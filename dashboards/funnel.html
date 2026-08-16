@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Filtru & Conversie — Apartamente București</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<style>
+:root { color-scheme: light; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f7; color: #1a1a1a; padding: 24px; line-height: 1.5; }
+.header { margin-bottom: 28px; }
+.header h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+.header p { font-size: 13px; color: #888; }
+.stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-bottom: 28px; }
+.stat-card { background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 16px; }
+.stat-card .label { font-size: 12px; color: #888; margin-bottom: 4px; }
+.stat-card .value { font-size: 26px; font-weight: 600; }
+.stat-card .value.accent { color: #2a78d6; }
+.stat-card .value.danger { color: #d03b3b; }
+.stat-card .value.success { color: #0ca30c; }
+.section { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; }
+.chart-wrap { position: relative; width: 100%; }
+.funnel-step { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 8px; margin-bottom: 6px; font-size: 13px; }
+.funnel-step .bar { height: 28px; border-radius: 4px; display: flex; align-items: center; padding: 0 10px; font-weight: 600; font-size: 12px; color: #fff; min-width: 40px; }
+.funnel-step .info { flex: 1; }
+.funnel-step .info .name { font-weight: 500; }
+.funnel-step .info .detail { font-size: 11px; color: #888; }
+.funnel-step .elim { font-size: 12px; color: #d03b3b; font-weight: 500; white-space: nowrap; }
+.seismic-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.seismic-table th { text-align: left; padding: 8px 10px; border-bottom: 2px solid #eee; font-weight: 600; font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+.seismic-table td { padding: 8px 10px; border-bottom: 1px solid #f0f0f0; }
+.seismic-table tr:hover { background: #fafafa; }
+.seismic-table a { color: #2a78d6; text-decoration: none; }
+.seismic-table a:hover { text-decoration: underline; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.badge-danger { background: #fce8e8; color: #d03b3b; }
+.badge-warning { background: #fff4d6; color: #a67300; }
+.badge-success { background: #e6f9e6; color: #0a8c0a; }
+.legend-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; font-size: 12px; color: #888; }
+.legend-dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; margin-right: 4px; vertical-align: middle; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Filtru & conversie — piață București</h1>
+  <p>Scan 15 august 2026 · 50 pagini Storia.ro · filtru max 160.000€</p>
+</div>
+
+<div class="stats-row">
+  <div class="stat-card">
+    <div class="label">Total extrase</div>
+    <div class="value">1.814</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Calificate</div>
+    <div class="value accent">73</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Rată conversie</div>
+    <div class="value">4,0%</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Eliminate total</div>
+    <div class="value danger">1.741</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Preț mediu calificat</div>
+    <div class="value">124.300€</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">€/m² mediu</div>
+    <div class="value">2.268</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Pâlnia de filtrare</h2>
+  <div id="funnel-steps"></div>
+  <div class="chart-wrap" style="height: 280px; margin-top: 20px;">
+    <canvas id="funnelChart"></canvas>
+  </div>
+</div>
+
+<div class="two-col">
+  <div class="section">
+    <h2>Distribuție preț</h2>
+    <div class="chart-wrap" style="height: 220px;">
+      <canvas id="priceChart"></canvas>
+    </div>
+    <div class="legend-row" id="priceLegend"></div>
+  </div>
+  <div class="section">
+    <h2>Motiv eliminare</h2>
+    <div class="chart-wrap" style="height: 220px;">
+      <canvas id="reasonChart"></canvas>
+    </div>
+    <div class="legend-row" id="reasonLegend"></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Distribuție zone — 165 listinguri active</h2>
+  <div class="chart-wrap" style="height: 320px;">
+    <canvas id="zoneChart"></canvas>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Eliminate risc seismic (10 anunțuri)</h2>
+  <table class="seismic-table">
+    <thead>
+      <tr><th>ID</th><th>Preț</th><th>m²</th><th>€/m²</th><th>Zonă</th><th>Link</th></tr>
+    </thead>
+    <tbody id="seismicBody"></tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h2>Interpretare</h2>
+  <div style="font-size: 14px; line-height: 1.7; color: #444;">
+    <p style="margin-bottom: 12px;">Din <strong>1.814</strong> anunțuri de 2 camere sub 160.000€ în București, doar <strong>73</strong> (4%) trec toate filtrele de investiție. Cel mai mare eliminare este zona: <strong>89,5%</strong> din listinguri sunt în zone periferice (Militari, Berceni, Pallady, Titan, Rahova, etc.).</p>
+    <p style="margin-bottom: 12px;">Riscul seismic elimină <strong>10 anunțuri</strong> din zone bune — în special în Centrul Istoric, Cișmigiu și Obor, unde blocurile interbelice sunt frecvente.</p>
+    <p style="margin-bottom: 12px;">Un aspect important descoperit: <strong>62 listinguri</strong> (32% din cele care treceau filtrul de URL) aveau adresa reală într-o zonă proastă, deși URL-ul sugera o zonă bună. Exemplu tipic: slug URL cu "tudor-arghezi" dar locația reală era IMGB/Berceni. Verificarea dublu (URL + adresă reală) este esențială.</p>
+    <p><strong>52 listinguri sub 140k€</strong> și <strong>21 în intervalul 140k-160k€</strong> — acestea din urmă oferă perspectiva de preț pentru viitoare negocieri și evoluția pieței.</p>
+  </div>
+</div>
+
+<script>
+const funnel = [
+  { name: 'Total extrase', count: 1814, elim: 0, reason: 'Toate anunțurile din 50 pagini Storia.ro', color: '#2a78d6' },
+  { name: 'Filtru zonă (URL)', count: 732, elim: 1082, reason: 'Eliminate zone periferice identificate din URL slug', color: '#3987e5' },
+  { name: 'Filtru zonă (pagină)', count: 190, elim: 542, reason: 'Zone rele confirmate prin verificare individuală', color: '#4a96f0' },
+  { name: 'Fără risc seismic', count: 180, elim: 10, reason: 'RS1, RS2, bulină, consolidare', color: '#5ba5f5' },
+  { name: 'Suprafață ≥ 50 m²', count: 135, elim: 45, reason: 'Sub limita minimă de 50 m² sau date lipsă', color: '#6cb4fa' },
+  { name: 'Localitate verificată', count: 73, elim: 62, reason: 'Adresa reală în zonă rea (URL înșelător)', color: '#0ca30c' }
+];
+
+// Funnel steps
+const stepsDiv = document.getElementById('funnel-steps');
+funnel.forEach((s, i) => {
+  const pct = Math.round(s.count / 1814 * 100);
+  const barW = Math.max(pct, 3);
+  stepsDiv.innerHTML += `
+    <div class="funnel-step" style="background: ${i === funnel.length-1 ? '#f0faf0' : '#fafafa'}">
+      <div class="bar" style="width: ${barW}%; background: ${s.color}">${s.count.toLocaleString()}</div>
+      <div class="info">
+        <div class="name">${s.name}</div>
+        <div class="detail">${s.reason}</div>
+      </div>
+      ${s.elim > 0 ? `<div class="elim">−${s.elim.toLocaleString()}</div>` : ''}
+    </div>`;
+});
+
+// Funnel bar chart
+new Chart(document.getElementById('funnelChart'), {
+  type: 'bar',
+  data: {
+    labels: funnel.map(s => s.name),
+    datasets: [{
+      data: funnel.map(s => s.count),
+      backgroundColor: funnel.map(s => s.color),
+      borderRadius: 4,
+      barPercentage: 0.65
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ctx.parsed.x.toLocaleString() + ' listinguri' } } },
+    scales: {
+      x: { ticks: { callback: v => v >= 1000 ? Math.round(v/1000)+'k' : v, color: '#888', font: { size: 11 } }, grid: { color: '#f0f0f0' } },
+      y: { ticks: { color: '#444', font: { size: 11 } }, grid: { display: false } }
+    }
+  }
+});
+
+// Price distribution donut
+const priceData = [52, 21];
+const priceLabels = ['Sub 140.000€', '140k – 160k€'];
+const priceColors = ['#2a78d6', '#eb6834'];
+new Chart(document.getElementById('priceChart'), {
+  type: 'doughnut',
+  data: { labels: priceLabels, datasets: [{ data: priceData, backgroundColor: priceColors, borderWidth: 2, borderColor: '#fff' }] },
+  options: { responsive: true, maintainAspectRatio: false, cutout: '60%', plugins: { legend: { display: false } } }
+});
+document.getElementById('priceLegend').innerHTML = priceLabels.map((l,i) =>
+  `<span><span class="legend-dot" style="background:${priceColors[i]}"></span>${l}: ${priceData[i]}</span>`
+).join('');
+
+// Elimination reasons donut
+const reasonData = [1082, 542, 10, 45, 62];
+const reasonLabels = ['Zonă rea (URL)', 'Zonă rea (pagină)', 'Risc seismic', 'Suprafață < 50m²', 'Localitate reală rea'];
+const reasonColors = ['#e34948', '#d03b3b', '#eb6834', '#eda100', '#e87ba4'];
+new Chart(document.getElementById('reasonChart'), {
+  type: 'doughnut',
+  data: { labels: reasonLabels, datasets: [{ data: reasonData, backgroundColor: reasonColors, borderWidth: 2, borderColor: '#fff' }] },
+  options: { responsive: true, maintainAspectRatio: false, cutout: '60%', plugins: { legend: { display: false } } }
+});
+document.getElementById('reasonLegend').innerHTML = reasonLabels.map((l,i) =>
+  `<span><span class="legend-dot" style="background:${reasonColors[i]}"></span>${l}: ${reasonData[i]}</span>`
+).join('');
+
+// Zone distribution bar
+const zones = {"Obor":16,"Dristor":14,"Ștefan cel Mare":12,"Mihai Bravu":10,"Calea Moșilor":9,"Colentina":9,"Tineretului":9,"Vitan":7,"Iancului":7,"Centru":7,"Dorobanți":6,"Grivița":5,"Cișmigiu":5,"Decebal":4,"Cotroceni":4,"Văcărești":4,"Victoriei":3,"Parcul Carol":3,"Centrul Civic":3,"Domenii":2,"Basarab":2,"Tei":2,"Vatra Luminoasă":2,"Universitate":2,"Calea Călărășilor":2,"Floreasca":1,"Altele":11};
+const zoneLabels = Object.keys(zones);
+const zoneValues = Object.values(zones);
+new Chart(document.getElementById('zoneChart'), {
+  type: 'bar',
+  data: {
+    labels: zoneLabels,
+    datasets: [{
+      data: zoneValues,
+      backgroundColor: '#2a78d6',
+      borderRadius: 3,
+      barPercentage: 0.75
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { color: '#888', font: { size: 10 }, maxRotation: 55, minRotation: 45 }, grid: { display: false } },
+      y: { ticks: { color: '#888', font: { size: 11 }, stepSize: 2 }, grid: { color: '#f0f0f0' }, beginAtZero: true }
+    }
+  }
+});
+
+// Seismic table
+const seismic = [
+  { id: 'IDIdBQ', price: 154000, area: 57, zone: 'Centrul Civic', slug: 'apartament-2-camere-hol-generos-imobil-art-deco' },
+  { id: 'IDIc97', price: 85990, area: 50, zone: 'Cișmigiu', slug: 'apartament-2-camere-semidecomandat-cismigiu' },
+  { id: 'IDIbCU', price: 78900, area: 54, zone: 'Obor', slug: 'obor-avrig-primarie-metrou-5-min' },
+  { id: 'IDIbBe', price: 98000, area: 50, zone: 'Vatra Luminoasă', slug: 'vatra-luminoasa-iancului-metrou-5-min' },
+  { id: 'IDIbna', price: 78900, area: 54, zone: 'Obor', slug: 'obor-avrig-primarie-parter-cu-balcon' },
+  { id: 'IDIaoH', price: 103900, area: 55, zone: 'Pantelimon/Iancului', slug: 'piata-iancului-metrou-1-min-scoala-56' },
+  { id: 'IDIan3', price: 103900, area: 55, zone: 'Pantelimon/Iancului', slug: 'piata-iancului-metrou-1-min-scoala-56' },
+  { id: 'IDI9UM', price: 78000, area: 54, zone: 'Armenească', slug: '2-camere-parter-stradal-bd-carol-armeneaca-ultracentral' },
+  { id: 'IDHrvp', price: 135000, area: 50, zone: 'Centrul Istoric', slug: 'de-vanzare-apartament-cochet-metrou-universitate' },
+  { id: 'IDHdZ7', price: 90000, area: 50, zone: 'Dorobanți', slug: '2-camere-5-minute-de-piata-roman-langa-ase' }
+];
+const tbody = document.getElementById('seismicBody');
+seismic.forEach(s => {
+  const ppm = Math.round(s.price / s.area);
+  tbody.innerHTML += `<tr>
+    <td><span class="badge badge-danger">${s.id}</span></td>
+    <td>${s.price.toLocaleString()}€</td>
+    <td>${s.area} m²</td>
+    <td>${ppm.toLocaleString()} €/m²</td>
+    <td>${s.zone}</td>
+    <td><a href="https://www.storia.ro/ro/oferta/${s.slug}-${s.id}" target="_blank">Deschide ↗</a></td>
+  </tr>`;
+});
+</script>
+</body>
+</html>

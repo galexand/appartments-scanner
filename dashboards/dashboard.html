@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartamente București — Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f172a;color:#e2e8f0;padding:20px}
+h1{font-size:1.6em;margin-bottom:4px;color:#f8fafc}
+.subtitle{color:#94a3b8;font-size:.85em;margin-bottom:20px}
+.nav{margin-bottom:20px}
+.nav a{color:#38bdf8;text-decoration:none;font-size:.85em}
+.nav a:hover{text-decoration:underline}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:20px}
+.stat{background:#1e293b;border-radius:10px;padding:14px;text-align:center;border:1px solid #334155}
+.stat .val{font-size:1.6em;font-weight:700;color:#38bdf8}
+.stat .lbl{font-size:.75em;color:#94a3b8;margin-top:2px}
+.filters{background:#1e293b;border-radius:10px;padding:14px;margin-bottom:20px;border:1px solid #334155;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.filters label{font-size:.8em;color:#94a3b8}
+.filters select,.filters input{background:#0f172a;color:#e2e8f0;border:1px solid #475569;border-radius:6px;padding:6px 10px;font-size:.85em}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.chart-box{background:#1e293b;border-radius:10px;padding:14px;border:1px solid #334155}
+.chart-box h3{font-size:.9em;color:#94a3b8;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:.8em}
+th{background:#1e293b;color:#94a3b8;padding:8px 6px;text-align:left;position:sticky;top:0;border-bottom:2px solid #334155;white-space:nowrap}
+td{padding:7px 6px;border-bottom:1px solid #1e293b}
+tr:hover td{background:#1e293b}
+a{color:#38bdf8;text-decoration:none}a:hover{text-decoration:underline}
+.table-wrap{background:#1e293b;border-radius:10px;padding:14px;border:1px solid #334155;margin-bottom:20px;max-height:600px;overflow-y:auto}
+.table-wrap h3{font-size:.9em;color:#94a3b8;margin-bottom:10px}
+.tag{display:inline-block;padding:2px 6px;border-radius:4px;font-size:.7em;font-weight:600}
+.tag-risk{background:#7f1d1d;color:#fca5a5}
+.best{color:#4ade80;font-weight:600}
+@media(max-width:768px){.charts{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="nav"><a href="apartamente-bucuresti-index.html">← Înapoi la index</a></div>
+<h1>Apartamente București — Investment Dashboard</h1>
+<p class="subtitle">2 camere | 50+ m² | sub 160.000€ | Zone centrale | Verificate seismic | Ultima scanare: 2026-08-15 | Zone verificate cu addressLocality</p>
+<div class="stats" id="stats"></div>
+<div class="filters">
+  <div><label>Zonă</label><br><select id="fZone"><option value="">Toate</option></select></div>
+  <div><label>Preț max (€)</label><br><input type="number" id="fPriceMax" value="160000" step="5000"></div>
+  <div><label>Preț min (€)</label><br><input type="number" id="fPriceMin" value="70000" step="5000"></div>
+  <div><label>Suprafață min (m²)</label><br><input type="number" id="fAreaMin" value="50" step="5"></div>
+  <div><label>Sortare</label><br><select id="fSort">
+    <option value="ppm_asc" selected>€/m² ↑</option>
+    <option value="price_asc">Preț ↑</option>
+    <option value="price_desc">Preț ↓</option>
+    <option value="ppm_desc">€/m² ↓</option>
+    <option value="area_desc">Suprafață ↓</option>
+  </select></div>
+</div>
+<div class="charts">
+  <div class="chart-box"><h3>Distribuție pe zone</h3><div style="position:relative;height:280px"><canvas id="chartZone"></canvas></div></div>
+  <div class="chart-box"><h3>Preț vs. Suprafață</h3><div style="position:relative;height:280px"><canvas id="chartScatter"></canvas></div></div>
+</div>
+<div class="table-wrap">
+  <h3>Listinguri active (<span id="countActive">0</span>)</h3>
+  <table><thead><tr><th>Preț €</th><th>m²</th><th>€/m²</th><th>Zonă</th><th>Sub-zonă</th><th>S</th><th>Link</th></tr></thead><tbody id="tbody"></tbody></table>
+</div>
+<div class="table-wrap">
+  <h3>Eliminate — risc seismic (<span id="countElim">0</span>)</h3>
+  <table><thead><tr><th>Preț €</th><th>m²</th><th>Zonă</th><th>Motiv</th><th>Link</th></tr></thead><tbody id="tbodyElim"></tbody></table>
+</div>
+<script>
+const DATA=[
+{id:'IDH0qG',price_eur:85000,area_mp:65,price_per_mp:1308,zone:'Splai',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDH0qG'},
+{id:'IDGLMF',price_eur:119500,area_mp:89,price_per_mp:1343,zone:'Piața Romană',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDGLMF'},
+{id:'IDIcC6',price_eur:70990,area_mp:50,price_per_mp:1420,zone:'Dristor',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/dristor-2-camere-IDIcC6'},
+{id:'IDI8Mq',price_eur:83000,area_mp:54,price_per_mp:1537,zone:'Știrbei',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/stirbei-2-camere-IDI8Mq'},
+{id:'IDIasb',price_eur:85000,area_mp:55,price_per_mp:1545,zone:'Tei',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/2-camere-55mp-metrou-stefan-cel-mare-IDIasb'},
+{id:'IDI5pq',price_eur:86000,area_mp:55,price_per_mp:1564,zone:'Floreasca',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI5pq'},
+{id:'IDHRtL',price_eur:85000,area_mp:50,price_per_mp:1700,zone:'Grivița',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-grivita-IDHRtL'},
+{id:'IDHahn',price_eur:93000,area_mp:54,price_per_mp:1722,zone:'Colentina',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/colentina-2-camere-IDHahn'},
+{id:'IDHPWl',price_eur:125000,area_mp:71,price_per_mp:1761,zone:'Cișmigiu',sub_zone:'Brezoianu',sector:1,url:'https://www.storia.ro/ro/oferta/IDHPWl'},
+{id:'IDI6AV',price_eur:89900,area_mp:51,price_per_mp:1763,zone:'Obor',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI6AV'},
+{id:'IDIcO7',price_eur:98000,area_mp:55,price_per_mp:1782,zone:'Iancului',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/iancului-2-camere-IDIcO7'},
+{id:'IDIbp7',price_eur:115000,area_mp:64,price_per_mp:1797,zone:'Văcărești',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-64mp-mobilat-IDIbp7'},
+{id:'IDIbXg',price_eur:98000,area_mp:54,price_per_mp:1815,zone:'Vatra Luminoasă',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vatra-luminoasa-2-camere-IDIbXg'},
+{id:'IDI37G',price_eur:135000,area_mp:74,price_per_mp:1824,zone:'Eminescu',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI37G'},
+{id:'IDI9GP',price_eur:140000,area_mp:76,price_per_mp:1842,zone:'Văcărești',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vacaresti-2-camere-76mp-IDI9GP'},
+{id:'IDI1Hk',price_eur:94000,area_mp:51,price_per_mp:1843,zone:'Splai',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI1Hk'},
+{id:'IDI5p7',price_eur:119000,area_mp:64,price_per_mp:1859,zone:'Splai',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI5p7'},
+{id:'IDIbE2',price_eur:95250,area_mp:50,price_per_mp:1905,zone:'Colentina',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/ap-2-camere-gradina-proprie-IDIbE2'},
+{id:'IDI4oZ',price_eur:105000,area_mp:55,price_per_mp:1909,zone:'Colentina',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI4oZ'},
+{id:'IDI8MQ',price_eur:105000,area_mp:55,price_per_mp:1909,zone:'Crângași',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI8MQ'},
+{id:'IDFCHa',price_eur:115490,area_mp:60,price_per_mp:1925,zone:'Ștefan cel Mare',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDFCHa'},
+{id:'IDI7dH',price_eur:129000,area_mp:67,price_per_mp:1925,zone:'Centrul Istoric',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/universitate-apartament-2-camere-IDI7dH'},
+{id:'IDI4vS',price_eur:103000,area_mp:53,price_per_mp:1943,zone:'Nerva Traian',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI4vS'},
+{id:'IDIaQe',price_eur:104990,area_mp:54,price_per_mp:1944,zone:'Dristor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIaQe'},
+{id:'IDI1PU',price_eur:137500,area_mp:70,price_per_mp:1964,zone:'Piața Romană',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI1PU'},
+{id:'IDIbNa',price_eur:98990,area_mp:50,price_per_mp:1980,zone:'Dristor',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-liviu-rebreanu-IDIbNa'},
+{id:'IDIb6e',price_eur:98990,area_mp:50,price_per_mp:1980,zone:'Dristor',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-liviu-rebreanu-IDIb6e'},
+{id:'IDIbcc',price_eur:104990,area_mp:53,price_per_mp:1981,zone:'Basarabia',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-basarabia-IDIbcc'},
+{id:'IDHDBy',price_eur:119001,area_mp:60,price_per_mp:1983,zone:'Victoriei',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDHDBy'},
+{id:'IDHzHk',price_eur:135000,area_mp:68,price_per_mp:1985,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHzHk'},
+{id:'IDIbVb',price_eur:119500,area_mp:60,price_per_mp:1992,zone:'Splai',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/splai-2-camere-60mp-IDIbVb'},
+{id:'IDIbsD',price_eur:119900,area_mp:60,price_per_mp:1998,zone:'Tei',sub_zone:'Teiul Doamnei',sector:2,url:'https://www.storia.ro/ro/oferta/IDIbsD'},
+{id:'IDI4sN',price_eur:99900,area_mp:50,price_per_mp:1998,zone:'Vatra Luminoasă',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI4sN'},
+{id:'IDH2xU',price_eur:100000,area_mp:50,price_per_mp:2000,zone:'Dristor',sub_zone:'Dristor',sector:3,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-dristor-IDH2xU'},
+{id:'IDI49i',price_eur:132000,area_mp:66,price_per_mp:2000,zone:'Piața Romană',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI49i'},
+{id:'IDI4qk',price_eur:110999,area_mp:55,price_per_mp:2018,zone:'Splai',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI4qk'},
+{id:'IDHOnl',price_eur:111500,area_mp:54,price_per_mp:2065,zone:'Vitan',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHOnl'},
+{id:'IDHCHA',price_eur:129000,area_mp:62,price_per_mp:2081,zone:'13 Septembrie',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/13-septembrie-2-camere-IDHCHA'},
+{id:'IDIbt5',price_eur:115000,area_mp:55,price_per_mp:2091,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIbt5'},
+{id:'IDGSDs',price_eur:115000,area_mp:55,price_per_mp:2091,zone:'Eminescu',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDGSDs'},
+{id:'IDHmpv',price_eur:115000,area_mp:55,price_per_mp:2091,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHmpv'},
+{id:'IDHpCc',price_eur:130000,area_mp:62,price_per_mp:2097,zone:'Dristor',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHpCc'},
+{id:'IDIcBR',price_eur:104980,area_mp:50,price_per_mp:2100,zone:'Dristor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIcBR'},
+{id:'IDI6oN',price_eur:105000,area_mp:50,price_per_mp:2100,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI6oN'},
+{id:'IDF5fD',price_eur:120000,area_mp:57,price_per_mp:2105,zone:'Colentina',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDF5fD'},
+{id:'IDHZCA',price_eur:109900,area_mp:52,price_per_mp:2113,zone:'Crângași',sub_zone:'Crângași',sector:6,url:'https://www.storia.ro/ro/oferta/2-camere-crangasi-i-metrou-6-min-i-posibilitate-centrala-i-comision-0-IDHZCA'},
+{id:'IDIatC',price_eur:124900,area_mp:59,price_per_mp:2117,zone:'Văcărești',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-tineretului-vacaresti-IDIatC'},
+{id:'IDIb5Y',price_eur:108000,area_mp:51,price_per_mp:2118,zone:'Fundeni',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIb5Y'},
+{id:'IDHLRa',price_eur:117000,area_mp:55,price_per_mp:2127,zone:'Tineretului',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDHLRa'},
+{id:'IDI3D8',price_eur:120000,area_mp:56,price_per_mp:2143,zone:'Ștefan cel Mare',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDI3D8'},
+{id:'IDIanh',price_eur:118000,area_mp:55,price_per_mp:2145,zone:'Vitan',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIanh'},
+{id:'IDGNCu',price_eur:118000,area_mp:55,price_per_mp:2145,zone:'Vatra Luminoasă',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDGNCu'},
+{id:'IDI1UU',price_eur:140000,area_mp:65,price_per_mp:2154,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI1UU'},
+{id:'IDHvzP',price_eur:110000,area_mp:51,price_per_mp:2157,zone:'Dristor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHvzP'},
+{id:'IDHZIr',price_eur:119000,area_mp:55,price_per_mp:2164,zone:'Timpuri Noi',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHZIr'},
+{id:'IDHfcz',price_eur:119000,area_mp:55,price_per_mp:2164,zone:'1 Mai',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHfcz'},
+{id:'IDHdfR',price_eur:139000,area_mp:64,price_per_mp:2172,zone:'Cișmigiu',sub_zone:'Sala Palatului',sector:1,url:'https://www.storia.ro/ro/oferta/IDHdfR'},
+{id:'IDHisy',price_eur:119500,area_mp:55,price_per_mp:2173,zone:'Dorobanți',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHisy'},
+{id:'IDIcxL',price_eur:120000,area_mp:55,price_per_mp:2182,zone:'Dristor',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDIcxL'},
+{id:'IDHwdr',price_eur:120000,area_mp:55,price_per_mp:2182,zone:'Colentina',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHwdr'},
+{id:'IDI93y',price_eur:124421,area_mp:57,price_per_mp:2183,zone:'Timpuri Noi',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI93y'},
+{id:'IDI1Zn',price_eur:109900,area_mp:50,price_per_mp:2198,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI1Zn'},
+{id:'IDHKbG',price_eur:110000,area_mp:50,price_per_mp:2200,zone:'Dristor',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDHKbG'},
+{id:'IDHmq2',price_eur:110000,area_mp:50,price_per_mp:2200,zone:'Colentina',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHmq2'},
+{id:'IDI5nf',price_eur:119000,area_mp:54,price_per_mp:2204,zone:'Dristor',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI5nf'},
+{id:'IDI8H4',price_eur:124000,area_mp:56,price_per_mp:2214,zone:'Dristor',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI8H4'},
+{id:'IDH9VN',price_eur:128500,area_mp:58,price_per_mp:2216,zone:'Colentina',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDH9VN'},
+{id:'IDIbmu',price_eur:122000,area_mp:55,price_per_mp:2218,zone:'Dristor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIbmu'},
+{id:'IDI3QF',price_eur:120000,area_mp:54,price_per_mp:2222,zone:'Calea Moșilor',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDI3QF'},
+{id:'IDHDY7',price_eur:120000,area_mp:54,price_per_mp:2222,zone:'Colentina',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHDY7'},
+{id:'IDI9vi',price_eur:122500,area_mp:55,price_per_mp:2227,zone:'Piața Romană',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI9vi'},
+{id:'IDI8VA',price_eur:122500,area_mp:55,price_per_mp:2227,zone:'Vitan',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI8VA'},
+{id:'IDIddS',price_eur:114000,area_mp:51,price_per_mp:2235,zone:'Dristor',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDIddS'},
+{id:'IDI925',price_eur:129900,area_mp:58,price_per_mp:2240,zone:'Colentina',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI925'},
+{id:'IDI8wa',price_eur:115000,area_mp:51,price_per_mp:2255,zone:'1 Mai',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI8wa'},
+{id:'IDHKnH',price_eur:115000,area_mp:51,price_per_mp:2255,zone:'Splai',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDHKnH'},
+{id:'IDIdjc',price_eur:115000,area_mp:51,price_per_mp:2255,zone:'Vitan',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-vitan-barzesti-bloc-2021-IDIdjc'},
+{id:'IDI3Lx',price_eur:120000,area_mp:53,price_per_mp:2264,zone:'1 Mai',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI3Lx'},
+{id:'IDHVn0',price_eur:122500,area_mp:54,price_per_mp:2269,zone:'Vitan',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHVn0'},
+{id:'IDHVmL',price_eur:122500,area_mp:54,price_per_mp:2269,zone:'Vitan',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHVmL'},
+{id:'IDHb71',price_eur:113500,area_mp:50,price_per_mp:2270,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHb71'},
+{id:'IDI91h',price_eur:129900,area_mp:57,price_per_mp:2279,zone:'Colentina',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI91h'},
+{id:'IDIdS6',price_eur:114000,area_mp:50,price_per_mp:2280,zone:'Calea Moșilor',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/aparatment-2-camere-calea-mosilor-imobil-1980-IDIdS6'},
+{id:'IDIaL1',price_eur:135000,area_mp:59,price_per_mp:2288,zone:'1 Mai',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIaL1'},
+{id:'IDI6pP',price_eur:135000,area_mp:59,price_per_mp:2288,zone:'Cișmigiu',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI6pP'},
+{id:'IDHdJp',price_eur:140000,area_mp:61,price_per_mp:2295,zone:'Vitan',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHdJp'},
+{id:'IDI84B',price_eur:131500,area_mp:57,price_per_mp:2307,zone:'Timpuri Noi',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI84B'},
+{id:'IDIchp',price_eur:118000,area_mp:51,price_per_mp:2314,zone:'Colentina',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDIchp'},
+{id:'IDI8Ps',price_eur:118000,area_mp:51,price_per_mp:2314,zone:'Splai',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI8Ps'},
+{id:'IDHz6H',price_eur:129999,area_mp:56,price_per_mp:2321,zone:'Crângași',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDHz6H'},
+{id:'IDHVt9',price_eur:139940,area_mp:60,price_per_mp:2332,zone:'Parcul Carol',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDHVt9'},
+{id:'IDHKbz',price_eur:139899,area_mp:60,price_per_mp:2332,zone:'Parcul Carol',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDHKbz'},
+{id:'IDI180',price_eur:133000,area_mp:57,price_per_mp:2333,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI180'},
+{id:'IDHmpF',price_eur:120000,area_mp:51,price_per_mp:2353,zone:'Obor',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHmpF'},
+{id:'IDI4i3',price_eur:139500,area_mp:59,price_per_mp:2364,zone:'Grivița',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI4i3'},
+{id:'IDI6l1',price_eur:130000,area_mp:55,price_per_mp:2364,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI6l1'},
+{id:'IDI6kX',price_eur:130000,area_mp:55,price_per_mp:2364,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI6kX'},
+{id:'IDIcMD',price_eur:135000,area_mp:57,price_per_mp:2368,zone:'Cișmigiu',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIcMD'},
+{id:'IDI1rx',price_eur:132900,area_mp:56,price_per_mp:2373,zone:'Obor',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI1rx'},
+{id:'IDI10a',price_eur:118999,area_mp:50,price_per_mp:2380,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI10a'},
+{id:'IDI2mk',price_eur:131000,area_mp:55,price_per_mp:2382,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI2mk'},
+{id:'IDIdpo',price_eur:134000,area_mp:56,price_per_mp:2393,zone:'Centrul Civic',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/cismigiu-decomandat-creditabil-IDIdpo'},
+{id:'IDHCwR',price_eur:127000,area_mp:53,price_per_mp:2396,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHCwR'},
+{id:'IDI1Kg',price_eur:120000,area_mp:50,price_per_mp:2400,zone:'Timpuri Noi',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI1Kg'},
+{id:'IDHKio',price_eur:122500,area_mp:51,price_per_mp:2402,zone:'Piața Romană',sub_zone:'Magheru',sector:1,url:'https://www.storia.ro/ro/oferta/IDHKio'},
+{id:'IDGQwx',price_eur:124900,area_mp:52,price_per_mp:2402,zone:'Timpuri Noi',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDGQwx'},
+{id:'IDIdw8',price_eur:129999,area_mp:54,price_per_mp:2407,zone:'Tineretului',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDIdw8'},
+{id:'IDI1vG',price_eur:130000,area_mp:54,price_per_mp:2407,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI1vG'},
+{id:'IDHtPi',price_eur:135000,area_mp:56,price_per_mp:2411,zone:'Decebal',sub_zone:'',sector:5,url:'https://www.storia.ro/ro/oferta/IDHtPi'},
+{id:'IDHmq4',price_eur:135000,area_mp:56,price_per_mp:2411,zone:'Colentina',sub_zone:'',sector:5,url:'https://www.storia.ro/ro/oferta/IDHmq4'},
+{id:'IDHbZn',price_eur:135000,area_mp:56,price_per_mp:2411,zone:'Vitan',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHbZn'},
+{id:'IDHQns',price_eur:140000,area_mp:58,price_per_mp:2414,zone:'Grivița',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/grivita-2-camere-58mp-IDHQns'},
+{id:'IDI26D',price_eur:133000,area_mp:55,price_per_mp:2418,zone:'Tineretului',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI26D'},
+{id:'IDHOcq',price_eur:131000,area_mp:54,price_per_mp:2426,zone:'Obor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHOcq'},
+{id:'IDI9Un',price_eur:141500,area_mp:58,price_per_mp:2440,zone:'Grivița',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-turda-parc-regina-maria-IDI9Un'},
+{id:'IDI2W9',price_eur:124900,area_mp:51,price_per_mp:2449,zone:'Iancului',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI2W9'},
+{id:'IDI4sg',price_eur:122500,area_mp:50,price_per_mp:2450,zone:'Vitan',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI4sg'},
+{id:'IDHKbp',price_eur:125000,area_mp:51,price_per_mp:2451,zone:'Iancului',sub_zone:'Piața Iancului',sector:2,url:'https://www.storia.ro/ro/oferta/iancului-apartament-cu-2-camere-transformat-in-3-IDHKbp'},
+{id:'IDIaRF',price_eur:135000,area_mp:55,price_per_mp:2455,zone:'Floreasca',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIaRF'},
+{id:'IDHExr',price_eur:125500,area_mp:51,price_per_mp:2461,zone:'Timpuri Noi',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDHExr'},
+{id:'IDI5Uo',price_eur:133000,area_mp:54,price_per_mp:2463,zone:'Calea Moșilor',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI5Uo'},
+{id:'IDH6vt',price_eur:126000,area_mp:51,price_per_mp:2471,zone:'Vitan',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDH6vt'},
+{id:'IDI2ft',price_eur:139000,area_mp:56,price_per_mp:2482,zone:'Cișmigiu',sub_zone:'',sector:5,url:'https://www.storia.ro/ro/oferta/IDI2ft'},
+{id:'IDH8vw',price_eur:132000,area_mp:53,price_per_mp:2491,zone:'Crângași',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDH8vw'},
+{id:'IDHIJa',price_eur:124800,area_mp:50,price_per_mp:2496,zone:'Piața Romană',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDHIJa'},
+{id:'IDIapJ',price_eur:149900,area_mp:60,price_per_mp:2498,zone:'Uranus',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-uranus-IDIapJ'},
+{id:'IDIcYA',price_eur:140000,area_mp:56,price_per_mp:2500,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIcYA'},
+{id:'IDI7ne',price_eur:124999,area_mp:50,price_per_mp:2500,zone:'Tineretului',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI7ne'},
+{id:'IDI32f',price_eur:125000,area_mp:50,price_per_mp:2500,zone:'Floreasca',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI32f'},
+{id:'IDI2n9',price_eur:135000,area_mp:54,price_per_mp:2500,zone:'Eminescu',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDI2n9'},
+{id:'IDI1lq',price_eur:125000,area_mp:50,price_per_mp:2500,zone:'Dristor',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI1lq'},
+{id:'IDGMTA',price_eur:139000,area_mp:55,price_per_mp:2527,zone:'13 Septembrie',sub_zone:'',sector:5,url:'https://www.storia.ro/ro/oferta/IDGMTA'},
+{id:'IDIdtL',price_eur:144890,area_mp:57,price_per_mp:2542,zone:'Ștefan cel Mare',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-obor-renovat-IDIdtL'},
+{id:'IDIbkL',price_eur:145000,area_mp:57,price_per_mp:2544,zone:'Ștefan cel Mare',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/stefan-cel-mare-metrou-obor-IDIbkL'},
+{id:'IDIcUF',price_eur:140000,area_mp:55,price_per_mp:2545,zone:'Tei',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDIcUF'},
+{id:'IDHg36',price_eur:130000,area_mp:51,price_per_mp:2549,zone:'Dristor',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDHg36'},
+{id:'IDI4m8',price_eur:128000,area_mp:50,price_per_mp:2560,zone:'Dristor',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDI4m8'},
+{id:'IDI15y',price_eur:128000,area_mp:50,price_per_mp:2560,zone:'Decebal',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI15y'},
+{id:'IDHhKF',price_eur:129000,area_mp:50,price_per_mp:2580,zone:'Dorobanți',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDHhKF'},
+{id:'IDI6rV',price_eur:131900,area_mp:51,price_per_mp:2586,zone:'Timpuri Noi',sub_zone:'',sector:3,url:'https://www.storia.ro/ro/oferta/IDI6rV'},
+{id:'IDHoj6',price_eur:129500,area_mp:50,price_per_mp:2590,zone:'Grivița',sub_zone:'',sector:2,url:'https://www.storia.ro/ro/oferta/IDHoj6'},
+{id:'IDIcZD',price_eur:140000,area_mp:54,price_per_mp:2593,zone:'Basarab',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDIcZD'},
+{id:'IDIc6v',price_eur:135000,area_mp:52,price_per_mp:2596,zone:'Floreasca',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDIc6v'},
+{id:'IDIdgD',price_eur:129900,area_mp:50,price_per_mp:2598,zone:'Văcărești',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-vacaresti-IDIdgD'},
+{id:'IDI4iV',price_eur:129999,area_mp:50,price_per_mp:2600,zone:'Tei',sub_zone:'',sector:4,url:'https://www.storia.ro/ro/oferta/IDI4iV'},
+{id:'IDHHY2',price_eur:142000,area_mp:54,price_per_mp:2630,zone:'Grivița',sub_zone:'Strada Cluj',sector:1,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-grivita-IDHHY2'},
+{id:'IDHYEO',price_eur:134900,area_mp:51,price_per_mp:2645,zone:'Domenii',sub_zone:'Stalpeanu',sector:1,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-domenii-IDHYEO'},
+{id:'IDFg5g',price_eur:138000,area_mp:52,price_per_mp:2654,zone:'Iancului',sub_zone:'Orzari',sector:2,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-l-muncii-IDFg5g'},
+{id:'IDIdPB',price_eur:155223,area_mp:58,price_per_mp:2676,zone:'Centrul Civic',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/2-camere-calea-calarasilor-IDIdPB'},
+{id:'IDIbax',price_eur:135000,area_mp:50,price_per_mp:2700,zone:'Crângași',sub_zone:'',sector:1,url:'https://www.storia.ro/ro/oferta/IDIbax'},
+{id:'IDHoSL',price_eur:144900,area_mp:53,price_per_mp:2734,zone:'Dristor',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/dristor-decomandat-an-1983-IDHoSL'},
+{id:'IDIcZl',price_eur:145000,area_mp:53,price_per_mp:2736,zone:'Dristor',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/dristor-metrou-5-min-IDIcZl'},
+{id:'IDI9Te',price_eur:149000,area_mp:54,price_per_mp:2759,zone:'Tineretului',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-tineretului-IDI9Te'},
+{id:'IDI2Hf',price_eur:159500,area_mp:57,price_per_mp:2798,zone:'Centrul Civic',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/2-camere-centrul-civic-IDI2Hf'},
+{id:'IDFvdD',price_eur:155000,area_mp:55,price_per_mp:2818,zone:'Dorobanți',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/dorobanti-2-camere-IDFvdD'},
+{id:'IDIbe4',price_eur:160000,area_mp:56,price_per_mp:2857,zone:'Decebal',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/decebal-metrou-p-ta-muncii-IDIbe4'},
+{id:'IDIblT',price_eur:149000,area_mp:52,price_per_mp:2865,zone:'Calea Moșilor',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/mosilor-eminescu-2-camere-IDIblT'},
+{id:'IDGes6',price_eur:145000,area_mp:50,price_per_mp:2900,zone:'Cișmigiu',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/apartament-2-camere-unirii-nicolae-balcescu-IDGes6'},
+{id:'IDIaSv',price_eur:145000,area_mp:50,price_per_mp:2900,zone:'Dorobanți',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vanzari-apartamente-2-camere-dorobanti-IDIaSv'},
+{id:'IDIbD1',price_eur:159000,area_mp:54,price_per_mp:2944,zone:'Tineretului',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/tineretului-2-camere-IDIbD1'},
+{id:'IDIcYn',price_eur:153000,area_mp:50,price_per_mp:3060,zone:'Vitan',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vitan-apartament-IDIcYn'},
+{id:'IDI9Gj',price_eur:153000,area_mp:50,price_per_mp:3060,zone:'Vitan',sub_zone:'',sector:0,url:'https://www.storia.ro/ro/oferta/vitan-2-camere-IDI9Gj'}
+];
+const ELIM=[
+{id:'IDHPjX',price_eur:125000,area_mp:59,zone:'Dorobanți',sub_zone:'Str. Londra',reason:'RS I — Risc Seismic grad I',url:'https://www.storia.ro/ro/oferta/londra-2-camere-decomandat-59-mp-rs-i-IDHPjX'},
+{id:'IDHLkn',price_eur:124800,area_mp:58,zone:'Eminescu',sub_zone:'Maria Rosetti',reason:'RS II — Risc Seismic grad II, bloc 1938',url:'https://www.storia.ro/ro/oferta/apartament-2-camere-decomandat-de-vanzare-zona-rosetti-58-mp-utili-IDHLkn'},
+{id:'IDHDus',price_eur:109990,area_mp:None,zone:'Ștefan cel Mare',sub_zone:'Ștefan cel Mare',reason:'Clasă de risc seismic confirmată',url:''},
+{id:'IDFV7O',price_eur:105000,area_mp:55,zone:'Dorobanți',sub_zone:'Căderea Bastiliei',reason:'U3 — Urgență grad 3, bloc 1945',url:''},
+{id:'IDHJ9o',price_eur:69400,area_mp:60,zone:'Floreasca',sub_zone:'Floreasca',reason:'Preț fals — anunț developer \'de la 11.362€ + TVA\'',url:''},
+{id:'IDHTSx',price_eur:107000,area_mp:58,zone:'Eminescu',sub_zone:'Maria Rosetti',reason:'RS2 - clasa de risc seismic RS2, bloc 1934',url:'https://www.storia.ro/ro/oferta/maria-rosetti-stradal-pretabil-i-pentru-investiie-IDHTSx'},
+{id:'IDHZTj',price_eur:135000,area_mp:61,zone:'Eminescu',sub_zone:'Maria Rosetti',reason:'RS2 - risc seismic 2, bloc boutique interbelic',url:'https://www.storia.ro/ro/oferta/un-apartament-stilat-intr-un-bloc-boutique-IDHZTj'},
+{id:'IDI8Em',price_eur:103999,area_mp:55,zone:'Iancului',sub_zone:'',reason:'Risc seismic U3',url:'https://www.storia.ro/ro/oferta/IDI8Em'},
+{id:'IDI7RN',price_eur:105000,area_mp:58,zone:'Dristor',sub_zone:'',reason:'Risc seismic RS2',url:'https://www.storia.ro/ro/oferta/IDI7RN'},
+{id:'IDHdZ7',price_eur:90000,area_mp:50,zone:'Piața Romană',sub_zone:'',reason:'Risc seismic U2',url:'https://www.storia.ro/ro/oferta/IDHdZ7'},
+{id:'IDIdBQ',price_eur:154000,area_mp:57,zone:'Centrul Civic',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/apartament-2-camere-hol-generos-imobil-art-deco-IDIdBQ'},
+{id:'IDIc97',price_eur:85990,area_mp:50,zone:'Cișmigiu',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/apartament-2-camere-semidecomandat-cismigiu-IDIc97'},
+{id:'IDIbCU',price_eur:78900,area_mp:54,zone:'Obor',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/obor-avrig-primarie-metrou-5-min-IDIbCU'},
+{id:'IDIbBe',price_eur:98000,area_mp:50,zone:'Vatra Luminoasă',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/vatra-luminoasa-iancului-metrou-5-min-IDIbBe'},
+{id:'IDIbna',price_eur:78900,area_mp:54,zone:'Obor',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/obor-avrig-primarie-parter-cu-balcon-IDIbna'},
+{id:'IDIaoH',price_eur:103900,area_mp:55,zone:'Iancului',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/piata-iancului-metrou-1-min-scoala-56-IDIaoH'},
+{id:'IDIan3',price_eur:103900,area_mp:55,zone:'Iancului',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/piata-iancului-metrou-1-min-scoala-56-IDIan3'},
+{id:'IDI9UM',price_eur:78000,area_mp:54,zone:'Parcul Carol',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/2-camere-parter-stradal-bd-carol-armeneaca-ultracentral-IDI9UM'},
+{id:'IDHrvp',price_eur:135000,area_mp:50,zone:'Centrul Istoric',sub_zone:'',reason:'Risc seismic detectat automat',url:'https://www.storia.ro/ro/oferta/de-vanzare-apartament-cochet-metrou-universitate-IDHrvp'},
+{id:'IDHCI8',price_eur:108000,area_mp:65,zone:'Pieptănari',sub_zone:'',reason:'Zonă exclusă: Pieptănari (era marcat ca Parcul Carol)',url:'https://www.storia.ro/ro/oferta/IDHCI8'},
+{id:'IDGAKt',price_eur:132000,area_mp:51,zone:'Bucureștii Noi',sub_zone:'',reason:'Zonă exclusă: Bucureștii Noi (era marcat ca Centru)',url:'https://www.storia.ro/ro/oferta/IDGAKt'},
+{id:'IDHYeO',price_eur:134900,area_mp:51,zone:'Focșani',sub_zone:'',reason:'Zonă exclusă: Focșani (era marcat ca Domenii)',url:'https://www.storia.ro/ro/oferta/domenii-1-mai-IDHYeO'}
+];
+
+let sortKey='price_per_mp',sortDir=1;
+function getFiltered(){
+  const zone=document.getElementById('fZone').value;
+  const pMax=+document.getElementById('fPriceMax').value||999999;
+  const pMin=+document.getElementById('fPriceMin').value||0;
+  const aMin=+document.getElementById('fAreaMin').value||0;
+  return DATA.filter(l=>{
+    if(zone&&l.zone!==zone&&l.sub_zone!==zone)return false;
+    if(l.price_eur>pMax||l.price_eur<pMin)return false;
+    if(l.area_mp<aMin)return false;
+    return true;
+  });
+}
+function render(){
+  const sv=document.getElementById('fSort').value;
+  if(sv==='price_asc'){sortKey='price_eur';sortDir=1;}
+  else if(sv==='price_desc'){sortKey='price_eur';sortDir=-1;}
+  else if(sv==='ppm_asc'){sortKey='price_per_mp';sortDir=1;}
+  else if(sv==='ppm_desc'){sortKey='price_per_mp';sortDir=-1;}
+  else if(sv==='area_desc'){sortKey='area_mp';sortDir=-1;}
+  const filtered=getFiltered();
+  filtered.sort((a,b)=>((a[sortKey]||0)-(b[sortKey]||0))*sortDir);
+  document.getElementById('countActive').textContent=filtered.length;
+  const prices=filtered.map(l=>l.price_eur);
+  const ppms=filtered.map(l=>l.price_per_mp).filter(Boolean);
+  const avgP=prices.length?Math.round(prices.reduce((a,b)=>a+b,0)/prices.length):0;
+  const minP=prices.length?Math.min(...prices):0;
+  const avgPpm=ppms.length?Math.round(ppms.reduce((a,b)=>a+b,0)/ppms.length):0;
+  const minPpm=ppms.length?Math.min(...ppms):0;
+  const zones=new Set(filtered.map(l=>l.zone));
+  document.getElementById('stats').innerHTML=`
+    <div class="stat"><div class="val">${filtered.length}</div><div class="lbl">Apartamente</div></div>
+    <div class="stat"><div class="val">${zones.size}</div><div class="lbl">Zone</div></div>
+    <div class="stat"><div class="val">${minP.toLocaleString()}€</div><div class="lbl">Preț minim</div></div>
+    <div class="stat"><div class="val">${avgP.toLocaleString()}€</div><div class="lbl">Preț mediu</div></div>
+    <div class="stat"><div class="val">${minPpm.toLocaleString()}</div><div class="lbl">Min €/m²</div></div>
+    <div class="stat"><div class="val">${avgPpm.toLocaleString()}</div><div class="lbl">Avg €/m²</div></div>`;
+  document.getElementById('tbody').innerHTML=filtered.map(l=>{
+    const pc=l.price_per_mp&&l.price_per_mp<=2000?' class="best"':'';
+    return `<tr><td>${l.price_eur.toLocaleString()}€</td><td>${l.area_mp}</td><td${pc}>${l.price_per_mp?l.price_per_mp.toLocaleString():'-'}</td><td>${l.zone}</td><td>${l.sub_zone||'-'}</td><td>S${l.sector||'?'}</td><td><a href="${l.url}" target="_blank">Vezi →</a></td></tr>`;
+  }).join('');
+  document.getElementById('countElim').textContent=ELIM.length;
+  document.getElementById('tbodyElim').innerHTML=ELIM.map(e=>`<tr><td>${e.price_eur.toLocaleString()}€</td><td>${e.area_mp}</td><td>${e.zone}/${e.sub_zone||''}</td><td><span class="tag tag-risk">${e.reason}</span></td><td><a href="${e.url}" target="_blank">Vezi →</a></td></tr>`).join('');
+  updateCharts(filtered);
+}
+let chartZone,chartScatter;
+function updateCharts(f){
+  const zc={};f.forEach(l=>{zc[l.zone]=(zc[l.zone]||0)+1;});
+  const sz=Object.entries(zc).sort((a,b)=>b[1]-a[1]);
+  const colors=['#38bdf8','#818cf8','#a78bfa','#f472b6','#fb923c','#4ade80','#facc15','#f87171','#2dd4bf','#e879f9','#34d399','#fbbf24','#60a5fa','#c084fc','#fb7185','#a3e635','#22d3ee','#f97316','#94a3b8','#e2e8f0','#6366f1','#14b8a6','#f59e0b','#78716c','#d946ef','#0ea5e9','#10b981','#f43f5e','#8b5cf6','#06b6d4','#84cc16','#ef4444','#eab308'];
+  if(chartZone)chartZone.destroy();
+  chartZone=new Chart(document.getElementById('chartZone'),{type:'doughnut',data:{labels:sz.map(z=>z[0]),datasets:[{data:sz.map(z=>z[1]),backgroundColor:colors.slice(0,sz.length)}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#94a3b8',font:{size:10}}}}}});
+  if(chartScatter)chartScatter.destroy();
+  chartScatter=new Chart(document.getElementById('chartScatter'),{type:'scatter',data:{datasets:[{label:'Apartamente',data:f.map(l=>({x:l.area_mp,y:l.price_eur,label:l.zone})),backgroundColor:'#38bdf880',borderColor:'#38bdf8',pointRadius:5,pointHoverRadius:8}]},options:{responsive:true,maintainAspectRatio:false,scales:{x:{title:{display:true,text:'m²',color:'#94a3b8'},ticks:{color:'#94a3b8'},grid:{color:'#1e293b'}},y:{title:{display:true,text:'€',color:'#94a3b8'},ticks:{color:'#94a3b8',callback:v=>v.toLocaleString()+'€'},grid:{color:'#1e293b'}}},plugins:{tooltip:{callbacks:{label:ctx=>`${ctx.raw.label}: ${ctx.raw.y.toLocaleString()}€ / ${ctx.raw.x}m²`}},legend:{display:false}}}});
+}
+function populateZones(){
+  const sel=document.getElementById('fZone');
+  const az=new Set();
+  DATA.forEach(l=>{az.add(l.zone);if(l.sub_zone&&l.sub_zone!==l.zone)az.add(l.sub_zone);});
+  [...az].sort().forEach(z=>{const o=document.createElement('option');o.value=z;o.textContent=z;sel.appendChild(o);});
+}
+document.querySelectorAll('.filters select, .filters input').forEach(el=>{
+  el.addEventListener('change',render);
+  el.addEventListener('input',()=>{clearTimeout(el._t);el._t=setTimeout(render,300);});
+});
+populateZones();render();
+</script>
+</body>
+</html>
