@@ -2,3 +2,5 @@
 *.swp
 *.swo
 *~
+data/apartamente.db
+__pycache__/

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartamente București — Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg: #0f172a; --surface: #1e293b; --surface2: #334155;
+  --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8;
+  --green: #4ade80; --red: #f87171; --amber: #fbbf24;
+  --border: #475569; --radius: 10px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.header h1 { font-size: 1.4em; font-weight: 600; }
+.header .meta { color: var(--muted); font-size: .8em; }
+.nav { display: flex; gap: 8px; }
+.nav a { padding: 6px 14px; border-radius: var(--radius); font-size: .85em; border: 1px solid var(--border); transition: all .2s; }
+.nav a:hover, .nav a.active { border-color: var(--accent); background: rgba(56,189,248,.1); text-decoration: none; }
+
+/* Stats */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding: 16px 24px; }
+.stat { background: var(--surface); border-radius: var(--radius); padding: 14px 16px; }
+.stat .label { font-size: .75em; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+.stat .value { font-size: 1.5em; font-weight: 600; margin-top: 2px; }
+.stat .value.green { color: var(--green); }
+.stat .value.red { color: var(--red); }
+
+/* Filters */
+.filters { display: flex; gap: 10px; padding: 12px 24px; flex-wrap: wrap; align-items: center; }
+.filters select, .filters input { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: var(--radius); padding: 7px 12px; font-size: .85em; outline: none; }
+.filters select:focus, .filters input:focus { border-color: var(--accent); }
+.filters .count { color: var(--muted); font-size: .8em; margin-left: auto; }
+.filter-label { font-size: .75em; color: var(--muted); text-transform: uppercase; }
+
+/* Table */
+.table-wrap { padding: 0 24px 24px; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .85em; }
+th { position: sticky; top: 0; background: var(--bg); color: var(--muted); font-weight: 500; text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; }
+th:hover { color: var(--accent); }
+th .arrow { margin-left: 4px; opacity: .5; }
+th.sorted .arrow { opacity: 1; color: var(--accent); }
+td { padding: 10px 12px; border-bottom: 1px solid rgba(71,85,105,.3); white-space: nowrap; }
+tr:hover { background: rgba(56,189,248,.05); }
+tr.price-drop { background: rgba(74,222,128,.08); }
+.zone-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; background: rgba(56,189,248,.15); color: var(--accent); font-size: .8em; }
+.price-change { font-size: .75em; font-weight: 600; }
+.price-change.down { color: var(--green); }
+.price-change.up { color: var(--red); }
+.risk-safe { color: var(--green); }
+.risk-warn { color: var(--amber); }
+.compare-btn { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 6px; padding: 3px 8px; cursor: pointer; font-size: .75em; }
+.compare-btn:hover { border-color: var(--accent); color: var(--accent); }
+.compare-btn.selected { background: rgba(56,189,248,.2); border-color: var(--accent); color: var(--accent); }
+
+/* Charts section */
+.charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px 24px; }
+.chart-card { background: var(--surface); border-radius: var(--radius); padding: 16px; }
+.chart-card h3 { font-size: .9em; color: var(--muted); margin-bottom: 12px; font-weight: 500; }
+
+/* Compare panel */
+.compare-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 2px solid var(--accent); padding: 12px 24px; z-index: 100; }
+.compare-bar.visible { display: flex; align-items: center; justify-content: space-between; }
+.compare-bar .items { display: flex; gap: 8px; flex-wrap: wrap; }
+.compare-bar .chip { background: rgba(56,189,248,.15); color: var(--accent); padding: 4px 10px; border-radius: 6px; font-size: .8em; display: flex; align-items: center; gap: 4px; }
+.compare-bar .chip .x { cursor: pointer; opacity: .7; }
+.compare-bar .chip .x:hover { opacity: 1; }
+.compare-bar button { background: var(--accent); color: var(--bg); border: none; padding: 8px 20px; border-radius: var(--radius); cursor: pointer; font-weight: 600; font-size: .85em; }
+
+/* Detail modal */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 200; justify-content: center; align-items: flex-start; padding: 40px 20px; overflow-y: auto; }
+.modal-overlay.visible { display: flex; }
+.modal { background: var(--surface); border-radius: 12px; max-width: 700px; width: 100%; padding: 24px; position: relative; }
+.modal .close { position: absolute; top: 12px; right: 16px; background: none; border: none; color: var(--muted); font-size: 1.5em; cursor: pointer; }
+.modal h2 { font-size: 1.2em; margin-bottom: 4px; }
+.modal .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+.modal .detail-item { }
+.modal .detail-item .dl { font-size: .75em; color: var(--muted); text-transform: uppercase; }
+.modal .detail-item .dv { font-size: 1.1em; font-weight: 500; }
+.modal .chart-container { height: 200px; margin-top: 16px; }
+
+/* Compare modal */
+.compare-modal { max-width: 900px; }
+.compare-grid { display: grid; gap: 16px; margin-top: 16px; }
+.compare-col { background: var(--bg); border-radius: var(--radius); padding: 16px; }
+.compare-col h3 { font-size: 1em; margin-bottom: 8px; }
+.compare-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: .85em; border-bottom: 1px solid rgba(71,85,105,.3); }
+.compare-row .lbl { color: var(--muted); }
+.best-value { color: var(--green); font-weight: 600; }
+
+@media (max-width: 768px) {
+  .charts { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Apartamente București</h1>
+    <span class="meta">2 camere · zone centrale · sub 160.000€ · verificate seismic</span>
+  </div>
+  <div class="nav">
+    <a href="#" class="active" onclick="showView('listings')">Listinguri</a>
+    <a href="#" onclick="showView('charts')">Grafice</a>
+    <a href="#" onclick="showView('eliminated')">Eliminate</a>
+  </div>
+</div>
+
+<div id="stats-bar" class="stats"></div>
+
+<div id="view-listings">
+  <div class="filters" id="filters"></div>
+  <div class="table-wrap">
+    <table>
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div id="view-charts" style="display:none">
+  <div class="charts">
+    <div class="chart-card"><h3>Distribuție pe zone</h3><canvas id="zoneChart"></canvas></div>
+    <div class="chart-card"><h3>Preț vs. suprafață</h3><canvas id="scatterChart"></canvas></div>
+    <div class="chart-card"><h3>Distribuție prețuri (€/m²)</h3><canvas id="histChart"></canvas></div>
+    <div class="chart-card"><h3>Prețuri pe zone (mediană)</h3><canvas id="zonePrice"></canvas></div>
+  </div>
+</div>
+
+<div id="view-eliminated" style="display:none">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>Zonă</th><th>Preț</th><th>Suprafață</th><th>Motiv</th><th>Link</th></tr></thead>
+      <tbody id="elim-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="compare-bar" id="compareBar">
+  <div class="items" id="compareItems"></div>
+  <button onclick="openCompare()">Compară (<span id="compareCnt">0</span>)</button>
+</div>
+
+<div class="modal-overlay" id="detailModal">
+  <div class="modal">
+    <button class="close" onclick="closeModal('detailModal')">&times;</button>
+    <div id="detailContent"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="compareModal">
+  <div class="modal compare-modal">
+    <button class="close" onclick="closeModal('compareModal')">&times;</button>
+    <h2>Comparație apartamente</h2>
+    <div id="compareContent" class="compare-grid"></div>
+    <div style="margin-top:16px;"><canvas id="compareChart" height="200"></canvas></div>
+  </div>
+</div>
+
+<script>
+let DATA = { listings: [], eliminated: [], stats: {}, zone_distribution: [] };
+let filtered = [];
+let sortCol = 'price_per_mp';
+let sortDir = 1;
+let compareSet = new Set();
+let chartInstances = {};
+
+// Load data
+fetch('data/listings.json')
+  .then(r => r.json())
+  .then(d => { DATA = d; init(); })
+  .catch(e => document.body.innerHTML += '<p style="color:red;padding:24px">Error loading data: '+e+'</p>');
+
+function init() {
+  renderStats();
+  buildFilters();
+  applyFilters();
+  renderEliminated();
+}
+
+function renderStats() {
+  const s = DATA.stats;
+  const drops = DATA.listings.filter(l => l.price_change < 0).length;
+  document.getElementById('stats-bar').innerHTML = `
+    <div class="stat"><div class="label">Active</div><div class="value">${s.active}</div></div>
+    <div class="stat"><div class="label">Zone</div><div class="value">${s.zones}</div></div>
+    <div class="stat"><div class="label">Preț min</div><div class="value">${fmt(s.price_min)}€</div></div>
+    <div class="stat"><div class="label">Preț mediu</div><div class="value">${fmt(s.price_avg)}€</div></div>
+    <div class="stat"><div class="label">Scăderi preț</div><div class="value green">${drops}</div></div>
+    <div class="stat"><div class="label">Eliminate</div><div class="value red">${DATA.eliminated.length}</div></div>
+  `;
+}
+
+function buildFilters() {
+  const zones = [...new Set(DATA.listings.map(l => l.zone))].sort();
+  document.getElementById('filters').innerHTML = `
+    <span class="filter-label">Zonă</span>
+    <select id="fZone" onchange="applyFilters()">
+      <option value="">Toate (${zones.length})</option>
+      ${zones.map(z => `<option value="${z}">${z}</option>`).join('')}
+    </select>
+    <span class="filter-label">Preț max</span>
+    <input type="number" id="fPrice" value="160000" step="5000" style="width:100px" onchange="applyFilters()">
+    <span class="filter-label">Suprafață min</span>
+    <input type="number" id="fArea" value="50" step="5" style="width:70px" onchange="applyFilters()">
+    <span class="filter-label">€/m² max</span>
+    <input type="number" id="fPpm" value="" placeholder="fără" style="width:80px" onchange="applyFilters()">
+    <label style="display:flex;align-items:center;gap:4px;font-size:.8em;color:var(--muted);cursor:pointer">
+      <input type="checkbox" id="fDrops" onchange="applyFilters()"> Doar scăderi
+    </label>
+    <span class="count" id="filterCount"></span>
+  `;
+}
+
+function applyFilters() {
+  const zone = document.getElementById('fZone').value;
+  const maxPrice = parseInt(document.getElementById('fPrice').value) || 999999;
+  const minArea = parseInt(document.getElementById('fArea').value) || 0;
+  const maxPpm = parseInt(document.getElementById('fPpm').value) || 999999;
+  const dropsOnly = document.getElementById('fDrops').checked;
+
+  filtered = DATA.listings.filter(l =>
+    (!zone || l.zone === zone) &&
+    l.price_eur <= maxPrice &&
+    l.area_mp >= minArea &&
+    l.price_per_mp <= maxPpm &&
+    (!dropsOnly || l.price_change < 0)
+  );
+
+  sortData();
+  renderTable();
+  document.getElementById('filterCount').textContent = `${filtered.length} din ${DATA.listings.length}`;
+}
+
+function sortData() {
+  filtered.sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (typeof va === 'string') return sortDir * va.localeCompare(vb);
+    return sortDir * ((va || 0) - (vb || 0));
+  });
+}
+
+const COLS = [
+  { key: '_compare', label: '☐', nosort: true },
+  { key: 'zone', label: 'Zonă' },
+  { key: 'price_eur', label: 'Preț €' },
+  { key: 'area_mp', label: 'm²' },
+  { key: 'price_per_mp', label: '€/m²' },
+  { key: 'price_change', label: 'Δ Preț' },
+  { key: 'sector', label: 'Sector' },
+  { key: 'seismic_risk', label: 'Seismic' },
+  { key: 'first_seen', label: 'Văzut' },
+  { key: '_link', label: '', nosort: true }
+];
+
+function renderTable() {
+  const thead = document.getElementById('thead');
+  thead.innerHTML = '<tr>' + COLS.map(c =>
+    c.nosort
+      ? `<th>${c.label}</th>`
+      : `<th class="${sortCol===c.key?'sorted':''}" onclick="setSort('${c.key}')">${c.label}<span class="arrow">${sortCol===c.key?(sortDir>0?'▲':'▼'):'↕'}</span></th>`
+  ).join('') + '</tr>';
+
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = filtered.map(l => {
+    const isDrop = l.price_change < 0;
+    const changeHtml = l.price_change !== 0
+      ? `<span class="price-change ${l.price_change<0?'down':'up'}">${l.price_change>0?'+':''}${fmt(l.price_change)}€ (${l.price_change_pct>0?'+':''}${l.price_change_pct}%)</span>`
+      : '<span style="color:var(--muted);font-size:.8em">—</span>';
+    return `<tr class="${isDrop?'price-drop':''}" style="cursor:pointer" onclick="openDetail('${l.id}')">
+      <td><button class="compare-btn ${compareSet.has(l.id)?'selected':''}" onclick="event.stopPropagation();toggleCompare('${l.id}')">${compareSet.has(l.id)?'✓':'+'}</button></td>
+      <td><span class="zone-badge">${l.zone}</span></td>
+      <td><strong>${fmt(l.price_eur)}€</strong></td>
+      <td>${l.area_mp} m²</td>
+      <td>${l.price_per_mp}</td>
+      <td>${changeHtml}</td>
+      <td>S${l.sector || '?'}</td>
+      <td class="${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">${l.seismic_risk==='none'?'✓ Safe':l.seismic_risk}</td>
+      <td style="font-size:.8em;color:var(--muted)">${l.first_seen||''}</td>
+      <td><a href="${l.url}" target="_blank" onclick="event.stopPropagation()">Storia →</a></td>
+    </tr>`;
+  }).join('');
+}
+
+function setSort(col) {
+  if (sortCol === col) sortDir *= -1;
+  else { sortCol = col; sortDir = 1; }
+  sortData();
+  renderTable();
+}
+
+function fmt(n) { return n != null ? n.toLocaleString('ro-RO') : '—'; }
+
+// Compare
+function toggleCompare(id) {
+  if (compareSet.has(id)) compareSet.delete(id);
+  else if (compareSet.size < 4) compareSet.add(id);
+  updateCompareBar();
+  renderTable();
+}
+
+function updateCompareBar() {
+  const bar = document.getElementById('compareBar');
+  const items = document.getElementById('compareItems');
+  const cnt = document.getElementById('compareCnt');
+  cnt.textContent = compareSet.size;
+  if (compareSet.size > 0) {
+    bar.classList.add('visible');
+    items.innerHTML = [...compareSet].map(id => {
+      const l = DATA.listings.find(x => x.id === id);
+      return `<span class="chip">${l.zone} ${fmt(l.price_eur)}€ <span class="x" onclick="toggleCompare('${id}')">✕</span></span>`;
+    }).join('');
+  } else {
+    bar.classList.remove('visible');
+  }
+}
+
+function openCompare() {
+  if (compareSet.size < 2) return;
+  const items = [...compareSet].map(id => DATA.listings.find(l => l.id === id));
+  const content = document.getElementById('compareContent');
+  const cols = Math.min(items.length, 4);
+  content.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+
+  const metrics = ['price_eur','area_mp','price_per_mp','sector','zone','seismic_risk','first_seen'];
+  const labels = { price_eur:'Preț',area_mp:'Suprafață',price_per_mp:'€/m²',sector:'Sector',zone:'Zonă',seismic_risk:'Seismic',first_seen:'Prima apariție' };
+  const bestMin = ['price_eur','price_per_mp'];
+  const bestMax = ['area_mp'];
+
+  content.innerHTML = items.map(l => {
+    const rows = metrics.map(m => {
+      let isBest = false;
+      if (bestMin.includes(m)) isBest = l[m] === Math.min(...items.map(x => x[m] || Infinity));
+      if (bestMax.includes(m)) isBest = l[m] === Math.max(...items.map(x => x[m] || 0));
+      const val = m === 'price_eur' ? fmt(l[m])+'€' : m === 'area_mp' ? l[m]+' m²' : m === 'price_per_mp' ? l[m]+' €/m²' : l[m] || '—';
+      return `<div class="compare-row"><span class="lbl">${labels[m]}</span><span class="${isBest?'best-value':''}">${val}</span></div>`;
+    }).join('');
+    return `<div class="compare-col">
+      <h3><a href="${l.url}" target="_blank">${l.zone}</a></h3>
+      ${rows}
+    </div>`;
+  }).join('');
+
+  // Price history chart
+  if (chartInstances.compare) chartInstances.compare.destroy();
+  const datasets = items.map((l, i) => ({
+    label: l.zone + ' ' + fmt(l.price_eur) + '€',
+    data: l.price_history.map(p => ({ x: p.date, y: p.price })),
+    borderColor: ['#38bdf8','#4ade80','#fbbf24','#f87171'][i],
+    tension: .3, pointRadius: 4, fill: false
+  }));
+
+  const ctx = document.getElementById('compareChart');
+  chartInstances.compare = new Chart(ctx, {
+    type: 'line',
+    data: { datasets },
+    options: {
+      responsive: true,
+      scales: {
+        x: { type: 'category', ticks: { color: '#94a3b8' }, grid: { color: 'rgba(71,85,105,.3)' } },
+        y: { ticks: { color: '#94a3b8', callback: v => fmt(v)+'€' }, grid: { color: 'rgba(71,85,105,.3)' } }
+      },
+      plugins: { legend: { labels: { color: '#e2e8f0' } } }
+    }
+  });
+
+  openModal('compareModal');
+}
+
+// Detail modal
+function openDetail(id) {
+  const l = DATA.listings.find(x => x.id === id);
+  if (!l) return;
+  const dc = document.getElementById('detailContent');
+  dc.innerHTML = `
+    <h2>${l.zone}${l.sub_zone ? ' — '+l.sub_zone : ''}</h2>
+    <div style="color:var(--muted);font-size:.85em;margin-bottom:8px">ID: ${l.id} · Sector ${l.sector || '?'} · Sursă: ${l.source || 'storia'}</div>
+    <div class="detail-grid">
+      <div class="detail-item"><div class="dl">Preț</div><div class="dv">${fmt(l.price_eur)}€</div></div>
+      <div class="detail-item"><div class="dl">Suprafață</div><div class="dv">${l.area_mp} m²</div></div>
+      <div class="detail-item"><div class="dl">€/m²</div><div class="dv">${l.price_per_mp}</div></div>
+      <div class="detail-item"><div class="dl">Risc seismic</div><div class="dv ${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">${l.seismic_risk==='none'?'✓ Fără risc':l.seismic_risk}</div></div>
+      <div class="detail-item"><div class="dl">Prima apariție</div><div class="dv">${l.first_seen||'—'}</div></div>
+      <div class="detail-item"><div class="dl">Ultima apariție</div><div class="dv">${l.last_seen||'—'}</div></div>
+    </div>
+    ${l.price_change !== 0 ? `<div style="padding:8px 12px;background:${l.price_change<0?'rgba(74,222,128,.1)':'rgba(248,113,113,.1)'};border-radius:8px;margin-bottom:12px">
+      <span class="price-change ${l.price_change<0?'down':'up'}" style="font-size:1em">${l.price_change>0?'+':''}${fmt(l.price_change)}€ (${l.price_change_pct>0?'+':''}${l.price_change_pct}%)</span>
+    </div>` : ''}
+    <h3 style="font-size:.9em;color:var(--muted);margin:12px 0 8px">Evoluție preț</h3>
+    <div class="chart-container"><canvas id="detailChart"></canvas></div>
+    <div style="margin-top:16px;text-align:center">
+      <a href="${l.url}" target="_blank" style="display:inline-block;padding:8px 20px;background:var(--accent);color:var(--bg);border-radius:var(--radius);font-weight:600">Vezi pe Storia.ro →</a>
+    </div>
+  `;
+
+  // Price chart
+  if (chartInstances.detail) chartInstances.detail.destroy();
+  const ctx = document.getElementById('detailChart');
+  chartInstances.detail = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: l.price_history.map(p => p.date),
+      datasets: [{
+        label: 'Preț €',
+        data: l.price_history.map(p => p.price),
+        borderColor: '#38bdf8', backgroundColor: 'rgba(56,189,248,.1)',
+        tension: .3, pointRadius: 5, fill: true
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      scales: {
+        x: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(71,85,105,.3)' } },
+        y: { ticks: { color: '#94a3b8', callback: v => fmt(v)+'€' }, grid: { color: 'rgba(71,85,105,.3)' } }
+      },
+      plugins: { legend: { display: false } }
+    }
+  });
+
+  openModal('detailModal');
+}
+
+function openModal(id) { document.getElementById(id).classList.add('visible'); document.body.style.overflow = 'hidden'; }
+function closeModal(id) { document.getElementById(id).classList.remove('visible'); document.body.style.overflow = ''; }
+
+// Views
+function showView(view) {
+  ['listings','charts','eliminated'].forEach(v => {
+    document.getElementById('view-'+v).style.display = v === view ? '' : 'none';
+  });
+  document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+  event.target.classList.add('active');
+  if (view === 'charts') renderCharts();
+}
+
+function renderCharts() {
+  Object.values(chartInstances).forEach(c => { if (c && c.canvas?.id?.startsWith('zone') || c?.canvas?.id?.startsWith('scatter') || c?.canvas?.id?.startsWith('hist')) c.destroy(); });
+
+  // Zone distribution
+  const zd = DATA.zone_distribution.slice(0, 15);
+  chartInstances.zone = new Chart(document.getElementById('zoneChart'), {
+    type: 'doughnut',
+    data: {
+      labels: zd.map(z => z.zone),
+      datasets: [{ data: zd.map(z => z.count), backgroundColor: zd.map((_, i) => `hsl(${200+i*15}, 70%, ${50+i*2}%)`) }]
+    },
+    options: { responsive: true, plugins: { legend: { position: 'right', labels: { color: '#e2e8f0', font: { size: 11 } } } } }
+  });
+
+  // Scatter price vs area
+  chartInstances.scatter = new Chart(document.getElementById('scatterChart'), {
+    type: 'scatter',
+    data: {
+      datasets: [{
+        label: 'Apartamente',
+        data: DATA.listings.map(l => ({ x: l.area_mp, y: l.price_eur, zone: l.zone })),
+        backgroundColor: 'rgba(56,189,248,.5)', pointRadius: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        x: { title: { display: true, text: 'm²', color: '#94a3b8' }, ticks: { color: '#94a3b8' }, grid: { color: 'rgba(71,85,105,.3)' } },
+        y: { title: { display: true, text: '€', color: '#94a3b8' }, ticks: { color: '#94a3b8', callback: v => fmt(v) }, grid: { color: 'rgba(71,85,105,.3)' } }
+      },
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.raw.zone}: ${fmt(ctx.raw.y)}€ / ${ctx.raw.x}m²` } } }
+    }
+  });
+
+  // Histogram €/m²
+  const ppmValues = DATA.listings.map(l => l.price_per_mp).filter(v => v);
+  const bins = [1000,1500,2000,2500,3000,3500,4000];
+  const histData = bins.map((b, i) => {
+    const next = bins[i+1] || Infinity;
+    return ppmValues.filter(v => v >= b && v < next).length;
+  });
+  chartInstances.hist = new Chart(document.getElementById('histChart'), {
+    type: 'bar',
+    data: {
+      labels: bins.map((b, i) => bins[i+1] ? `${b}-${bins[i+1]}` : `${b}+`),
+      datasets: [{ label: 'Nr. apartamente', data: histData, backgroundColor: 'rgba(56,189,248,.6)' }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        x: { ticks: { color: '#94a3b8' }, grid: { display: false } },
+        y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(71,85,105,.3)' } }
+      },
+      plugins: { legend: { display: false } }
+    }
+  });
+
+  // Zone median prices
+  const zoneGroups = {};
+  DATA.listings.forEach(l => { if (!zoneGroups[l.zone]) zoneGroups[l.zone] = []; zoneGroups[l.zone].push(l.price_per_mp); });
+  const zoneMedians = Object.entries(zoneGroups).map(([z, prices]) => {
+    prices.sort((a,b) => a-b);
+    return { zone: z, median: prices[Math.floor(prices.length/2)] };
+  }).sort((a,b) => a.median - b.median).slice(0, 20);
+
+  chartInstances.zonePrice = new Chart(document.getElementById('zonePrice'), {
+    type: 'bar',
+    data: {
+      labels: zoneMedians.map(z => z.zone),
+      datasets: [{ label: '€/m² mediană', data: zoneMedians.map(z => z.median), backgroundColor: 'rgba(74,222,128,.6)' }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true,
+      scales: {
+        x: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(71,85,105,.3)' } },
+        y: { ticks: { color: '#94a3b8', font: { size: 11 } }, grid: { display: false } }
+      },
+      plugins: { legend: { display: false } }
+    }
+  });
+}
+
+// Eliminated table
+function renderEliminated() {
+  document.getElementById('elim-tbody').innerHTML = DATA.eliminated.map(e =>
+    `<tr>
+      <td>${e.id}</td>
+      <td><span class="zone-badge">${e.zone||'—'}</span></td>
+      <td>${e.price_eur ? fmt(e.price_eur)+'€' : '—'}</td>
+      <td>${e.area_mp ? e.area_mp+' m²' : '—'}</td>
+      <td style="color:var(--red);max-width:300px;white-space:normal">${e.reason||'—'}</td>
+      <td>${e.url ? '<a href="'+e.url+'" target="_blank">Link →</a>' : '—'}</td>
+    </tr>`
+  ).join('');
+}
+
+// Close modals on overlay click
+document.querySelectorAll('.modal-overlay').forEach(el => {
+  el.addEventListener('click', e => { if (e.target === el) closeModal(el.id); });
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.visible').forEach(el => closeModal(el.id)); });
+</script>
+</body>
+</html>

@@ -1,0 +1,4117 @@
+{
+  "generated": "",
+  "stats": {
+    "active": 162,
+    "price_min": 70990,
+    "price_max": 160000,
+    "price_avg": 124289,
+    "zones": 34
+  },
+  "zone_distribution": [
+    {
+      "zone": "Dristor",
+      "count": 19
+    },
+    {
+      "zone": "Vitan",
+      "count": 12
+    },
+    {
+      "zone": "Obor",
+      "count": 12
+    },
+    {
+      "zone": "Colentina",
+      "count": 12
+    },
+    {
+      "zone": "Tei",
+      "count": 11
+    },
+    {
+      "zone": "Timpuri Noi",
+      "count": 7
+    },
+    {
+      "zone": "Splai",
+      "count": 7
+    },
+    {
+      "zone": "Tineretului",
+      "count": 6
+    },
+    {
+      "zone": "Piața Romană",
+      "count": 6
+    },
+    {
+      "zone": "Grivița",
+      "count": 6
+    },
+    {
+      "zone": "Cișmigiu",
+      "count": 6
+    },
+    {
+      "zone": "Crângași",
+      "count": 5
+    },
+    {
+      "zone": "Ștefan cel Mare",
+      "count": 4
+    },
+    {
+      "zone": "Văcărești",
+      "count": 4
+    },
+    {
+      "zone": "Iancului",
+      "count": 4
+    },
+    {
+      "zone": "Floreasca",
+      "count": 4
+    },
+    {
+      "zone": "Dorobanți",
+      "count": 4
+    },
+    {
+      "zone": "Calea Moșilor",
+      "count": 4
+    },
+    {
+      "zone": "1 Mai",
+      "count": 4
+    },
+    {
+      "zone": "Vatra Luminoasă",
+      "count": 3
+    },
+    {
+      "zone": "Eminescu",
+      "count": 3
+    },
+    {
+      "zone": "Decebal",
+      "count": 3
+    },
+    {
+      "zone": "Centrul Civic",
+      "count": 3
+    },
+    {
+      "zone": "Parcul Carol",
+      "count": 2
+    },
+    {
+      "zone": "13 Septembrie",
+      "count": 2
+    },
+    {
+      "zone": "Știrbei",
+      "count": 1
+    },
+    {
+      "zone": "Victoriei",
+      "count": 1
+    },
+    {
+      "zone": "Uranus",
+      "count": 1
+    },
+    {
+      "zone": "Nerva Traian",
+      "count": 1
+    },
+    {
+      "zone": "Fundeni",
+      "count": 1
+    },
+    {
+      "zone": "Domenii",
+      "count": 1
+    },
+    {
+      "zone": "Centrul Istoric",
+      "count": 1
+    },
+    {
+      "zone": "Basarabia",
+      "count": 1
+    },
+    {
+      "zone": "Basarab",
+      "count": 1
+    }
+  ],
+  "listings": [
+    {
+      "id": "IDH0qG",
+      "price_eur": 85000,
+      "area_mp": 65.0,
+      "price_per_mp": 1308,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDH0qG",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 85000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDGLMF",
+      "price_eur": 119500,
+      "area_mp": 89.0,
+      "price_per_mp": 1343,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDGLMF",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcC6",
+      "price_eur": 70990,
+      "area_mp": 50.0,
+      "price_per_mp": 1420,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/dristor-2-camere-IDIcC6",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Dristor",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI8Mq",
+      "price_eur": 83000,
+      "area_mp": 54.0,
+      "price_per_mp": 1537,
+      "zone": "Știrbei",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/stirbei-2-camere-IDI8Mq",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Stirbei",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIasb",
+      "price_eur": 85000,
+      "area_mp": 55.0,
+      "price_per_mp": 1545,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-55mp-metrou-stefan-cel-mare-IDIasb",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Tei",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI5pq",
+      "price_eur": 86000,
+      "area_mp": 55.0,
+      "price_per_mp": 1564,
+      "zone": "Floreasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI5pq",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 86000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHRtL",
+      "price_eur": 85000,
+      "area_mp": 50.0,
+      "price_per_mp": 1700,
+      "zone": "Grivița",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-grivita-IDHRtL",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Grivita",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHahn",
+      "price_eur": 93000,
+      "area_mp": 54.0,
+      "price_per_mp": 1722,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/colentina-2-camere-IDHahn",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Colentina",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHPWl",
+      "price_eur": 125000,
+      "area_mp": 71.0,
+      "price_per_mp": 1761,
+      "zone": "Cișmigiu",
+      "sub_zone": "Brezoianu",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHPWl",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 125000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI6AV",
+      "price_eur": 89900,
+      "area_mp": 51.0,
+      "price_per_mp": 1763,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI6AV",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 89900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcO7",
+      "price_eur": 98000,
+      "area_mp": 55.0,
+      "price_per_mp": 1782,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/iancului-2-camere-IDIcO7",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Iancului",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbp7",
+      "price_eur": 115000,
+      "area_mp": 64.0,
+      "price_per_mp": 1797,
+      "zone": "Văcărești",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-64mp-mobilat-IDIbp7",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vacaresti",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbXg",
+      "price_eur": 98000,
+      "area_mp": 54.0,
+      "price_per_mp": 1815,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vatra-luminoasa-2-camere-IDIbXg",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vatra Luminoasa",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI37G",
+      "price_eur": 135000,
+      "area_mp": 74.0,
+      "price_per_mp": 1824,
+      "zone": "Eminescu",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI37G",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI9GP",
+      "price_eur": 140000,
+      "area_mp": 76.0,
+      "price_per_mp": 1842,
+      "zone": "Văcărești",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vacaresti-2-camere-76mp-IDI9GP",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vacaresti",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1Hk",
+      "price_eur": 94000,
+      "area_mp": 51.0,
+      "price_per_mp": 1843,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1Hk",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 94000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI5p7",
+      "price_eur": 119000,
+      "area_mp": 64.0,
+      "price_per_mp": 1859,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI5p7",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbE2",
+      "price_eur": 95250,
+      "area_mp": 50.0,
+      "price_per_mp": 1905,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/ap-2-camere-gradina-proprie-IDIbE2",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Colentina",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4oZ",
+      "price_eur": 105000,
+      "area_mp": 55.0,
+      "price_per_mp": 1909,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4oZ",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 105000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI8MQ",
+      "price_eur": 105000,
+      "area_mp": 55.0,
+      "price_per_mp": 1909,
+      "zone": "Crângași",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI8MQ",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 105000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDFCHa",
+      "price_eur": 115490,
+      "area_mp": 60.0,
+      "price_per_mp": 1925,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDFCHa",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 115490
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI7dH",
+      "price_eur": 129000,
+      "area_mp": 67.0,
+      "price_per_mp": 1925,
+      "zone": "Centrul Istoric",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/universitate-apartament-2-camere-IDI7dH",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Centrul Istoric",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4vS",
+      "price_eur": 103000,
+      "area_mp": 53.0,
+      "price_per_mp": 1943,
+      "zone": "Nerva Traian",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4vS",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 103000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIaQe",
+      "price_eur": 104990,
+      "area_mp": 54.0,
+      "price_per_mp": 1944,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIaQe",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 104990
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1PU",
+      "price_eur": 137500,
+      "area_mp": 70.0,
+      "price_per_mp": 1964,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1PU",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 137500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbNa",
+      "price_eur": 98990,
+      "area_mp": 50.0,
+      "price_per_mp": 1980,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-liviu-rebreanu-IDIbNa",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Dristor",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIb6e",
+      "price_eur": 98990,
+      "area_mp": 50.0,
+      "price_per_mp": 1980,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-liviu-rebreanu-IDIb6e",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Dristor",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbcc",
+      "price_eur": 104990,
+      "area_mp": 53.0,
+      "price_per_mp": 1981,
+      "zone": "Basarabia",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-basarabia-IDIbcc",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Basarabia",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHDBy",
+      "price_eur": 119001,
+      "area_mp": 60.0,
+      "price_per_mp": 1983,
+      "zone": "Victoriei",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHDBy",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119001
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHzHk",
+      "price_eur": 135000,
+      "area_mp": 68.0,
+      "price_per_mp": 1985,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHzHk",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbVb",
+      "price_eur": 119500,
+      "area_mp": 60.0,
+      "price_per_mp": 1992,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/splai-2-camere-60mp-IDIbVb",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Splai",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbsD",
+      "price_eur": 119900,
+      "area_mp": 60.0,
+      "price_per_mp": 1998,
+      "zone": "Tei",
+      "sub_zone": "Teiul Doamnei",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIbsD",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4sN",
+      "price_eur": 99900,
+      "area_mp": 50.0,
+      "price_per_mp": 1998,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4sN",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 99900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDH2xU",
+      "price_eur": 100000,
+      "area_mp": 50.0,
+      "price_per_mp": 2000,
+      "zone": "Dristor",
+      "sub_zone": "Dristor",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-dristor-IDH2xU",
+      "source": "storia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-07-26",
+          "price": 100000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI49i",
+      "price_eur": 132000,
+      "area_mp": 66.0,
+      "price_per_mp": 2000,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI49i",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 132000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4qk",
+      "price_eur": 110999,
+      "area_mp": 55.0,
+      "price_per_mp": 2018,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4qk",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 110999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHOnl",
+      "price_eur": 111500,
+      "area_mp": 54.0,
+      "price_per_mp": 2065,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHOnl",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 111500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHCHA",
+      "price_eur": 129000,
+      "area_mp": 62.0,
+      "price_per_mp": 2081,
+      "zone": "13 Septembrie",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/13-septembrie-2-camere-IDHCHA",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - 13 Septembrie",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbt5",
+      "price_eur": 115000,
+      "area_mp": 55.0,
+      "price_per_mp": 2091,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIbt5",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 115000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDGSDs",
+      "price_eur": 115000,
+      "area_mp": 55.0,
+      "price_per_mp": 2091,
+      "zone": "Eminescu",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDGSDs",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 115000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHmpv",
+      "price_eur": 115000,
+      "area_mp": 55.0,
+      "price_per_mp": 2091,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHmpv",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 115000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHpCc",
+      "price_eur": 130000,
+      "area_mp": 62.0,
+      "price_per_mp": 2097,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHpCc",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcBR",
+      "price_eur": 104980,
+      "area_mp": 50.0,
+      "price_per_mp": 2100,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIcBR",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 104980
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI6oN",
+      "price_eur": 105000,
+      "area_mp": 50.0,
+      "price_per_mp": 2100,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI6oN",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 105000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDF5fD",
+      "price_eur": 120000,
+      "area_mp": 57.0,
+      "price_per_mp": 2105,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDF5fD",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHZCA",
+      "price_eur": 109900,
+      "area_mp": 52.0,
+      "price_per_mp": 2113,
+      "zone": "Crângași",
+      "sub_zone": "Crângași",
+      "sector": 6,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-crangasi-i-metrou-6-min-i-posibilitate-centrala-i-comision-0-IDHZCA",
+      "source": "storia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-07-26",
+          "price": 111000
+        },
+        {
+          "date": "2026-08-15",
+          "price": 109900
+        }
+      ],
+      "price_change": -1100,
+      "price_change_pct": -1.0
+    },
+    {
+      "id": "IDIatC",
+      "price_eur": 124900,
+      "area_mp": 59.0,
+      "price_per_mp": 2117,
+      "zone": "Văcărești",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-tineretului-vacaresti-IDIatC",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vacaresti",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIb5Y",
+      "price_eur": 108000,
+      "area_mp": 51.0,
+      "price_per_mp": 2118,
+      "zone": "Fundeni",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIb5Y",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 108000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHLRa",
+      "price_eur": 117000,
+      "area_mp": 55.0,
+      "price_per_mp": 2127,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHLRa",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 117000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI3D8",
+      "price_eur": 120000,
+      "area_mp": 56.0,
+      "price_per_mp": 2143,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI3D8",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIanh",
+      "price_eur": 118000,
+      "area_mp": 55.0,
+      "price_per_mp": 2145,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIanh",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 118000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDGNCu",
+      "price_eur": 118000,
+      "area_mp": 55.0,
+      "price_per_mp": 2145,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDGNCu",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 118000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1UU",
+      "price_eur": 140000,
+      "area_mp": 65.0,
+      "price_per_mp": 2154,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1UU",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 140000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHvzP",
+      "price_eur": 110000,
+      "area_mp": 51.0,
+      "price_per_mp": 2157,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHvzP",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 110000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHZIr",
+      "price_eur": 119000,
+      "area_mp": 55.0,
+      "price_per_mp": 2164,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHZIr",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHfcz",
+      "price_eur": 119000,
+      "area_mp": 55.0,
+      "price_per_mp": 2164,
+      "zone": "1 Mai",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHfcz",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHdfR",
+      "price_eur": 139000,
+      "area_mp": 64.0,
+      "price_per_mp": 2172,
+      "zone": "Cișmigiu",
+      "sub_zone": "Sala Palatului",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHdfR",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 139000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHisy",
+      "price_eur": 119500,
+      "area_mp": 55.0,
+      "price_per_mp": 2173,
+      "zone": "Dorobanți",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHisy",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcxL",
+      "price_eur": 120000,
+      "area_mp": 55.0,
+      "price_per_mp": 2182,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIcxL",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHwdr",
+      "price_eur": 120000,
+      "area_mp": 55.0,
+      "price_per_mp": 2182,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHwdr",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI93y",
+      "price_eur": 124421,
+      "area_mp": 57.0,
+      "price_per_mp": 2183,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI93y",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 124421
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1Zn",
+      "price_eur": 109900,
+      "area_mp": 50.0,
+      "price_per_mp": 2198,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1Zn",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 109900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHKbG",
+      "price_eur": 110000,
+      "area_mp": 50.0,
+      "price_per_mp": 2200,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHKbG",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 110000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHmq2",
+      "price_eur": 110000,
+      "area_mp": 50.0,
+      "price_per_mp": 2200,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHmq2",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 110000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI5nf",
+      "price_eur": 119000,
+      "area_mp": 54.0,
+      "price_per_mp": 2204,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI5nf",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 119000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI8H4",
+      "price_eur": 124000,
+      "area_mp": 56.0,
+      "price_per_mp": 2214,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI8H4",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 124000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDH9VN",
+      "price_eur": 128500,
+      "area_mp": 58.0,
+      "price_per_mp": 2216,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDH9VN",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 128500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbmu",
+      "price_eur": 122000,
+      "area_mp": 55.0,
+      "price_per_mp": 2218,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIbmu",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 122000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI3QF",
+      "price_eur": 120000,
+      "area_mp": 54.0,
+      "price_per_mp": 2222,
+      "zone": "Calea Moșilor",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI3QF",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHDY7",
+      "price_eur": 120000,
+      "area_mp": 54.0,
+      "price_per_mp": 2222,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHDY7",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI9vi",
+      "price_eur": 122500,
+      "area_mp": 55.0,
+      "price_per_mp": 2227,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI9vi",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 122500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI8VA",
+      "price_eur": 122500,
+      "area_mp": 55.0,
+      "price_per_mp": 2227,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI8VA",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 122500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIddS",
+      "price_eur": 114000,
+      "area_mp": 51.0,
+      "price_per_mp": 2235,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIddS",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 114000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI925",
+      "price_eur": 129900,
+      "area_mp": 58.0,
+      "price_per_mp": 2240,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI925",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 129900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI8wa",
+      "price_eur": 115000,
+      "area_mp": 51.0,
+      "price_per_mp": 2255,
+      "zone": "1 Mai",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI8wa",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 115000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHKnH",
+      "price_eur": 115000,
+      "area_mp": 51.0,
+      "price_per_mp": 2255,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHKnH",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 115000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIdjc",
+      "price_eur": 115000,
+      "area_mp": 51.0,
+      "price_per_mp": 2255,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-vitan-barzesti-bloc-2021-IDIdjc",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vitan",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI3Lx",
+      "price_eur": 120000,
+      "area_mp": 53.0,
+      "price_per_mp": 2264,
+      "zone": "1 Mai",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI3Lx",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHVn0",
+      "price_eur": 122500,
+      "area_mp": 54.0,
+      "price_per_mp": 2269,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHVn0",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 122500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHVmL",
+      "price_eur": 122500,
+      "area_mp": 54.0,
+      "price_per_mp": 2269,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHVmL",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 122500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHb71",
+      "price_eur": 113500,
+      "area_mp": 50.0,
+      "price_per_mp": 2270,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHb71",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 113500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI91h",
+      "price_eur": 129900,
+      "area_mp": 57.0,
+      "price_per_mp": 2279,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI91h",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 129900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIdS6",
+      "price_eur": 114000,
+      "area_mp": 50.0,
+      "price_per_mp": 2280,
+      "zone": "Calea Moșilor",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/aparatment-2-camere-calea-mosilor-imobil-1980-IDIdS6",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Mosilor",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIaL1",
+      "price_eur": 135000,
+      "area_mp": 59.0,
+      "price_per_mp": 2288,
+      "zone": "1 Mai",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIaL1",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI6pP",
+      "price_eur": 135000,
+      "area_mp": 59.0,
+      "price_per_mp": 2288,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI6pP",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHdJp",
+      "price_eur": 140000,
+      "area_mp": 61.0,
+      "price_per_mp": 2295,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHdJp",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 140000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI84B",
+      "price_eur": 131500,
+      "area_mp": 57.0,
+      "price_per_mp": 2307,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI84B",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 131500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIchp",
+      "price_eur": 118000,
+      "area_mp": 51.0,
+      "price_per_mp": 2314,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIchp",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 118000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI8Ps",
+      "price_eur": 118000,
+      "area_mp": 51.0,
+      "price_per_mp": 2314,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI8Ps",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 118000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHz6H",
+      "price_eur": 129999,
+      "area_mp": 56.0,
+      "price_per_mp": 2321,
+      "zone": "Crângași",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHz6H",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 129999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHVt9",
+      "price_eur": 139940,
+      "area_mp": 60.0,
+      "price_per_mp": 2332,
+      "zone": "Parcul Carol",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHVt9",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 139940
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHKbz",
+      "price_eur": 139899,
+      "area_mp": 60.0,
+      "price_per_mp": 2332,
+      "zone": "Parcul Carol",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHKbz",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 139899
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI180",
+      "price_eur": 133000,
+      "area_mp": 57.0,
+      "price_per_mp": 2333,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI180",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 133000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHmpF",
+      "price_eur": 120000,
+      "area_mp": 51.0,
+      "price_per_mp": 2353,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHmpF",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4i3",
+      "price_eur": 139500,
+      "area_mp": 59.0,
+      "price_per_mp": 2364,
+      "zone": "Grivița",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4i3",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 139500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI6l1",
+      "price_eur": 130000,
+      "area_mp": 55.0,
+      "price_per_mp": 2364,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI6l1",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI6kX",
+      "price_eur": 130000,
+      "area_mp": 55.0,
+      "price_per_mp": 2364,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI6kX",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcMD",
+      "price_eur": 135000,
+      "area_mp": 57.0,
+      "price_per_mp": 2368,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIcMD",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1rx",
+      "price_eur": 132900,
+      "area_mp": 56.0,
+      "price_per_mp": 2373,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1rx",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 132900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI10a",
+      "price_eur": 118999,
+      "area_mp": 50.0,
+      "price_per_mp": 2380,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI10a",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 118999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI2mk",
+      "price_eur": 131000,
+      "area_mp": 55.0,
+      "price_per_mp": 2382,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI2mk",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 131000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIdpo",
+      "price_eur": 134000,
+      "area_mp": 56.0,
+      "price_per_mp": 2393,
+      "zone": "Centrul Civic",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/cismigiu-decomandat-creditabil-IDIdpo",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Centrul Civic",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHCwR",
+      "price_eur": 127000,
+      "area_mp": 53.0,
+      "price_per_mp": 2396,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHCwR",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 127000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1Kg",
+      "price_eur": 120000,
+      "area_mp": 50.0,
+      "price_per_mp": 2400,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1Kg",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHKio",
+      "price_eur": 122500,
+      "area_mp": 51.0,
+      "price_per_mp": 2402,
+      "zone": "Piața Romană",
+      "sub_zone": "Magheru",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHKio",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 122500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDGQwx",
+      "price_eur": 124900,
+      "area_mp": 52.0,
+      "price_per_mp": 2402,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDGQwx",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 124900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIdw8",
+      "price_eur": 129999,
+      "area_mp": 54.0,
+      "price_per_mp": 2407,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIdw8",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 129999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1vG",
+      "price_eur": 130000,
+      "area_mp": 54.0,
+      "price_per_mp": 2407,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1vG",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHtPi",
+      "price_eur": 135000,
+      "area_mp": 56.0,
+      "price_per_mp": 2411,
+      "zone": "Decebal",
+      "sub_zone": "",
+      "sector": 5,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHtPi",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHmq4",
+      "price_eur": 135000,
+      "area_mp": 56.0,
+      "price_per_mp": 2411,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 5,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHmq4",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHbZn",
+      "price_eur": 135000,
+      "area_mp": 56.0,
+      "price_per_mp": 2411,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHbZn",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHQns",
+      "price_eur": 140000,
+      "area_mp": 58.0,
+      "price_per_mp": 2414,
+      "zone": "Grivița",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/grivita-2-camere-58mp-IDHQns",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Grivita",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI26D",
+      "price_eur": 133000,
+      "area_mp": 55.0,
+      "price_per_mp": 2418,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI26D",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 133000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHOcq",
+      "price_eur": 131000,
+      "area_mp": 54.0,
+      "price_per_mp": 2426,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHOcq",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 131000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI9Un",
+      "price_eur": 141500,
+      "area_mp": 58.0,
+      "price_per_mp": 2440,
+      "zone": "Grivița",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-turda-parc-regina-maria-IDI9Un",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Grivita",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI2W9",
+      "price_eur": 124900,
+      "area_mp": 51.0,
+      "price_per_mp": 2449,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI2W9",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 124900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4sg",
+      "price_eur": 122500,
+      "area_mp": 50.0,
+      "price_per_mp": 2450,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4sg",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 122500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHKbp",
+      "price_eur": 125000,
+      "area_mp": 51.0,
+      "price_per_mp": 2451,
+      "zone": "Iancului",
+      "sub_zone": "Piața Iancului",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/iancului-apartament-cu-2-camere-transformat-in-3-IDHKbp",
+      "source": "storia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "2 camere transformat în 3, bloc anvelopat",
+      "price_history": [
+        {
+          "date": "2026-07-26",
+          "price": 125000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIaRF",
+      "price_eur": 135000,
+      "area_mp": 55.0,
+      "price_per_mp": 2455,
+      "zone": "Floreasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIaRF",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHExr",
+      "price_eur": 125500,
+      "area_mp": 51.0,
+      "price_per_mp": 2461,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHExr",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 125500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI5Uo",
+      "price_eur": 133000,
+      "area_mp": 54.0,
+      "price_per_mp": 2463,
+      "zone": "Calea Moșilor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI5Uo",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 133000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDH6vt",
+      "price_eur": 126000,
+      "area_mp": 51.0,
+      "price_per_mp": 2471,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDH6vt",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 126000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI2ft",
+      "price_eur": 139000,
+      "area_mp": 56.0,
+      "price_per_mp": 2482,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": 5,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI2ft",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 139000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDH8vw",
+      "price_eur": 132000,
+      "area_mp": 53.0,
+      "price_per_mp": 2491,
+      "zone": "Crângași",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDH8vw",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 132000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHIJa",
+      "price_eur": 124800,
+      "area_mp": 50.0,
+      "price_per_mp": 2496,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHIJa",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 124800
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIapJ",
+      "price_eur": 149900,
+      "area_mp": 60.0,
+      "price_per_mp": 2498,
+      "zone": "Uranus",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-uranus-IDIapJ",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Uranus",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcYA",
+      "price_eur": 140000,
+      "area_mp": 56.0,
+      "price_per_mp": 2500,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIcYA",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 140000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI7ne",
+      "price_eur": 124999,
+      "area_mp": 50.0,
+      "price_per_mp": 2500,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI7ne",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 124999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI32f",
+      "price_eur": 125000,
+      "area_mp": 50.0,
+      "price_per_mp": 2500,
+      "zone": "Floreasca",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI32f",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 125000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI2n9",
+      "price_eur": 135000,
+      "area_mp": 54.0,
+      "price_per_mp": 2500,
+      "zone": "Eminescu",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI2n9",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI1lq",
+      "price_eur": 125000,
+      "area_mp": 50.0,
+      "price_per_mp": 2500,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI1lq",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 125000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDGMTA",
+      "price_eur": 139000,
+      "area_mp": 55.0,
+      "price_per_mp": 2527,
+      "zone": "13 Septembrie",
+      "sub_zone": "",
+      "sector": 5,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDGMTA",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 139000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIdtL",
+      "price_eur": 144890,
+      "area_mp": 57.0,
+      "price_per_mp": 2542,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-obor-renovat-IDIdtL",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Stefan cel Mare",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbkL",
+      "price_eur": 145000,
+      "area_mp": 57.0,
+      "price_per_mp": 2544,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/stefan-cel-mare-metrou-obor-IDIbkL",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Stefan cel Mare",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcUF",
+      "price_eur": 140000,
+      "area_mp": 55.0,
+      "price_per_mp": 2545,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIcUF",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 140000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHg36",
+      "price_eur": 130000,
+      "area_mp": 51.0,
+      "price_per_mp": 2549,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHg36",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4m8",
+      "price_eur": 128000,
+      "area_mp": 50.0,
+      "price_per_mp": 2560,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4m8",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 128000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI15y",
+      "price_eur": 128000,
+      "area_mp": 50.0,
+      "price_per_mp": 2560,
+      "zone": "Decebal",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI15y",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 128000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHhKF",
+      "price_eur": 129000,
+      "area_mp": 50.0,
+      "price_per_mp": 2580,
+      "zone": "Dorobanți",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHhKF",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 129000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI6rV",
+      "price_eur": 131900,
+      "area_mp": 51.0,
+      "price_per_mp": 2586,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI6rV",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 131900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHoj6",
+      "price_eur": 129500,
+      "area_mp": 50.0,
+      "price_per_mp": 2590,
+      "zone": "Grivița",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDHoj6",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 129500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcZD",
+      "price_eur": 140000,
+      "area_mp": 54.0,
+      "price_per_mp": 2593,
+      "zone": "Basarab",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIcZD",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 140000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIc6v",
+      "price_eur": 135000,
+      "area_mp": 52.0,
+      "price_per_mp": 2596,
+      "zone": "Floreasca",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIc6v",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIdgD",
+      "price_eur": 129900,
+      "area_mp": 50.0,
+      "price_per_mp": 2598,
+      "zone": "Văcărești",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-vacaresti-IDIdgD",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vacaresti",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI4iV",
+      "price_eur": 129999,
+      "area_mp": 50.0,
+      "price_per_mp": 2600,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI4iV",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 129999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHHY2",
+      "price_eur": 142000,
+      "area_mp": 54.0,
+      "price_per_mp": 2630,
+      "zone": "Grivița",
+      "sub_zone": "Strada Cluj",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-grivita-IDHHY2",
+      "source": "storia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-07-26",
+          "price": 140000
+        },
+        {
+          "date": "2026-08-15",
+          "price": 142000
+        }
+      ],
+      "price_change": 2000,
+      "price_change_pct": 1.4
+    },
+    {
+      "id": "IDHYEO",
+      "price_eur": 134900,
+      "area_mp": 51.0,
+      "price_per_mp": 2645,
+      "zone": "Domenii",
+      "sub_zone": "Stalpeanu",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-domenii-IDHYEO",
+      "source": "storia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-07-26",
+          "price": 134900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDFg5g",
+      "price_eur": 138000,
+      "area_mp": 52.0,
+      "price_per_mp": 2654,
+      "zone": "Iancului",
+      "sub_zone": "Orzari",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-l-muncii-IDFg5g",
+      "source": "storia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-07-26",
+          "price": 138000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIdPB",
+      "price_eur": 155223,
+      "area_mp": 58.0,
+      "price_per_mp": 2676,
+      "zone": "Centrul Civic",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-calea-calarasilor-IDIdPB",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Centrul Civic",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbax",
+      "price_eur": 135000,
+      "area_mp": 50.0,
+      "price_per_mp": 2700,
+      "zone": "Crângași",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDIbax",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDHoSL",
+      "price_eur": 144900,
+      "area_mp": 53.0,
+      "price_per_mp": 2734,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/dristor-decomandat-an-1983-IDHoSL",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Dristor",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcZl",
+      "price_eur": 145000,
+      "area_mp": 53.0,
+      "price_per_mp": 2736,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/dristor-metrou-5-min-IDIcZl",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Dristor",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI9Te",
+      "price_eur": 149000,
+      "area_mp": 54.0,
+      "price_per_mp": 2759,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-tineretului-IDI9Te",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Tineretului",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI2Hf",
+      "price_eur": 159500,
+      "area_mp": 57.0,
+      "price_per_mp": 2798,
+      "zone": "Centrul Civic",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-centrul-civic-IDI2Hf",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Centrul Civic",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDFvdD",
+      "price_eur": 155000,
+      "area_mp": 55.0,
+      "price_per_mp": 2818,
+      "zone": "Dorobanți",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/dorobanti-2-camere-IDFvdD",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Dorobanti",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbe4",
+      "price_eur": 160000,
+      "area_mp": 56.0,
+      "price_per_mp": 2857,
+      "zone": "Decebal",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/decebal-metrou-p-ta-muncii-IDIbe4",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Decebal",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIblT",
+      "price_eur": 149000,
+      "area_mp": 52.0,
+      "price_per_mp": 2865,
+      "zone": "Calea Moșilor",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/mosilor-eminescu-2-camere-IDIblT",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Mosilor",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDGes6",
+      "price_eur": 145000,
+      "area_mp": 50.0,
+      "price_per_mp": 2900,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-unirii-nicolae-balcescu-IDGes6",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Cismigiu",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIaSv",
+      "price_eur": 145000,
+      "area_mp": 50.0,
+      "price_per_mp": 2900,
+      "zone": "Dorobanți",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vanzari-apartamente-2-camere-dorobanti-IDIaSv",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Dorobanti",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIbD1",
+      "price_eur": 159000,
+      "area_mp": 54.0,
+      "price_per_mp": 2944,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/tineretului-2-camere-IDIbD1",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Tineretului",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDIcYn",
+      "price_eur": 153000,
+      "area_mp": 50.0,
+      "price_per_mp": 3060,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vitan-apartament-IDIcYn",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vitan",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    },
+    {
+      "id": "IDI9Gj",
+      "price_eur": 153000,
+      "area_mp": 50.0,
+      "price_per_mp": 3060,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vitan-2-camere-IDI9Gj",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "status": "active",
+      "notes": "Scan 160k - Vitan",
+      "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0
+    }
+  ],
+  "eliminated": [
+    {
+      "id": "IDGAKt",
+      "price_eur": 132000,
+      "area_mp": 51.0,
+      "zone": "Bucureștii Noi",
+      "sub_zone": "",
+      "reason": "Zonă exclusă: Bucureștii Noi (era marcat ca Centru)",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/IDGAKt",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIdBQ",
+      "price_eur": 154000,
+      "area_mp": 57.0,
+      "zone": "Centrul Civic",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-hol-generos-imobil-art-deco-IDIdBQ",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHrvp",
+      "price_eur": 135000,
+      "area_mp": 50.0,
+      "zone": "Centrul Istoric",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/de-vanzare-apartament-cochet-metrou-universitate-IDHrvp",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIc97",
+      "price_eur": 85990,
+      "area_mp": 50.0,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-semidecomandat-cismigiu-IDIc97",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHPjX",
+      "price_eur": 125000,
+      "area_mp": 59.0,
+      "zone": "Dorobanți",
+      "sub_zone": "Str. Londra",
+      "reason": "RS I — Risc Seismic grad I",
+      "year_built": 1924,
+      "url": "https://www.storia.ro/ro/oferta/londra-2-camere-decomandat-59-mp-rs-i-IDHPjX",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDFV7O",
+      "price_eur": 105000,
+      "area_mp": 55.0,
+      "zone": "Dorobanți",
+      "sub_zone": "Căderea Bastiliei",
+      "reason": "U3 — Urgență grad 3, bloc 1945",
+      "year_built": 1945,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDI7RN",
+      "price_eur": 105000,
+      "area_mp": 58.0,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "reason": "Risc seismic RS2",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/IDI7RN",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHLkn",
+      "price_eur": 124800,
+      "area_mp": 58.0,
+      "zone": "Eminescu",
+      "sub_zone": "Maria Rosetti",
+      "reason": "RS II — Risc Seismic grad II, bloc 1938",
+      "year_built": 1938,
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-decomandat-de-vanzare-zona-rosetti-58-mp-utili-IDHLkn",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHTSx",
+      "price_eur": 107000,
+      "area_mp": 58.0,
+      "zone": "Eminescu",
+      "sub_zone": "Maria Rosetti",
+      "reason": "RS2 - clasa de risc seismic RS2, bloc 1934",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/maria-rosetti-stradal-pretabil-i-pentru-investiie-IDHTSx",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHZTj",
+      "price_eur": 135000,
+      "area_mp": 61.0,
+      "zone": "Eminescu",
+      "sub_zone": "Maria Rosetti",
+      "reason": "RS2 - risc seismic 2, bloc boutique interbelic",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/un-apartament-stilat-intr-un-bloc-boutique-IDHZTj",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHJ9o",
+      "price_eur": 69400,
+      "area_mp": 60.0,
+      "zone": "Floreasca",
+      "sub_zone": "Floreasca",
+      "reason": "Preț fals — anunț developer 'de la 11.362€ + TVA'",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHYeO",
+      "price_eur": 134900,
+      "area_mp": 51.0,
+      "zone": "Focșani",
+      "sub_zone": "",
+      "reason": "Zonă exclusă: Focșani (era marcat ca Domenii)",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/domenii-1-mai-IDHYeO",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDI8Em",
+      "price_eur": 103999,
+      "area_mp": 55.0,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "reason": "Risc seismic U3",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/IDI8Em",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIaoH",
+      "price_eur": 103900,
+      "area_mp": 55.0,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/piata-iancului-metrou-1-min-scoala-56-IDIaoH",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIan3",
+      "price_eur": 103900,
+      "area_mp": 55.0,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/piata-iancului-metrou-1-min-scoala-56-IDIan3",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIbCU",
+      "price_eur": 78900,
+      "area_mp": 54.0,
+      "zone": "Obor",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/obor-avrig-primarie-metrou-5-min-IDIbCU",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIbna",
+      "price_eur": 78900,
+      "area_mp": 54.0,
+      "zone": "Obor",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/obor-avrig-primarie-parter-cu-balcon-IDIbna",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDI9UM",
+      "price_eur": 78000,
+      "area_mp": 54.0,
+      "zone": "Parcul Carol",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/2-camere-parter-stradal-bd-carol-armeneaca-ultracentral-IDI9UM",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHdZ7",
+      "price_eur": 90000,
+      "area_mp": 50.0,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "reason": "Risc seismic U2",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/IDHdZ7",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHCI8",
+      "price_eur": 108000,
+      "area_mp": 65.0,
+      "zone": "Pieptănari",
+      "sub_zone": "",
+      "reason": "Zonă exclusă: Pieptănari (era marcat ca Parcul Carol)",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/IDHCI8",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIbBe",
+      "price_eur": 98000,
+      "area_mp": 50.0,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "reason": "Risc seismic detectat automat",
+      "year_built": null,
+      "url": "https://www.storia.ro/ro/oferta/vatra-luminoasa-iancului-metrou-5-min-IDIbBe",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDHDus",
+      "price_eur": 109990,
+      "area_mp": null,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "Ștefan cel Mare",
+      "reason": "Clasă de risc seismic confirmată",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    }
+  ]
+}

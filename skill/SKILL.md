@@ -1,6 +1,6 @@
 ---
 name: "apartamente-bucuresti"
-description: "Skill for scanning Storia.ro for 2-bedroom apartments under 160,000€ in central Bucharest, verifying each listing individually for seismic risk (RS1, RS2, bulină, consolidare, U1, U2, U3), and maintaining a persistent JSON database with price history and change tracking. Use this skill whenever the user mentions: searching for apartments in Bucharest, updating apartment listings, checking new real estate listings, running the apartment scanner, checking price changes, or anything related to their Bucharest real estate investment project. Also trigger when the user says \"caută apartamente\", \"scanează Storia\", \"actualizează listinguri\", \"verifică prețuri\", or references the apartamente_bucuresti.json file."
+description: "Skill for scanning Storia.ro and imobiliare.ro for 2-bedroom apartments under 160,000€ in central Bucharest, verifying each listing individually for seismic risk (RS1, RS2, bulină, consolidare, U1, U2, U3), and maintaining a persistent JSON database with price history and change tracking. Use this skill whenever the user mentions: searching for apartments in Bucharest, updating apartment listings, checking new real estate listings, running the apartment scanner, checking price changes, or anything related to their Bucharest real estate investment project. Also trigger when the user says \"caută apartamente\", \"scanează Storia\", \"scanează imobiliare\", \"actualizează listinguri\", \"verifică prețuri\", or references the apartamente_bucuresti.json file."
 ---
 
 # Apartamente București — Scanner & Tracker
@@ -9,11 +9,12 @@ You are an automated real estate scanner for 2-bedroom apartments in central Buc
 
 ## What this skill does
 
-1. Scans Storia.ro for listings matching the investment criteria
-2. Batch-fetches each listing page to extract the REAL zone via `addressLocality` (JSON-LD metadata)
-3. Verifies EACH new listing individually for seismic risk
-4. Updates a persistent JSON database with new listings, price changes, and disappeared listings
-5. Presents a clear summary of what changed since the last scan
+1. Scans Storia.ro and imobiliare.ro for listings matching the investment criteria
+2. For Storia: batch-fetches each listing page to extract the REAL zone via `addressLocality` (JSON-LD metadata)
+3. For Imobiliare: extracts data from `article[data-listing-id]` HTML data attributes
+4. Verifies EACH new listing individually for seismic risk
+5. Updates a persistent JSON database with new listings, price changes, and disappeared listings
+6. Presents a clear summary of what changed since the last scan
 
 ## Prerequisites
 
@@ -183,6 +184,56 @@ Summarize what changed since the last scan:
 
 Format each listing as: `**{price}€** | {area}m² | {zone} — {notes}` with clickable Storia.ro link.
 
+## Imobiliare.ro scanning workflow (alternative/supplementary source)
+
+Imobiliare.ro is a SPA — `fetch()` returns empty HTML shells. You MUST use Claude in Chrome browser tools for real navigation.
+
+### Step A: Navigate zone-by-zone
+
+URL pagination does NOT work on imobiliare.ro (SPA ignores `/pagina-N`). Instead, navigate to each target zone directly:
+```
+https://www.imobiliare.ro/vanzare-apartamente/bucuresti/{zone}/2-camere
+```
+
+Target zones (URL slugs): dristor, obor, vitan, tineretului, iancului, tei, colentina, floreasca, dorobanti, stefan-cel-mare, eminescu, mosilor, decebal, cismigiu, grivita, timpuri-noi, piata-romana, centrul-civic, centrul-istoric, vacaresti, vatra-luminoasa, carol, cotroceni, victoriei, universitate, nerva-traian, splai, domenii, armeneasca
+
+Wait 3-5 seconds between zone navigations to avoid triggering rate limits.
+
+### Step B: Extract listing data from data attributes
+
+All listing data is available in HTML data attributes on `article[data-listing-id]` elements:
+```javascript
+const listings = [...document.querySelectorAll('article[data-listing-id]')].map(a => ({
+  id: a.getAttribute('data-listing-id'),
+  price: parseInt(a.getAttribute('data-item-price')),  // EUR
+  zone: a.getAttribute('data-area'),                    // reliable zone name
+  area: parseFloat(a.getAttribute('data-surface')),     // m²
+  sector: a.getAttribute('data-city'),                  // "Sector N, București"
+  sellerType: a.getAttribute('data-sellertype'),        // "developer" | "agency" | "owner"
+  daysOnMarket: parseInt(a.getAttribute('data-days-market')),
+  url: a.querySelector('a[href*="/oferta/"]')?.href
+}));
+```
+
+Filter: price ≤ 160,000€, area ≥ 50m², zone not in excluded list.
+
+### Step C: Verify seismic risk individually
+
+Same as Storia workflow — navigate to each qualifying listing page and search page text for risk keywords.
+
+### Step D: Add to DB
+
+Add qualifying listings with `source: "imobiliare"`. Imobiliare listing IDs are numeric (e.g., `X72M1100N`), not `IDxxxxxx` format like Storia.
+
+### Imobiliare.ro rate limiting — CRITICAL
+
+Imobiliare.ro has aggressive anti-bot protection:
+- Blocks IP after a few rapid operations
+- Blocks persist ~15 minutes on search/listing pages (homepage may still work)
+- Avoid JavaScript DOM queries that trigger additional XHR calls
+- If blocked: wait 15 minutes, then navigate to zone-specific URLs (not the main search page)
+- Message when blocked: "Accesul este restricționat temporar — Am detectat o anomalie în comportamentul browserului dumneavoastră."
+
 ## Rate limiting
 
 Storia.ro may block requests if too many are made too quickly. If you get "ERROR: The request could not be satisfied":
@@ -210,4 +261,12 @@ These are real issues encountered during development of this project:
 7. **Search page HTML doesn't reliably contain price/area near listing IDs** — extract only IDs from search pages, then batch-fetch individual pages for all data.
 
 8. **The `data-cy="listing-item"` selector no longer works** on Storia.ro — use regex on raw HTML to extract listing IDs: `/\/oferta\/([\w-]+-ID([A-Za-z0-9]{4,8}))/g`
+
+9. **Imobiliare.ro is a SPA** — `fetch()` and `web_fetch` return empty HTML shells with no listing data. Must use real browser navigation via Claude in Chrome.
+
+10. **Imobiliare.ro URL pagination is ignored** — the SPA doesn't respond to `/pagina-N` in URLs. Navigate zone-by-zone instead.
+
+11. **Imobiliare.ro `data-area` attribute is reliable for zone classification** — unlike Storia.ro's URL slugs, imobiliare.ro data attributes accurately reflect the listing's actual zone.
+
+12. **Imobiliare.ro rate limiting is very aggressive** — blocks IP after a few rapid operations, blocks persist ~15 minutes. Space requests 3-5s apart and avoid triggering extra XHR via DOM queries like sorting.
 
