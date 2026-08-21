@@ -58,7 +58,7 @@ def import_json(conn, data):
              l.get("zone", ""), l.get("sub_zone", ""), l.get("sector"),
              l.get("year_built"), l.get("floor"), l.get("renovated"),
              l.get("furnished"), l.get("seismic_risk", "none"),
-             l.get("seismic_note"), l.get("url"), "storia",
+             l.get("seismic_note"), l.get("url"), l.get("source", "storia"),
              l.get("first_seen"), l.get("last_seen"),
              l.get("status", "active"), l.get("notes")))
         for ph in l.get("price_history", []):
@@ -74,7 +74,7 @@ def import_json(conn, data):
             (e["id"], e.get("price_eur"), e.get("area_mp"),
              e.get("zone", ""), e.get("sub_zone", ""),
              e.get("reason", ""), e.get("year_built"), e.get("url"),
-             "storia", None))
+             e.get("source", "storia"), e.get("date_eliminated")))
     conn.commit()
     print(f"Imported: {len(data.get('listings', []))} listings, "
           f"{len(data.get('eliminated', []))} eliminated")

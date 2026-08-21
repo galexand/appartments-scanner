@@ -214,6 +214,12 @@ function buildFilters() {
     <input type="number" id="fArea" value="50" step="5" style="width:70px" onchange="applyFilters()">
     <span class="filter-label">€/m² max</span>
     <input type="number" id="fPpm" value="" placeholder="fără" style="width:80px" onchange="applyFilters()">
+    <span class="filter-label">Sursă</span>
+    <select id="fSource" onchange="applyFilters()">
+      <option value="">Toate</option>
+      <option value="storia">Storia</option>
+      <option value="imobiliare">Imobiliare</option>
+    </select>
     <label style="display:flex;align-items:center;gap:4px;font-size:.8em;color:var(--muted);cursor:pointer">
       <input type="checkbox" id="fDrops" onchange="applyFilters()"> Doar scăderi
     </label>
@@ -227,13 +233,15 @@ function applyFilters() {
   const minArea = parseInt(document.getElementById('fArea').value) || 0;
   const maxPpm = parseInt(document.getElementById('fPpm').value) || 999999;
   const dropsOnly = document.getElementById('fDrops').checked;
+  const source = document.getElementById('fSource').value;
 
   filtered = DATA.listings.filter(l =>
     (!zone || l.zone === zone) &&
     l.price_eur <= maxPrice &&
     l.area_mp >= minArea &&
     l.price_per_mp <= maxPpm &&
-    (!dropsOnly || l.price_change < 0)
+    (!dropsOnly || l.price_change < 0) &&
+    (!source || (l.source || 'storia') === source)
   );
 
   sortData();
@@ -286,7 +294,7 @@ function renderTable() {
       <td>S${l.sector || '?'}</td>
       <td class="${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">${l.seismic_risk==='none'?'✓ Safe':l.seismic_risk}</td>
       <td style="font-size:.8em;color:var(--muted)">${l.first_seen||''}</td>
-      <td><a href="${l.url}" target="_blank" onclick="event.stopPropagation()">Storia →</a></td>
+      <td><a href="${l.url}" target="_blank" onclick="event.stopPropagation()">${(l.source||'storia')==='imobiliare'?'Imobiliare':'Storia'} →</a></td>
     </tr>`;
   }).join('');
 }

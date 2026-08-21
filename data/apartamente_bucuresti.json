@@ -1,9 +1,9 @@
 {
   "metadata": {
     "project": "Investiție imobiliară București",
-    "description": "Apartamente 2 camere sub 140.000€ în zone centrale, verificate individual pentru risc seismic",
+    "description": "Apartamente 2 camere sub 160.000€ în zone centrale, verificate individual pentru risc seismic",
     "created": "2026-07-26",
-    "last_scan": "2026-08-15",
+    "last_scan": "2026-08-21",
     "filters": {
       "rooms": 2,
       "min_area_mp": 50,
@@ -7108,6 +7108,867 @@
       "price_history": [],
       "status": "active",
       "notes": "Scan 160k - Uranus"
+    },
+    {
+      "id": "275514619",
+      "price_eur": 113000,
+      "area_mp": 54.08,
+      "price_per_mp": 2089,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 113000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275514619"
+    },
+    {
+      "id": "274979185",
+      "price_eur": 129000,
+      "area_mp": 55,
+      "price_per_mp": 2345,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 129000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274979185"
+    },
+    {
+      "id": "275803159",
+      "price_eur": 144000,
+      "area_mp": 52,
+      "price_per_mp": 2769,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 144000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275803159"
+    },
+    {
+      "id": "275844993",
+      "price_eur": 139000,
+      "area_mp": 51.76,
+      "price_per_mp": 2685,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 139000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275844993"
+    },
+    {
+      "id": "269179317",
+      "price_eur": 125000,
+      "area_mp": 56.4,
+      "price_per_mp": 2216,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 125000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-269179317"
+    },
+    {
+      "id": "275854988",
+      "price_eur": 159000,
+      "area_mp": 54,
+      "price_per_mp": 2944,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 159000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275854988"
+    },
+    {
+      "id": "275788524",
+      "price_eur": 133000,
+      "area_mp": 52,
+      "price_per_mp": 2558,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 133000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275788524"
+    },
+    {
+      "id": "275443682",
+      "price_eur": 135000,
+      "area_mp": 60,
+      "price_per_mp": 2250,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 135000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275443682"
+    },
+    {
+      "id": "275737561",
+      "price_eur": 113500,
+      "area_mp": 54,
+      "price_per_mp": 2102,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 113500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275737561"
+    },
+    {
+      "id": "275834639",
+      "price_eur": 123999,
+      "area_mp": 55.1,
+      "price_per_mp": 2250,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 123999
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275834639"
+    },
+    {
+      "id": "275887766",
+      "price_eur": 138500,
+      "area_mp": 53,
+      "price_per_mp": 2613,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 138500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275887766"
+    },
+    {
+      "id": "262410450",
+      "price_eur": 114999,
+      "area_mp": 55,
+      "price_per_mp": 2091,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 114999
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-262410450"
+    },
+    {
+      "id": "262410661",
+      "price_eur": 113999,
+      "area_mp": 55,
+      "price_per_mp": 2073,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 113999
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-262410661"
+    },
+    {
+      "id": "194616267",
+      "price_eur": 136730,
+      "area_mp": 95.4,
+      "price_per_mp": 1433,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 136730
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-194616267"
+    },
+    {
+      "id": "275727114",
+      "price_eur": 115000,
+      "area_mp": 51,
+      "price_per_mp": 2255,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 115000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275727114"
+    },
+    {
+      "id": "275838406",
+      "price_eur": 118000,
+      "area_mp": 51.47,
+      "price_per_mp": 2293,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 118000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275838406"
+    },
+    {
+      "id": "275730431",
+      "price_eur": 111500,
+      "area_mp": 54,
+      "price_per_mp": 2065,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 111500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275730431"
+    },
+    {
+      "id": "275842278",
+      "price_eur": 78000,
+      "area_mp": 65,
+      "price_per_mp": 1200,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 78000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275842278"
+    },
+    {
+      "id": "275818026",
+      "price_eur": 96900,
+      "area_mp": 54,
+      "price_per_mp": 1794,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 96900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275818026"
+    },
+    {
+      "id": "275850986",
+      "price_eur": 107000,
+      "area_mp": 50,
+      "price_per_mp": 2140,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 107000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275850986"
+    },
+    {
+      "id": "275818529",
+      "price_eur": 155000,
+      "area_mp": 51,
+      "price_per_mp": 3039,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 155000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275818529"
+    },
+    {
+      "id": "275772119",
+      "price_eur": 151320,
+      "area_mp": 54,
+      "price_per_mp": 2802,
+      "zone": "Floreasca",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 151320
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275772119"
+    },
+    {
+      "id": "275888634",
+      "price_eur": 156000,
+      "area_mp": 54,
+      "price_per_mp": 2889,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 156000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275888634"
+    },
+    {
+      "id": "275827304",
+      "price_eur": 154000,
+      "area_mp": 63.98,
+      "price_per_mp": 2407,
+      "zone": "Eminescu",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 154000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275827304"
+    },
+    {
+      "id": "275869358",
+      "price_eur": 129900,
+      "area_mp": 50,
+      "price_per_mp": 2598,
+      "zone": "Calea Moșilor",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 129900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275869358"
+    },
+    {
+      "id": "275788066",
+      "price_eur": 160000,
+      "area_mp": 56,
+      "price_per_mp": 2857,
+      "zone": "Decebal",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 160000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275788066"
+    },
+    {
+      "id": "270959137",
+      "price_eur": 130000,
+      "area_mp": 52,
+      "price_per_mp": 2500,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 130000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-270959137"
+    },
+    {
+      "id": "275730848",
+      "price_eur": 140000,
+      "area_mp": 58,
+      "price_per_mp": 2414,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": 5,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 140000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275730848"
+    },
+    {
+      "id": "275803152",
+      "price_eur": 144000,
+      "area_mp": 52,
+      "price_per_mp": 2769,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 144000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275803152"
+    },
+    {
+      "id": "274752265",
+      "price_eur": 100000,
+      "area_mp": 51,
+      "price_per_mp": 1961,
+      "zone": "Centrul Istoric",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 100000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274752265"
+    },
+    {
+      "id": "274751571",
+      "price_eur": 100000,
+      "area_mp": 52,
+      "price_per_mp": 1923,
+      "zone": "Centrul Istoric",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 100000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274751571"
+    },
+    {
+      "id": "275697052",
+      "price_eur": 150000,
+      "area_mp": 58,
+      "price_per_mp": 2586,
+      "zone": "Văcărești",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 150000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275697052"
+    },
+    {
+      "id": "275721578",
+      "price_eur": 98000,
+      "area_mp": 50,
+      "price_per_mp": 1960,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 98000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275721578"
+    },
+    {
+      "id": "275722644",
+      "price_eur": 98000,
+      "area_mp": 54,
+      "price_per_mp": 1815,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 98000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275722644"
+    },
+    {
+      "id": "21744261",
+      "price_eur": 150000,
+      "area_mp": 55,
+      "price_per_mp": 2727,
+      "zone": "Victoriei",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 150000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-21744261"
+    },
+    {
+      "id": "275839761",
+      "price_eur": 105000,
+      "area_mp": 58,
+      "price_per_mp": 1810,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 105000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275839761"
+    },
+    {
+      "id": "275796858",
+      "price_eur": 149000,
+      "area_mp": 50,
+      "price_per_mp": 2980,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 5,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 149000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275796858"
+    },
+    {
+      "id": "275858854",
+      "price_eur": 159500,
+      "area_mp": 61,
+      "price_per_mp": 2615,
+      "zone": "Nerva Traian",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 159500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275858854"
+    },
+    {
+      "id": "275396166",
+      "price_eur": 149900,
+      "area_mp": 50,
+      "price_per_mp": 2998,
+      "zone": "Armenească",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 149900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275396166"
+    },
+    {
+      "id": "275827316",
+      "price_eur": 154000,
+      "area_mp": 63.98,
+      "price_per_mp": 2407,
+      "zone": "Armenească",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 154000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275827316"
+    },
+    {
+      "id": "275801855",
+      "price_eur": 97000,
+      "area_mp": 54,
+      "price_per_mp": 1796,
+      "zone": "Armenească",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 97000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275801855"
     }
   ],
   "eliminated": [
@@ -7330,6 +8191,16 @@
       "reason": "Zonă exclusă: Focșani (era marcat ca Domenii)",
       "year_built": null,
       "url": "https://www.storia.ro/ro/oferta/domenii-1-mai-IDHYeO"
+    },
+    {
+      "id": "275874039",
+      "zone": "Dristor",
+      "price_eur": 89000,
+      "area_mp": 58,
+      "source": "imobiliare",
+      "reason": "Risc seismic RS2",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-dristor-275874039",
+      "date_eliminated": "2026-08-21"
     }
   ]
 }
