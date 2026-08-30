@@ -280,7 +280,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdh7",
@@ -304,7 +307,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275842231",
@@ -328,7 +334,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275842278",
@@ -352,7 +361,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDH0qG",
@@ -376,7 +388,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgjY",
@@ -400,7 +415,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIggs",
@@ -424,7 +442,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgeB",
@@ -448,7 +469,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGLMF",
@@ -472,7 +496,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIj6q",
@@ -496,7 +523,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcC6",
@@ -515,7 +545,10 @@
       "notes": "Scan 160k - Dristor",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "194616267",
@@ -539,7 +572,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfDC",
@@ -563,7 +599,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfSY",
@@ -587,7 +626,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI8Mq",
@@ -606,7 +648,10 @@
       "notes": "Scan 160k - Stirbei",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkWi",
@@ -630,7 +675,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "renovat + mobilat + utilat",
+      "user_confirmed": ""
     },
     {
       "id": "IDIasb",
@@ -649,7 +697,10 @@
       "notes": "Scan 160k - Tei",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHDWt",
@@ -673,7 +724,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI5pq",
@@ -697,7 +751,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhCL",
@@ -721,7 +778,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhD8",
@@ -745,7 +805,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhCG",
@@ -769,7 +832,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlQw",
@@ -793,7 +859,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhDa",
@@ -817,7 +886,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlQA",
@@ -841,7 +913,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgiG",
@@ -865,7 +940,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIghI",
@@ -889,7 +967,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgfH",
@@ -913,7 +994,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhDp",
@@ -937,7 +1021,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIj0S",
@@ -961,7 +1048,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIeUK",
@@ -985,7 +1075,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjVr",
@@ -1009,7 +1102,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "renovat + mobilat + utilat",
+      "user_confirmed": ""
     },
     {
       "id": "IDHRtL",
@@ -1028,7 +1124,10 @@
       "notes": "Scan 160k - Grivita",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkKu",
@@ -1052,7 +1151,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHahn",
@@ -1071,7 +1173,10 @@
       "notes": "Scan 160k - Colentina",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHRdI",
@@ -1095,7 +1200,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHRdi",
@@ -1119,7 +1227,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHdXW",
@@ -1143,7 +1254,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIiV5",
@@ -1167,7 +1281,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275882571",
@@ -1191,7 +1308,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlqq",
@@ -1215,7 +1335,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkWE",
@@ -1239,7 +1362,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHPWl",
@@ -1263,7 +1389,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "273362897",
@@ -1287,7 +1416,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI6AV",
@@ -1311,7 +1443,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIku2",
@@ -1335,7 +1470,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkt1",
@@ -1359,7 +1497,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlcm",
@@ -1383,7 +1524,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcO7",
@@ -1402,7 +1546,10 @@
       "notes": "Scan 160k - Iancului",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlyU",
@@ -1426,7 +1573,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHVwu",
@@ -1450,7 +1600,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275813087",
@@ -1474,7 +1627,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "needs_renovation",
+      "renovation_notes": "mobilat but needs renovation work",
+      "user_confirmed": ""
     },
     {
       "id": "IDIj8C",
@@ -1498,7 +1654,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275818026",
@@ -1522,7 +1681,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "mobilat + utilat, bine întreținut, 1965, AC",
+      "user_confirmed": ""
     },
     {
       "id": "275801855",
@@ -1546,7 +1708,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbp7",
@@ -1565,7 +1730,10 @@
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDCegu",
@@ -1589,7 +1757,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHXDI",
@@ -1613,7 +1784,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjub",
@@ -1637,7 +1811,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHb5A",
@@ -1661,7 +1838,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkV3",
@@ -1685,7 +1865,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275839761",
@@ -1709,7 +1892,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275922259",
@@ -1733,7 +1919,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbXg",
@@ -1752,7 +1941,10 @@
       "notes": "Scan 160k - Vatra Luminoasa",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275722644",
@@ -1776,7 +1968,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkQN",
@@ -1800,7 +1995,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI37G",
@@ -1824,7 +2022,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHuco",
@@ -1848,7 +2049,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275620264",
@@ -1872,7 +2076,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlxm",
@@ -1896,7 +2103,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "check",
+      "renovation_notes": "no keywords - needs visual check",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlxe",
@@ -1920,7 +2130,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "check",
+      "renovation_notes": "no keywords - needs visual check",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgj2",
@@ -1944,7 +2157,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI9GP",
@@ -1963,7 +2179,10 @@
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhwD",
@@ -1987,7 +2206,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1Hk",
@@ -2011,7 +2233,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI5p7",
@@ -2035,7 +2260,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275916932",
@@ -2059,7 +2287,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbE2",
@@ -2078,7 +2309,10 @@
       "notes": "Scan 160k - Colentina",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4oZ",
@@ -2102,7 +2336,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI8MQ",
@@ -2126,7 +2363,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "274751571",
@@ -2150,7 +2390,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDFCHa",
@@ -2174,7 +2417,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI7dH",
@@ -2193,7 +2439,10 @@
       "notes": "Scan 160k - Centrul Istoric",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4vS",
@@ -2217,7 +2466,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIaQe",
@@ -2241,7 +2493,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDFiV3",
@@ -2265,7 +2520,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275721578",
@@ -2289,7 +2547,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfIY",
@@ -2313,7 +2574,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "274752265",
@@ -2337,7 +2601,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1PU",
@@ -2361,7 +2628,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbNa",
@@ -2380,7 +2650,10 @@
       "notes": "Scan 160k - Dristor",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIb6e",
@@ -2399,7 +2672,10 @@
       "notes": "Scan 160k - Dristor",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbcc",
@@ -2418,7 +2694,10 @@
       "notes": "Scan 160k - Basarabia",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHDBy",
@@ -2442,7 +2721,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHzHk",
@@ -2466,7 +2748,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkeC",
@@ -2490,7 +2775,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlER",
@@ -2514,7 +2802,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbVb",
@@ -2533,7 +2824,10 @@
       "notes": "Scan 160k - Splai",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275850986",
@@ -2561,7 +2855,10 @@
         }
       ],
       "price_change": -7200,
-      "price_change_pct": -6.7
+      "price_change_pct": -6.7,
+      "claude_needs_renovation": "check",
+      "renovation_notes": "minimal description, needs visual check",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbsD",
@@ -2585,7 +2882,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4sN",
@@ -2609,7 +2909,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDH2xU",
@@ -2633,7 +2936,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI49i",
@@ -2657,7 +2963,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHET8",
@@ -2681,7 +2990,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4qk",
@@ -2705,7 +3017,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfdB",
@@ -2729,7 +3044,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlVo",
@@ -2753,7 +3071,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHLuo",
@@ -2777,7 +3098,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjKY",
@@ -2801,7 +3125,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIj0D",
@@ -2825,7 +3152,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275885219",
@@ -2849,7 +3179,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275924163",
@@ -2873,7 +3206,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "mobilat + utilat, Tineretului, decomandat",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlad",
@@ -2897,7 +3233,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHOnl",
@@ -2921,7 +3260,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275730431",
@@ -2945,7 +3287,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "262410661",
@@ -2969,7 +3314,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkYm",
@@ -2993,7 +3341,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHCHA",
@@ -3012,7 +3363,10 @@
       "notes": "Scan 160k - 13 Septembrie",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275514619",
@@ -3036,7 +3390,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbt5",
@@ -3060,7 +3417,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGSDs",
@@ -3084,7 +3444,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHmpv",
@@ -3108,7 +3471,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "262410450",
@@ -3132,7 +3498,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHpCc",
@@ -3156,7 +3525,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcBR",
@@ -3180,7 +3552,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI6oN",
@@ -3204,7 +3579,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275737561",
@@ -3228,7 +3606,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDF5fD",
@@ -3252,7 +3633,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHZCA",
@@ -3280,7 +3664,10 @@
         }
       ],
       "price_change": -1100,
-      "price_change_pct": -1.0
+      "price_change_pct": -1.0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIatC",
@@ -3299,7 +3686,10 @@
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIb5Y",
@@ -3323,7 +3713,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHLRa",
@@ -3347,7 +3740,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlen",
@@ -3371,7 +3767,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "partial",
+      "renovation_notes": "renovat but not furnished",
+      "user_confirmed": ""
     },
     {
       "id": "IDI3D8",
@@ -3395,7 +3794,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIanh",
@@ -3419,7 +3821,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGNCu",
@@ -3443,7 +3848,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1UU",
@@ -3467,7 +3875,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHvzP",
@@ -3491,7 +3902,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDImbX",
@@ -3515,7 +3929,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHZIr",
@@ -3539,7 +3956,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHfcz",
@@ -3563,7 +3983,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHdfR",
@@ -3587,7 +4010,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIh2C",
@@ -3611,7 +4037,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHisy",
@@ -3635,7 +4064,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjMD",
@@ -3659,7 +4091,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcxL",
@@ -3683,7 +4118,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHwdr",
@@ -3707,7 +4145,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlYc",
@@ -3731,7 +4172,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI93y",
@@ -3755,7 +4199,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI2Yz",
@@ -3779,7 +4226,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1Zn",
@@ -3803,7 +4253,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHKbG",
@@ -3827,7 +4280,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHmq2",
@@ -3851,7 +4307,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHYpD",
@@ -3875,7 +4334,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI5nf",
@@ -3899,7 +4361,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDCvWd",
@@ -3923,7 +4388,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIeVT",
@@ -3947,7 +4415,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI8H4",
@@ -3971,7 +4442,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDH9VN",
@@ -3995,7 +4469,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "269179317",
@@ -4019,7 +4496,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbmu",
@@ -4043,7 +4523,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI3QF",
@@ -4067,7 +4550,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHDY7",
@@ -4091,7 +4577,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgXR",
@@ -4115,7 +4604,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI9vi",
@@ -4139,7 +4631,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI8VA",
@@ -4163,7 +4658,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIddS",
@@ -4187,7 +4685,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI925",
@@ -4211,7 +4712,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275443682",
@@ -4235,7 +4739,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275834639",
@@ -4259,7 +4766,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI8wa",
@@ -4283,7 +4793,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHKnH",
@@ -4307,7 +4820,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdjc",
@@ -4326,7 +4842,10 @@
       "notes": "Scan 160k - Vitan",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275727114",
@@ -4350,7 +4869,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgsJ",
@@ -4374,7 +4896,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI3Lx",
@@ -4398,7 +4923,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHVn0",
@@ -4422,7 +4950,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHVmL",
@@ -4446,7 +4977,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHb71",
@@ -4470,7 +5004,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlJo",
@@ -4494,7 +5031,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI91h",
@@ -4518,7 +5058,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdS6",
@@ -4537,7 +5080,10 @@
       "notes": "Scan 160k - Mosilor",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIaL1",
@@ -4561,7 +5107,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI6pP",
@@ -4585,7 +5134,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjLQ",
@@ -4609,7 +5161,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275838406",
@@ -4633,7 +5188,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHdJp",
@@ -4657,7 +5215,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkOz",
@@ -4681,7 +5242,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI84B",
@@ -4705,7 +5269,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIchp",
@@ -4729,7 +5296,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI8Ps",
@@ -4753,7 +5323,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHz6H",
@@ -4777,7 +5350,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIiUr",
@@ -4801,7 +5377,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "renovat + mobilat + utilat",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjaj",
@@ -4825,7 +5404,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHVt9",
@@ -4849,7 +5431,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHKbz",
@@ -4873,7 +5458,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI180",
@@ -4897,7 +5485,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhOt",
@@ -4921,7 +5512,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI5UT",
@@ -4945,7 +5539,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "274979185",
@@ -4969,7 +5566,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHmpF",
@@ -4993,7 +5593,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275927509",
@@ -5017,7 +5620,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4i3",
@@ -5041,7 +5647,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI6l1",
@@ -5065,7 +5674,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI6kX",
@@ -5089,7 +5701,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIg0c",
@@ -5113,7 +5728,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275830051",
@@ -5137,7 +5755,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjLW",
@@ -5161,7 +5782,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIj4a",
@@ -5185,7 +5809,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkrV",
@@ -5209,7 +5836,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "renovat + mobilat + utilat",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcMD",
@@ -5233,7 +5863,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1rx",
@@ -5257,7 +5890,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIf8E",
@@ -5281,7 +5917,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI10a",
@@ -5305,7 +5944,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI2mk",
@@ -5329,7 +5971,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275908022",
@@ -5353,7 +5998,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdpo",
@@ -5372,7 +6020,10 @@
       "notes": "Scan 160k - Centrul Civic",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHCwR",
@@ -5396,7 +6047,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1Kg",
@@ -5420,7 +6074,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIh56",
@@ -5444,7 +6101,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIm1v",
@@ -5468,7 +6128,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlIr",
@@ -5492,7 +6155,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHKio",
@@ -5516,7 +6182,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGQwx",
@@ -5540,7 +6209,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDEhdZ",
@@ -5564,7 +6236,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIltI",
@@ -5588,7 +6263,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "renovat + mobilat + utilat, 1956 building",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdw8",
@@ -5612,7 +6290,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1vG",
@@ -5636,7 +6317,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275827304",
@@ -5660,7 +6344,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275827316",
@@ -5684,7 +6371,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfSF",
@@ -5708,7 +6398,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHtPi",
@@ -5732,7 +6425,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHmq4",
@@ -5756,7 +6452,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHbZn",
@@ -5780,7 +6479,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjLO",
@@ -5804,7 +6506,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHQns",
@@ -5823,7 +6528,10 @@
       "notes": "Scan 160k - Grivita",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275730848",
@@ -5847,7 +6555,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "274861496",
@@ -5871,7 +6582,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI26D",
@@ -5895,7 +6609,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkoV",
@@ -5919,7 +6636,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkaO",
@@ -5943,7 +6663,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHOcq",
@@ -5967,7 +6690,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI9Un",
@@ -5986,7 +6712,10 @@
       "notes": "Scan 160k - Grivita",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI2W9",
@@ -6010,7 +6739,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4sg",
@@ -6034,7 +6766,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHKbp",
@@ -6058,7 +6793,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgcT",
@@ -6082,7 +6820,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275745509",
@@ -6106,7 +6847,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjpZ",
@@ -6130,7 +6874,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIaRF",
@@ -6154,7 +6901,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjDJ",
@@ -6178,7 +6928,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "check",
+      "renovation_notes": "no keywords found, needs visual check",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhyM",
@@ -6202,7 +6955,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHExr",
@@ -6226,7 +6982,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI5Uo",
@@ -6250,7 +7009,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDH6vt",
@@ -6274,7 +7036,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275910984",
@@ -6298,7 +7063,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI2ft",
@@ -6322,7 +7090,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDH8vw",
@@ -6346,7 +7117,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHIJa",
@@ -6370,7 +7144,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIapJ",
@@ -6389,7 +7166,10 @@
       "notes": "Scan 160k - Uranus",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkoz",
@@ -6413,7 +7193,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcYA",
@@ -6437,7 +7220,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI7ne",
@@ -6461,7 +7247,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI32f",
@@ -6485,7 +7274,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI2n9",
@@ -6509,7 +7301,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI1lq",
@@ -6533,7 +7328,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "270959137",
@@ -6557,7 +7355,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgd6",
@@ -6581,7 +7382,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfgb",
@@ -6605,7 +7409,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275641687",
@@ -6629,7 +7436,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhX9",
@@ -6653,7 +7463,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "needs_renovation",
+      "renovation_notes": "mentions renovation needed",
+      "user_confirmed": ""
     },
     {
       "id": "IDGAMV",
@@ -6677,7 +7490,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIflR",
@@ -6701,7 +7517,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIflP",
@@ -6725,7 +7544,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlGl",
@@ -6749,7 +7571,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIl2Z",
@@ -6773,7 +7598,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGMTA",
@@ -6797,7 +7625,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIecd",
@@ -6821,7 +7652,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdtL",
@@ -6840,7 +7674,10 @@
       "notes": "USER_SELECTIE — Scan 160k - Stefan cel Mare",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjyn",
@@ -6864,7 +7701,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbkL",
@@ -6883,7 +7723,10 @@
       "notes": "Scan 160k - Stefan cel Mare",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcUF",
@@ -6907,7 +7750,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIh8Q",
@@ -6931,7 +7777,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275909809",
@@ -6955,7 +7804,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "mobilat + utilat + renovat, bine întreținut, 1983, ready to move",
+      "user_confirmed": ""
     },
     {
       "id": "275447785",
@@ -6979,7 +7831,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHg36",
@@ -7003,7 +7858,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkbE",
@@ -7027,7 +7885,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275788524",
@@ -7051,7 +7912,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4m8",
@@ -7075,7 +7939,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI15y",
@@ -7099,7 +7966,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkBX",
@@ -7123,7 +7993,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "needs_renovation",
+      "renovation_notes": "mentions need for renovation despite some furniture",
+      "user_confirmed": ""
     },
     {
       "id": "IDIclF",
@@ -7147,7 +8020,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIj1U",
@@ -7171,7 +8047,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "ready",
+      "renovation_notes": "renovat + mobilat + utilat",
+      "user_confirmed": ""
     },
     {
       "id": "IDHhKF",
@@ -7195,7 +8074,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfmY",
@@ -7219,7 +8101,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI6rV",
@@ -7243,7 +8128,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275697052",
@@ -7267,7 +8155,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfl3",
@@ -7291,7 +8182,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHOwA",
@@ -7315,7 +8209,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI7jm",
@@ -7339,7 +8236,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHoj6",
@@ -7363,7 +8263,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcZD",
@@ -7387,7 +8290,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIc6v",
@@ -7411,7 +8317,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdgD",
@@ -7430,7 +8339,10 @@
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275869358",
@@ -7454,7 +8366,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI4iV",
@@ -7478,7 +8393,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkmR",
@@ -7502,7 +8420,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "partial",
+      "renovation_notes": "renovat but not furnished - needs furniture",
+      "user_confirmed": ""
     },
     {
       "id": "275927639",
@@ -7526,7 +8447,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275887766",
@@ -7550,7 +8474,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275858854",
@@ -7574,7 +8501,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIb2n",
@@ -7598,7 +8528,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHHY2",
@@ -7626,7 +8559,10 @@
         }
       ],
       "price_change": 2000,
-      "price_change_pct": 1.4
+      "price_change_pct": 1.4,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIg8q",
@@ -7650,7 +8586,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIg73",
@@ -7674,7 +8613,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275877411",
@@ -7698,7 +8640,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHYEO",
@@ -7722,7 +8667,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfyU",
@@ -7746,7 +8694,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275784277",
@@ -7770,7 +8721,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfIo",
@@ -7794,7 +8748,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDFg5g",
@@ -7818,7 +8775,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIgX7",
@@ -7842,7 +8802,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHRQW",
@@ -7866,7 +8829,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIf8F",
@@ -7890,7 +8856,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIdPB",
@@ -7909,7 +8878,10 @@
       "notes": "Scan 160k - Centrul Civic",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIg20",
@@ -7933,7 +8905,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIiZB",
@@ -7957,7 +8932,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfe0",
@@ -7981,7 +8959,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275844993",
@@ -8005,7 +8986,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfBI",
@@ -8029,7 +9013,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIh3X",
@@ -8053,7 +9040,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbax",
@@ -8077,7 +9067,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhjQ",
@@ -8101,7 +9094,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIf2l",
@@ -8125,7 +9121,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkIe",
@@ -8149,7 +9148,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "21744261",
@@ -8173,7 +9175,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHoSL",
@@ -8192,7 +9197,10 @@
       "notes": "Scan 160k - Dristor",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcZl",
@@ -8211,7 +9219,10 @@
       "notes": "Scan 160k - Dristor",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIj1c",
@@ -8235,7 +9246,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275776105",
@@ -8259,7 +9273,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI9Te",
@@ -8278,7 +9295,10 @@
       "notes": "USER_SELECTIE — Scan 160k - Tineretului",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275803159",
@@ -8302,7 +9322,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275803152",
@@ -8330,7 +9353,10 @@
         }
       ],
       "price_change": 1,
-      "price_change_pct": 0.0
+      "price_change_pct": 0.0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIm0R",
@@ -8354,7 +9380,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI2Hf",
@@ -8373,7 +9402,10 @@
       "notes": "Scan 160k - Centrul Civic",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275772119",
@@ -8397,7 +9429,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIh64",
@@ -8421,7 +9456,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDFvdD",
@@ -8440,7 +9478,10 @@
       "notes": "Scan 160k - Dorobanti",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIffV",
@@ -8464,7 +9505,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlHH",
@@ -8488,7 +9532,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbe4",
@@ -8507,7 +9554,10 @@
       "notes": "Scan 160k - Decebal",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275788066",
@@ -8531,7 +9581,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkE9",
@@ -8555,7 +9608,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIblT",
@@ -8574,7 +9630,10 @@
       "notes": "Scan 160k - Mosilor",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHZ6V",
@@ -8598,7 +9657,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275888634",
@@ -8622,7 +9684,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIiWk",
@@ -8646,7 +9711,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGes6",
@@ -8665,7 +9733,10 @@
       "notes": "Scan 160k - Cismigiu",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIaSv",
@@ -8684,7 +9755,10 @@
       "notes": "Scan 160k - Dorobanti",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfxE",
@@ -8708,7 +9782,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275912318",
@@ -8732,7 +9809,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGOjK",
@@ -8756,7 +9836,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHdvp",
@@ -8780,7 +9863,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIm44",
@@ -8804,7 +9890,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHt1C",
@@ -8828,7 +9917,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkBR",
@@ -8852,7 +9944,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "needs_renovation",
+      "renovation_notes": "mentions need for renovation despite some furniture",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlhr",
@@ -8876,7 +9971,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "partial",
+      "renovation_notes": "renovat but not furnished - needs furniture",
+      "user_confirmed": ""
     },
     {
       "id": "IDIfP7",
@@ -8900,7 +9998,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIbD1",
@@ -8919,7 +10020,10 @@
       "notes": "USER_SELECTIE — Scan 160k - Tineretului",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275854988",
@@ -8943,7 +10047,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGqfX",
@@ -8967,7 +10074,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhRX",
@@ -8991,7 +10101,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhRT",
@@ -9015,7 +10128,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275796858",
@@ -9039,7 +10155,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275916699",
@@ -9063,7 +10182,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275396166",
@@ -9087,7 +10209,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHSgr",
@@ -9111,7 +10236,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "275818529",
@@ -9135,7 +10263,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIjjO",
@@ -9159,7 +10290,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDGtR2",
@@ -9183,7 +10317,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIcYn",
@@ -9202,7 +10339,10 @@
       "notes": "Scan 160k - Vitan",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDI9Gj",
@@ -9221,7 +10361,10 @@
       "notes": "Scan 160k - Vitan",
       "price_history": [],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhob",
@@ -9245,7 +10388,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIg1S",
@@ -9269,7 +10415,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIf9Y",
@@ -9293,7 +10442,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIlyq",
@@ -9317,7 +10469,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIkLG",
@@ -9341,7 +10496,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIk3r",
@@ -9365,7 +10523,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIhVO",
@@ -9389,7 +10550,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDHIeO",
@@ -9413,7 +10577,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIl15",
@@ -9437,7 +10604,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIilF",
@@ -9461,7 +10631,10 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     },
     {
       "id": "IDIktP",
@@ -9485,7 +10658,39 @@
         }
       ],
       "price_change": 0,
-      "price_change_pct": 0
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    }
+  ],
+  "sold": [
+    {
+      "id": "275805918",
+      "price_eur": 130000,
+      "area_mp": 50.0,
+      "price_per_mp": 2600,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-obor-2-camere-275805918",
+      "source": "imobiliare",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "status": "sold",
+      "notes": "USER_SELECTIE — SOLD",
+      "price_history": [
+        {
+          "date": "2026-08-29",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     }
   ],
   "eliminated": [

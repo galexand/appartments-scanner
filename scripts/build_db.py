@@ -80,7 +80,7 @@ def import_json(conn, data):
           f"{len(data.get('eliminated', []))} eliminated")
 
 
-def export_site_data(conn):
+def export_site_data(conn, data):
     cur = conn.cursor()
     cur.execute("""SELECT id, price_eur, area_mp, price_per_mp, zone, sub_zone,
         sector, seismic_risk, url, source, first_seen, last_seen, status, notes
@@ -88,7 +88,14 @@ def export_site_data(conn):
     cols = [d[0] for d in cur.description]
     active = [dict(zip(cols, r)) for r in cur.fetchall()]
 
-    for listing in active:
+    # Also fetch sold listings
+    cur.execute("""SELECT id, price_eur, area_mp, price_per_mp, zone, sub_zone,
+        sector, seismic_risk, url, source, first_seen, last_seen, status, notes
+        FROM listings WHERE status='sold' ORDER BY price_per_mp""")
+    sold = [dict(zip(cols, r)) for r in cur.fetchall()]
+
+    # Enrich listings with price history and renovation data
+    for listing in active + sold:
         cur.execute("SELECT date, price_eur FROM price_history WHERE listing_id=? ORDER BY date",
                     (listing["id"],))
         listing["price_history"] = [{"date": r[0], "price": r[1]} for r in cur.fetchall()]
@@ -100,6 +107,14 @@ def export_site_data(conn):
         else:
             listing["price_change"] = 0
             listing["price_change_pct"] = 0
+
+    # Add renovation assessment from JSON source
+    json_by_id = {l["id"]: l for l in data.get("listings", [])}
+    for listing in active + sold:
+        src = json_by_id.get(listing["id"], {})
+        listing["claude_needs_renovation"] = src.get("claude_needs_renovation", "")
+        listing["renovation_notes"] = src.get("renovation_notes", "")
+        listing["user_confirmed"] = src.get("user_confirmed", "")
 
     cur.execute("SELECT id,price_eur,area_mp,zone,sub_zone,reason,year_built,url,source,eliminated_date FROM eliminated ORDER BY zone")
     elim_cols = [d[0] for d in cur.description]
@@ -118,13 +133,14 @@ def export_site_data(conn):
                   "price_avg": int(pavg or 0), "zones": len(zones)},
         "zone_distribution": zones,
         "listings": active,
+        "sold": sold,
         "eliminated": eliminated
     }
 
     os.makedirs(SITE_DATA_PATH.parent, exist_ok=True)
     with open(SITE_DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(site_data, f, ensure_ascii=False, indent=2)
-    print(f"Exported: {len(active)} active, {len(eliminated)} eliminated → {SITE_DATA_PATH}")
+    print(f"Exported: {len(active)} active, {len(sold)} sold, {len(eliminated)} eliminated → {SITE_DATA_PATH}")
 
 
 def main():
@@ -140,7 +156,7 @@ def main():
     conn = sqlite3.connect(tmp_db)
     create_schema(conn)
     import_json(conn, data)
-    export_site_data(conn)
+    export_site_data(conn, data)
     conn.close()
 
     shutil.copy2(tmp_db, str(DB_PATH))

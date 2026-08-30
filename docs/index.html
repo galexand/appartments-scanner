@@ -59,6 +59,21 @@ tr.price-drop { background: rgba(74,222,128,.08); }
 .compare-btn { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: 6px; padding: 3px 8px; cursor: pointer; font-size: .75em; }
 .compare-btn:hover { border-color: var(--accent); color: var(--accent); }
 .compare-btn.selected { background: rgba(56,189,248,.2); border-color: var(--accent); color: var(--accent); }
+.star-btn { background: none; border: none; font-size: 1.1em; cursor: pointer; padding: 2px 4px; opacity: .4; transition: all .2s; }
+.star-btn:hover { opacity: .8; }
+.star-btn.starred { opacity: 1; }
+.star-btn.starred.shortlist { color: var(--amber); }
+.star-btn.starred.preferred { color: var(--green); }
+.reno-badge { display: inline-block; padding: 1px 6px; border-radius: 4px; font-size: .7em; font-weight: 500; }
+.reno-badge.ready { background: rgba(74,222,128,.15); color: var(--green); }
+.reno-badge.partial { background: rgba(251,191,36,.15); color: var(--amber); }
+.reno-badge.needs_renovation { background: rgba(248,113,113,.15); color: var(--red); }
+.reno-badge.check { background: rgba(148,163,184,.15); color: var(--muted); }
+.filter-btn { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: var(--radius); padding: 6px 12px; cursor: pointer; font-size: .8em; transition: all .2s; }
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: rgba(56,189,248,.15); border-color: var(--accent); color: var(--accent); }
+.filter-btn.active-green { background: rgba(74,222,128,.15); border-color: var(--green); color: var(--green); }
+.filter-btn.active-amber { background: rgba(251,191,36,.15); border-color: var(--amber); color: var(--amber); }
 
 /* Charts section */
 .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px 24px; }
@@ -112,6 +127,7 @@ tr.price-drop { background: rgba(74,222,128,.08); }
     <a href="#" class="active" onclick="showView('listings')">Listinguri</a>
     <a href="#" onclick="showView('charts')">Grafice</a>
     <a href="#" onclick="showView('eliminated')">Eliminate</a>
+    <a href="#" onclick="showView('sold')">Vândute</a>
   </div>
 </div>
 
@@ -145,6 +161,15 @@ tr.price-drop { background: rgba(74,222,128,.08); }
   </div>
 </div>
 
+<div id="view-sold" style="display:none">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>Zonă</th><th>Preț</th><th>Suprafață</th><th>€/m²</th><th>Sector</th><th>Prima apariție</th><th>Link</th></tr></thead>
+      <tbody id="sold-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
 <div class="compare-bar" id="compareBar">
   <div class="items" id="compareItems"></div>
   <button onclick="openCompare()">Compară (<span id="compareCnt">0</span>)</button>
@@ -167,12 +192,39 @@ tr.price-drop { background: rgba(74,222,128,.08); }
 </div>
 
 <script>
-let DATA = { listings: [], eliminated: [], stats: {}, zone_distribution: [] };
+let DATA = { listings: [], eliminated: [], sold: [], stats: {}, zone_distribution: [] };
 let filtered = [];
 let sortCol = 'price_per_mp';
 let sortDir = 1;
 let compareSet = new Set();
 let chartInstances = {};
+
+// Preferred zones from user criteria
+const PREFERRED_ZONES = new Set(['Timpuri Noi','Tineretului','Carol','Mihai Bravu','Muncii',
+  'Dristor','Iancului','Obor','Stefan cel Mare','Grozavesti','Domenii']);
+
+// Shortlist persisted in localStorage
+function getShortlist() {
+  try { return JSON.parse(localStorage.getItem('apt_shortlist') || '{}'); } catch(e) { return {}; }
+}
+function saveShortlist(sl) {
+  try { localStorage.setItem('apt_shortlist', JSON.stringify(sl)); } catch(e) {}
+}
+function toggleStar(id, e) {
+  e.stopPropagation();
+  const sl = getShortlist();
+  if (!sl[id]) sl[id] = 'shortlist';
+  else if (sl[id] === 'shortlist') sl[id] = 'preferred';
+  else delete sl[id];
+  saveShortlist(sl);
+  renderTable();
+}
+function toggleFilterBtn(btnId) {
+  const btn = document.getElementById(btnId);
+  const cls = btnId === 'fShort' ? 'active-amber' : btnId === 'fConfirmed' ? 'active-green' : 'active';
+  btn.classList.toggle(cls);
+  applyFilters();
+}
 
 // Load data
 fetch('data/listings.json')
@@ -185,6 +237,7 @@ function init() {
   buildFilters();
   applyFilters();
   renderEliminated();
+  renderSold();
 }
 
 function renderStats() {
@@ -197,6 +250,7 @@ function renderStats() {
     <div class="stat"><div class="label">Preț mediu</div><div class="value">${fmt(s.price_avg)}€</div></div>
     <div class="stat"><div class="label">Scăderi preț</div><div class="value green">${drops}</div></div>
     <div class="stat"><div class="label">Eliminate</div><div class="value red">${DATA.eliminated.length}</div></div>
+    <div class="stat"><div class="label">Vândute</div><div class="value">${(DATA.sold||[]).length}</div></div>
   `;
 }
 
@@ -223,6 +277,9 @@ function buildFilters() {
     <label style="display:flex;align-items:center;gap:4px;font-size:.8em;color:var(--muted);cursor:pointer">
       <input type="checkbox" id="fDrops" onchange="applyFilters()"> Doar scăderi
     </label>
+    <button class="filter-btn" id="fPref" onclick="toggleFilterBtn('fPref')">⭐ Preferate</button>
+    <button class="filter-btn" id="fShort" onclick="toggleFilterBtn('fShort')">📋 Short List</button>
+    <button class="filter-btn" id="fConfirmed" onclick="toggleFilterBtn('fConfirmed')">✓ Confirmed</button>
     <span class="count" id="filterCount"></span>
   `;
 }
@@ -234,6 +291,10 @@ function applyFilters() {
   const maxPpm = parseInt(document.getElementById('fPpm').value) || 999999;
   const dropsOnly = document.getElementById('fDrops').checked;
   const source = document.getElementById('fSource').value;
+  const prefOnly = document.getElementById('fPref').classList.contains('active');
+  const shortOnly = document.getElementById('fShort').classList.contains('active-amber');
+  const confirmedOnly = document.getElementById('fConfirmed').classList.contains('active-green');
+  const sl = getShortlist();
 
   filtered = DATA.listings.filter(l =>
     (!zone || l.zone === zone) &&
@@ -241,7 +302,10 @@ function applyFilters() {
     l.area_mp >= minArea &&
     l.price_per_mp <= maxPpm &&
     (!dropsOnly || l.price_change < 0) &&
-    (!source || (l.source || 'storia') === source)
+    (!source || (l.source || 'storia') === source) &&
+    (!prefOnly || PREFERRED_ZONES.has(l.zone)) &&
+    (!shortOnly || sl[l.id]) &&
+    (!confirmedOnly || sl[l.id] === 'preferred')
   );
 
   sortData();
@@ -258,12 +322,14 @@ function sortData() {
 }
 
 const COLS = [
+  { key: '_star', label: '★', nosort: true },
   { key: '_compare', label: '☐', nosort: true },
   { key: 'zone', label: 'Zonă' },
   { key: 'price_eur', label: 'Preț €' },
   { key: 'area_mp', label: 'm²' },
   { key: 'price_per_mp', label: '€/m²' },
   { key: 'price_change', label: 'Δ Preț' },
+  { key: '_reno', label: 'Renovare', nosort: true },
   { key: 'sector', label: 'Sector' },
   { key: 'seismic_risk', label: 'Seismic' },
   { key: 'first_seen', label: 'Văzut' },
@@ -279,18 +345,32 @@ function renderTable() {
   ).join('') + '</tr>';
 
   const tbody = document.getElementById('tbody');
+  const sl = getShortlist();
   tbody.innerHTML = filtered.map(l => {
     const isDrop = l.price_change < 0;
+    const isPref = PREFERRED_ZONES.has(l.zone);
+    const starState = sl[l.id] || '';
+    const starLabel = starState === 'preferred' ? '★' : starState === 'shortlist' ? '☆' : '·';
+    const starClass = starState ? `starred ${starState}` : '';
     const changeHtml = l.price_change !== 0
       ? `<span class="price-change ${l.price_change<0?'down':'up'}">${l.price_change>0?'+':''}${fmt(l.price_change)}€ (${l.price_change_pct>0?'+':''}${l.price_change_pct}%)</span>`
       : '<span style="color:var(--muted);font-size:.8em">—</span>';
+    const reno = l.claude_needs_renovation;
+    const renoHtml = reno
+      ? `<span class="reno-badge ${reno}">${reno === 'ready' ? '✓ Ready' : reno === 'partial' ? '◐ Partial' : reno === 'needs_renovation' ? '✗ Reno' : '? Check'}</span>`
+      : '<span style="color:var(--muted);font-size:.75em">—</span>';
+    const zoneBadge = isPref
+      ? `<span class="zone-badge" style="background:rgba(74,222,128,.15);color:var(--green)">${l.zone}</span>`
+      : `<span class="zone-badge">${l.zone}</span>`;
     return `<tr class="${isDrop?'price-drop':''}" style="cursor:pointer" onclick="openDetail('${l.id}')">
+      <td><button class="star-btn ${starClass}" onclick="toggleStar('${l.id}',event)" title="Click: Short List → Preferred → Remove">${starLabel}</button></td>
       <td><button class="compare-btn ${compareSet.has(l.id)?'selected':''}" onclick="event.stopPropagation();toggleCompare('${l.id}')">${compareSet.has(l.id)?'✓':'+'}</button></td>
-      <td><span class="zone-badge">${l.zone}</span></td>
+      <td>${zoneBadge}</td>
       <td><strong>${fmt(l.price_eur)}€</strong></td>
       <td>${l.area_mp} m²</td>
       <td>${l.price_per_mp}</td>
       <td>${changeHtml}</td>
+      <td>${renoHtml}</td>
       <td>S${l.sector || '?'}</td>
       <td class="${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">${l.seismic_risk==='none'?'✓ Safe':l.seismic_risk}</td>
       <td style="font-size:.8em;color:var(--muted)">${l.first_seen||''}</td>
@@ -442,7 +522,7 @@ function closeModal(id) { document.getElementById(id).classList.remove('visible'
 
 // Views
 function showView(view) {
-  ['listings','charts','eliminated'].forEach(v => {
+  ['listings','charts','eliminated','sold'].forEach(v => {
     document.getElementById('view-'+v).style.display = v === view ? '' : 'none';
   });
   document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
@@ -544,6 +624,23 @@ function renderEliminated() {
       <td>${e.url ? '<a href="'+e.url+'" target="_blank">Link →</a>' : '—'}</td>
     </tr>`
   ).join('');
+}
+
+// Sold table
+function renderSold() {
+  const sold = DATA.sold || [];
+  document.getElementById('sold-tbody').innerHTML = sold.map(s =>
+    `<tr>
+      <td>${s.id}</td>
+      <td><span class="zone-badge">${s.zone||'—'}</span></td>
+      <td>${s.price_eur ? fmt(s.price_eur)+'€' : '—'}</td>
+      <td>${s.area_mp ? s.area_mp+' m²' : '—'}</td>
+      <td>${s.price_per_mp || '—'}</td>
+      <td>S${s.sector || '?'}</td>
+      <td style="font-size:.8em;color:var(--muted)">${s.first_seen||'—'}</td>
+      <td>${s.url ? '<a href="'+s.url+'" target="_blank">'+ ((s.source||'storia')==='imobiliare'?'Imobiliare':'Storia') +' →</a>' : '—'}</td>
+    </tr>`
+  ).join('') || '<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:24px">Niciun apartament vândut încă</td></tr>';
 }
 
 // Close modals on overlay click
