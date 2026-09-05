@@ -128,6 +128,9 @@ tr.price-drop { background: rgba(74,222,128,.08); }
     <a href="#" onclick="showView('charts')">Grafice</a>
     <a href="#" onclick="showView('eliminated')">Eliminate</a>
     <a href="#" onclick="showView('sold')">Vândute</a>
+    <a href="#" onclick="showView('recommended')" style="background:rgba(74,222,128,.15);color:var(--green)">⭐ Recomandate</a>
+    <a href="#" onclick="showView('newlistings')" style="background:rgba(96,165,250,.15);color:var(--blue)">🆕 Noi</a>
+    <a href="#" onclick="showView('changes')">📊 Schimbări</a>
   </div>
 </div>
 
@@ -167,6 +170,44 @@ tr.price-drop { background: rgba(74,222,128,.08); }
       <thead><tr><th>ID</th><th>Zonă</th><th>Preț</th><th>Suprafață</th><th>€/m²</th><th>Sector</th><th>Prima apariție</th><th>Link</th></tr></thead>
       <tbody id="sold-tbody"></tbody>
     </table>
+  </div>
+</div>
+
+<div id="view-recommended" style="display:none">
+  <div style="padding:12px 0;color:var(--muted);font-size:.9em">
+    Listinguri din zonele tale preferate, sortate după valoare (€/m²). Doar cele fără risc seismic.
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>⭐</th><th>Zonă</th><th>Preț</th><th>Suprafață</th><th>€/m²</th><th>Sector</th><th>Risc</th><th>Prima apariție</th><th>Link</th>
+      </tr></thead>
+      <tbody id="rec-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div id="view-newlistings" style="display:none">
+  <div style="padding:12px 0;display:flex;align-items:center;gap:12px">
+    <span style="color:var(--muted);font-size:.9em">Listinguri apărute la ultima scanare:</span>
+    <select id="newScanDate" onchange="renderNewListings()" style="background:var(--card);color:var(--text);border:1px solid var(--border);padding:4px 8px;border-radius:6px"></select>
+    <span id="newCount" style="color:var(--blue);font-size:.85em"></span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>⭐</th><th>Zonă</th><th>Preț</th><th>Suprafață</th><th>€/m²</th><th>Sector</th><th>Risc</th><th>Sursă</th><th>Link</th>
+      </tr></thead>
+      <tbody id="new-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div id="view-changes" style="display:none">
+  <div style="padding:12px 0">
+    <h3 style="color:var(--text);margin:0 0 16px">Schimbări între scanări</h3>
+    <div id="changes-sold"></div>
+    <div id="changes-price" style="margin-top:24px"></div>
   </div>
 </div>
 
@@ -522,12 +563,134 @@ function closeModal(id) { document.getElementById(id).classList.remove('visible'
 
 // Views
 function showView(view) {
-  ['listings','charts','eliminated','sold'].forEach(v => {
+  ['listings','charts','eliminated','sold','recommended','newlistings','changes'].forEach(v => {
     document.getElementById('view-'+v).style.display = v === view ? '' : 'none';
   });
   document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
   event.target.classList.add('active');
   if (view === 'charts') renderCharts();
+  if (view === 'recommended') renderRecommended();
+  if (view === 'newlistings') renderNewListings();
+  if (view === 'changes') renderChanges();
+}
+
+function renderRecommended() {
+  const sl = getShortlist();
+  const safe = DATA.listings.filter(l => l.seismic_risk === 'none' && PREFERRED_ZONES.has(l.zone));
+  safe.sort((a,b) => (a.price_per_mp||9999) - (b.price_per_mp||9999));
+  document.getElementById('rec-tbody').innerHTML = safe.map(l => {
+    const starState = sl[l.id] || '';
+    const starLabel = starState === 'preferred' ? '★' : starState === 'shortlist' ? '☆' : '·';
+    const starClass = starState ? `starred ${starState}` : '';
+    return `<tr style="cursor:pointer" onclick="openDetail('${l.id}')">
+      <td><button class="star-btn ${starClass}" onclick="toggleStar('${l.id}',event)" title="Click: Short List → Preferred → Remove">${starLabel}</button></td>
+      <td><span class="zone-badge" style="background:rgba(74,222,128,.15);color:var(--green)">${l.zone}</span></td>
+      <td><strong>${fmt(l.price_eur)}€</strong></td>
+      <td>${l.area_mp} m²</td>
+      <td><strong>${l.price_per_mp}</strong></td>
+      <td>S${l.sector || '?'}</td>
+      <td class="${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">✓ Safe</td>
+      <td style="font-size:.8em;color:var(--muted)">${l.first_seen||''}</td>
+      <td><a href="${l.url}" target="_blank" onclick="event.stopPropagation()">${(l.source||'storia')==='imobiliare'?'Imobiliare':'Storia'} →</a></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="9" style="text-align:center;color:var(--muted);padding:24px">Niciun listing în zonele preferate</td></tr>';
+}
+
+function renderNewListings() {
+  // Build date dropdown from all first_seen dates
+  const dates = [...new Set(DATA.listings.map(l => l.first_seen).filter(Boolean))].sort().reverse();
+  const sel = document.getElementById('newScanDate');
+  if (!sel.options.length) {
+    dates.forEach(d => { const o = document.createElement('option'); o.value = d; o.text = d; sel.add(o); });
+  }
+  const chosenDate = sel.value || dates[0] || '';
+  const newOnes = DATA.listings.filter(l => l.first_seen === chosenDate);
+  newOnes.sort((a,b) => (a.price_per_mp||9999) - (b.price_per_mp||9999));
+  document.getElementById('newCount').textContent = `${newOnes.length} listinguri noi`;
+  const sl = getShortlist();
+  document.getElementById('new-tbody').innerHTML = newOnes.map(l => {
+    const starState = sl[l.id] || '';
+    const starLabel = starState === 'preferred' ? '★' : starState === 'shortlist' ? '☆' : '·';
+    const starClass = starState ? `starred ${starState}` : '';
+    const isPref = PREFERRED_ZONES.has(l.zone);
+    const zoneBadge = isPref
+      ? `<span class="zone-badge" style="background:rgba(74,222,128,.15);color:var(--green)">${l.zone}</span>`
+      : `<span class="zone-badge">${l.zone}</span>`;
+    return `<tr style="cursor:pointer" onclick="openDetail('${l.id}')">
+      <td><button class="star-btn ${starClass}" onclick="toggleStar('${l.id}',event)">${starLabel}</button></td>
+      <td>${zoneBadge}</td>
+      <td><strong>${fmt(l.price_eur)}€</strong></td>
+      <td>${l.area_mp} m²</td>
+      <td>${l.price_per_mp}</td>
+      <td>S${l.sector || '?'}</td>
+      <td class="${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">${l.seismic_risk==='none'?'✓ Safe':l.seismic_risk}</td>
+      <td>${(l.source||'storia')==='imobiliare'?'Imobiliare':'Storia'}</td>
+      <td><a href="${l.url}" target="_blank" onclick="event.stopPropagation()">Deschide →</a></td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="9" style="text-align:center;color:var(--muted);padding:24px">Niciun listing nou la această dată</td></tr>';
+}
+
+function renderChanges() {
+  // Sold section
+  const sold = DATA.sold || [];
+  let soldHtml = '<h4 style="color:#f87171;margin:0 0 8px">🔴 Vândute</h4>';
+  if (sold.length) {
+    soldHtml += '<div class="table-wrap"><table><thead><tr><th>ID</th><th>Zonă</th><th>Preț</th><th>Suprafață</th><th>€/m²</th><th>Prima apariție</th><th>Ultima apariție</th><th>Link</th></tr></thead><tbody>';
+    soldHtml += sold.map(s => `<tr>
+      <td>${s.id}</td>
+      <td><span class="zone-badge">${s.zone||'—'}</span></td>
+      <td>${s.price_eur ? fmt(s.price_eur)+'€' : '—'}</td>
+      <td>${s.area_mp ? s.area_mp+' m²' : '—'}</td>
+      <td>${s.price_per_mp || '—'}</td>
+      <td style="font-size:.8em;color:var(--muted)">${s.first_seen||'—'}</td>
+      <td style="font-size:.8em;color:var(--muted)">${s.last_seen||'—'}</td>
+      <td>${s.url ? '<a href="'+s.url+'" target="_blank">'+((s.source||'storia')==='imobiliare'?'Imobiliare':'Storia')+' →</a>' : '—'}</td>
+    </tr>`).join('');
+    soldHtml += '</tbody></table></div>';
+  } else {
+    soldHtml += '<p style="color:var(--muted);font-size:.9em">Niciun apartament vândut încă.</p>';
+  }
+  document.getElementById('changes-sold').innerHTML = soldHtml;
+
+  // Price changes section
+  const withChanges = DATA.listings.filter(l => l.price_change !== 0 && l.price_history && l.price_history.length > 1);
+  // Also include all listings with multi-entry price_history (even if current price_change is 0 but had changes before)
+  const allWithHistory = DATA.listings.filter(l => l.price_history && l.price_history.length > 1);
+  const combined = [...new Map([...withChanges, ...allWithHistory].map(l => [l.id, l])).values()];
+  combined.sort((a,b) => (a.price_change||0) - (b.price_change||0)); // biggest drops first
+
+  let priceHtml = '<h4 style="color:var(--text);margin:0 0 8px">📊 Schimbări de preț</h4>';
+  if (combined.length) {
+    priceHtml += '<div class="table-wrap"><table><thead><tr><th>⭐</th><th>Zonă</th><th>Preț actual</th><th>Preț anterior</th><th>Diferență</th><th>%</th><th>Istoric</th><th>Link</th></tr></thead><tbody>';
+    const sl = getShortlist();
+    priceHtml += combined.map(l => {
+      const starState = sl[l.id] || '';
+      const starLabel = starState === 'preferred' ? '★' : starState === 'shortlist' ? '☆' : '·';
+      const starClass = starState ? `starred ${starState}` : '';
+      const hist = l.price_history || [];
+      const prev = hist.length >= 2 ? hist[hist.length-2].price : l.price_eur;
+      const diff = l.price_eur - prev;
+      const pct = prev ? ((diff/prev)*100).toFixed(1) : '0';
+      const diffClass = diff < 0 ? 'color:#4ade80' : diff > 0 ? 'color:#f87171' : '';
+      const arrow = diff < 0 ? '↓' : diff > 0 ? '↑' : '→';
+      const histStr = hist.map(h => `${h.date}: ${fmt(h.price)}€`).join(' → ');
+      const isPref = PREFERRED_ZONES.has(l.zone);
+      return `<tr style="cursor:pointer" onclick="openDetail('${l.id}')">
+        <td><button class="star-btn ${starClass}" onclick="toggleStar('${l.id}',event)">${starLabel}</button></td>
+        <td><span class="zone-badge"${isPref?' style="background:rgba(74,222,128,.15);color:var(--green)"':''}>${l.zone}</span></td>
+        <td><strong>${fmt(l.price_eur)}€</strong></td>
+        <td style="color:var(--muted)">${fmt(prev)}€</td>
+        <td style="${diffClass};font-weight:600">${arrow} ${diff>0?'+':''}${fmt(diff)}€</td>
+        <td style="${diffClass}">${diff>0?'+':''}${pct}%</td>
+        <td style="font-size:.75em;color:var(--muted);max-width:300px;overflow:hidden;text-overflow:ellipsis">${histStr}</td>
+        <td><a href="${l.url}" target="_blank" onclick="event.stopPropagation()">${(l.source||'storia')==='imobiliare'?'Imobiliare':'Storia'} →</a></td>
+      </tr>`;
+    }).join('');
+    priceHtml += '</tbody></table></div>';
+  } else {
+    priceHtml += '<p style="color:var(--muted);font-size:.9em">Nicio schimbare de preț.</p>';
+  }
+  document.getElementById('changes-price').innerHTML = priceHtml;
 }
 
 function renderCharts() {

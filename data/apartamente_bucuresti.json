@@ -3,10 +3,10 @@
     "project": "Investiție imobiliară București",
     "description": "Apartamente 2 camere sub 160.000€ în zone centrale, verificate individual pentru risc seismic",
     "created": "2026-07-26",
-    "last_scan": "2026-08-29",
+    "last_scan": "2026-09-05",
     "filters": {
       "rooms": 2,
-      "min_area_mp": 50,
+      "min_area_mp": 45,
       "max_price_eur": 160000,
       "zones_focus": [
         "Calea Moșilor",
@@ -5032,14 +5032,14 @@
       "url": "https://www.storia.ro/ro/oferta/IDI2mk",
       "price_per_mp": 2382,
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 131000
         }
       ],
-      "status": "active",
+      "status": "sold",
       "notes": "USER_SELECTIE"
     },
     {
@@ -5110,14 +5110,14 @@
       "url": "https://www.storia.ro/ro/oferta/IDI26D",
       "price_per_mp": 2418,
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 133000
         }
       ],
-      "status": "active",
+      "status": "sold",
       "notes": "USER_SELECTIE"
     },
     {
@@ -6397,7 +6397,7 @@
     },
     {
       "id": "IDIdtL",
-      "price_eur": 144890,
+      "price_eur": 154990,
       "area_mp": 57,
       "zone": "Ștefan cel Mare",
       "sub_zone": "",
@@ -6409,10 +6409,15 @@
       "seismic_risk": false,
       "seismic_note": "",
       "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-obor-renovat-IDIdtL",
-      "price_per_mp": 2542,
+      "price_per_mp": 2719,
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
-      "price_history": [],
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 154990
+        }
+      ],
       "status": "active",
       "notes": "USER_SELECTIE — Scan 160k - Stefan cel Mare"
     },
@@ -7121,7 +7126,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7142,7 +7147,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7163,7 +7168,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7184,7 +7189,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7205,7 +7210,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7226,7 +7231,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7247,7 +7252,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7268,7 +7273,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7289,7 +7294,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7310,7 +7315,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7331,7 +7336,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7352,7 +7357,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7373,7 +7378,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7394,7 +7399,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7415,7 +7420,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7436,7 +7441,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7457,7 +7462,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7478,7 +7483,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7499,7 +7504,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7523,7 +7528,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7551,7 +7556,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7572,7 +7577,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7593,7 +7598,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7614,7 +7619,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7635,7 +7640,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7656,7 +7661,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7678,7 +7683,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7699,7 +7704,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7720,7 +7725,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7745,7 +7750,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7766,7 +7771,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7787,7 +7792,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7808,7 +7813,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7829,7 +7834,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7850,7 +7855,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7871,7 +7876,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7892,7 +7897,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7913,7 +7918,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7934,7 +7939,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7955,7 +7960,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -7976,7 +7981,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-21",
@@ -9180,7 +9185,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275641687",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": "USER_SELECTIE - mobilat+utilat, balcon, AC, termopan, langa metrou Iancului",
       "price_history": [
@@ -9192,9 +9197,9 @@
     },
     {
       "id": "275830051",
-      "price_eur": 130000,
+      "price_eur": 125000,
       "area_mp": 55,
-      "price_per_mp": 2364,
+      "price_per_mp": 2273,
       "zone": "Iancului",
       "sub_zone": "Mihai Bravu",
       "sector": 2,
@@ -9207,13 +9212,17 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275830051",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": "USER_SELECTIE - semidecomandat, bloc reabilitat, mobilat+utilat, vis-a-vis Lic Iulia Hasdeu",
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 130000
+        },
+        {
+          "date": "2026-09-05",
+          "price": 125000
         }
       ]
     },
@@ -11657,7 +11666,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11678,7 +11687,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11702,7 +11711,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11723,7 +11732,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11744,7 +11753,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11765,7 +11774,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11786,7 +11795,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11807,7 +11816,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11831,7 +11840,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11852,7 +11861,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11873,7 +11882,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11897,7 +11906,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11918,7 +11927,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11939,7 +11948,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11960,7 +11969,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -11981,7 +11990,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -12002,7 +12011,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -12023,7 +12032,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -12044,7 +12053,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -12065,7 +12074,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -12086,7 +12095,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -12107,7 +12116,7 @@
       "seismic_risk": "none",
       "status": "active",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "price_history": [
         {
           "date": "2026-08-29",
@@ -12115,6 +12124,710 @@
         }
       ],
       "url": "https://www.imobiliare.ro/oferta/275912318"
+    },
+    {
+      "id": "275930507",
+      "price_eur": 139800,
+      "area_mp": 53.6,
+      "price_per_mp": 2608,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 139800
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-obor-2-camere-275930507",
+      "notes": ""
+    },
+    {
+      "id": "253355102",
+      "price_eur": 109117,
+      "area_mp": 51,
+      "price_per_mp": 2140,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 109117
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-253355102",
+      "notes": ""
+    },
+    {
+      "id": "253658202",
+      "price_eur": 104326,
+      "area_mp": 50,
+      "price_per_mp": 2087,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 104326
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-253658202",
+      "notes": ""
+    },
+    {
+      "id": "274929010",
+      "price_eur": 133000,
+      "area_mp": 50.55,
+      "price_per_mp": 2631,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 133000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-274929010",
+      "notes": ""
+    },
+    {
+      "id": "275947628",
+      "price_eur": 110000,
+      "area_mp": 52,
+      "price_per_mp": 2115,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 110000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275947628",
+      "notes": ""
+    },
+    {
+      "id": "275946350",
+      "price_eur": 124900,
+      "area_mp": 53,
+      "price_per_mp": 2357,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 124900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275946350",
+      "notes": ""
+    },
+    {
+      "id": "275879535",
+      "price_eur": 153998,
+      "area_mp": 67,
+      "price_per_mp": 2298,
+      "zone": "Eminescu",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 153998
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-eminescu-mobilat-2-camere-275879535",
+      "notes": ""
+    },
+    {
+      "id": "275882093",
+      "price_eur": 119500,
+      "area_mp": 53,
+      "price_per_mp": 2255,
+      "zone": "Grivita",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 119500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-grivita-mobilat-2-camere-275882093",
+      "notes": ""
+    },
+    {
+      "id": "275866308",
+      "price_eur": 80000,
+      "area_mp": 50,
+      "price_per_mp": 1600,
+      "zone": "Grivita",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 80000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-grivita-2-camere-275866308",
+      "notes": ""
+    },
+    {
+      "id": "275873752",
+      "price_eur": 118000,
+      "area_mp": 55,
+      "price_per_mp": 2145,
+      "zone": "Vatra Luminoasa",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 118000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-mobilat-2-camere-275873752",
+      "notes": ""
+    },
+    {
+      "id": "275721402",
+      "price_eur": 114500,
+      "area_mp": 50.3,
+      "price_per_mp": 2276,
+      "zone": "Vatra Luminoasa",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 114500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275721402",
+      "notes": ""
+    },
+    {
+      "id": "275735548",
+      "price_eur": 99900,
+      "area_mp": 45,
+      "price_per_mp": 2220,
+      "zone": "Vatra Luminoasa",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 99900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275735548",
+      "notes": ""
+    },
+    {
+      "id": "275732177",
+      "price_eur": 89000,
+      "area_mp": 49,
+      "price_per_mp": 1816,
+      "zone": "Nerva Traian",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 89000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-nerva-traian-2-camere-275732177",
+      "notes": ""
+    },
+    {
+      "id": "275748780",
+      "price_eur": 150000,
+      "area_mp": 56,
+      "price_per_mp": 2679,
+      "zone": "Nerva Traian",
+      "sub_zone": "",
+      "sector": 3,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 150000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-nerva-traian-mobilat-2-camere-275748780",
+      "notes": ""
+    },
+    {
+      "id": "275939195",
+      "price_eur": 158800,
+      "area_mp": 70,
+      "price_per_mp": 2269,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 158800
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275939195",
+      "notes": ""
+    },
+    {
+      "id": "275464697",
+      "price_eur": 68000,
+      "area_mp": 46,
+      "price_per_mp": 1478,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 68000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275464697",
+      "notes": ""
+    },
+    {
+      "id": "275672894",
+      "price_eur": 150000,
+      "area_mp": 46,
+      "price_per_mp": 3261,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 150000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-mobilat-2-camere-275672894",
+      "notes": ""
+    },
+    {
+      "id": "275924271",
+      "price_eur": 95000,
+      "area_mp": 45,
+      "price_per_mp": 2111,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 95000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275924271",
+      "notes": ""
+    },
+    {
+      "id": "275872557",
+      "price_eur": 87500,
+      "area_mp": 64,
+      "price_per_mp": 1367,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 87500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275872557",
+      "notes": ""
+    },
+    {
+      "id": "275935268",
+      "price_eur": 75000,
+      "area_mp": 47,
+      "price_per_mp": 1596,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 75000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275935268",
+      "notes": ""
+    },
+    {
+      "id": "275860893",
+      "price_eur": 120000,
+      "area_mp": 58.05,
+      "price_per_mp": 2067,
+      "zone": "Domenii",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 120000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275860893",
+      "notes": ""
+    },
+    {
+      "id": "275922617",
+      "price_eur": 98000,
+      "area_mp": 47,
+      "price_per_mp": 2085,
+      "zone": "Domenii",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 98000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275922617",
+      "notes": ""
+    },
+    {
+      "id": "275947695",
+      "price_eur": 85700,
+      "area_mp": 45,
+      "price_per_mp": 1904,
+      "zone": "Domenii",
+      "sub_zone": "",
+      "sector": 1,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 85700
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275947695",
+      "notes": ""
+    },
+    {
+      "id": "275947916",
+      "price_eur": 102000,
+      "area_mp": 55,
+      "price_per_mp": 1855,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 0,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 102000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-mobilat-2-camere-275947916",
+      "notes": ""
+    },
+    {
+      "id": "275672604",
+      "price_eur": 124900,
+      "area_mp": 45,
+      "price_per_mp": 2776,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 0,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 124900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-2-camere-275672604",
+      "notes": ""
+    },
+    {
+      "id": "275521147",
+      "price_eur": 140000,
+      "area_mp": 48,
+      "price_per_mp": 2917,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 0,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 140000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-mobilat-2-camere-275521147",
+      "notes": ""
+    },
+    {
+      "id": "275947923",
+      "price_eur": 102000,
+      "area_mp": 55,
+      "price_per_mp": 1855,
+      "zone": "Cismigiu",
+      "sub_zone": "",
+      "sector": 0,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 102000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-cismigiu-mobilat-2-camere-275947923",
+      "notes": ""
+    },
+    {
+      "id": "275891261",
+      "price_eur": 159000,
+      "area_mp": 54,
+      "price_per_mp": 2944,
+      "zone": "Cismigiu",
+      "sub_zone": "",
+      "sector": 0,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 159000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-cismigiu-mobilat-2-camere-275891261",
+      "notes": ""
+    },
+    {
+      "id": "275737860",
+      "price_eur": 112500,
+      "area_mp": 48.48,
+      "price_per_mp": 2321,
+      "zone": "Vacaresti",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 112500
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-vacaresti-2-camere-275737860",
+      "notes": ""
+    },
+    {
+      "id": "275883604",
+      "price_eur": 135000,
+      "area_mp": 47,
+      "price_per_mp": 2872,
+      "zone": "Cotroceni",
+      "sub_zone": "",
+      "sector": 5,
+      "source": "imobiliare",
+      "seismic_risk": "needs_check",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 135000
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-5-cotroceni-2-camere-275883604",
+      "notes": ""
+    },
+    {
+      "id": "275786486",
+      "price_eur": 124900,
+      "area_mp": 63,
+      "price_per_mp": 1983,
+      "zone": "Victoriei",
+      "sub_zone": "",
+      "sector": 0,
+      "source": "imobiliare",
+      "seismic_risk": "needs_check",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 124900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-victoriei-mobilat-2-camere-275786486",
+      "notes": ""
+    },
+    {
+      "id": "275644695",
+      "price_eur": 131900,
+      "area_mp": 51,
+      "price_per_mp": 2586,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 4,
+      "source": "imobiliare",
+      "seismic_risk": "none",
+      "status": "active",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 131900
+        }
+      ],
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-timpuri-noi-mobilat-2-camere-275644695",
+      "notes": ""
     }
   ],
   "eliminated": [
@@ -12404,6 +13117,44 @@
       "reason": "Încadrat la U2 urgență seismică",
       "source": "storia",
       "date_eliminated": "2026-08-29"
+    },
+    {
+      "id": "275373082",
+      "zone": "Centrul Istoric",
+      "price_eur": 110000,
+      "area_mp": 59,
+      "reason": "Risc seismic clasa 1",
+      "source": "imobiliare",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-centrul-istoric-mobilat-2-camere-275373082",
+      "date": "2026-09-05"
+    }
+  ],
+  "sold": [
+    {
+      "id": "IDI2mk",
+      "zone": "Obor",
+      "price_eur": 131000,
+      "area_mp": 55,
+      "price_per_mp": 2382,
+      "sector": 2,
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-09-05",
+      "sold_date": "2026-09-05",
+      "url": "https://www.storia.ro/ro/oferta/IDI2mk"
+    },
+    {
+      "id": "IDI26D",
+      "zone": "Tineretului",
+      "price_eur": 133000,
+      "area_mp": 55,
+      "price_per_mp": 2418,
+      "sector": 3,
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-09-05",
+      "sold_date": "2026-09-05",
+      "url": "https://www.storia.ro/ro/oferta/IDI26D"
     }
   ]
 }

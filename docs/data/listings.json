@@ -1,23 +1,23 @@
 {
   "generated": "",
   "stats": {
-    "active": 392,
+    "active": 422,
     "price_min": 66000,
     "price_max": 160000,
-    "price_avg": 126336,
-    "zones": 62
+    "price_avg": 125548,
+    "zones": 63
   },
   "zone_distribution": [
     {
-      "zone": "Tineretului",
-      "count": 30
+      "zone": "Vitan",
+      "count": 32
     },
     {
       "zone": "Dristor",
       "count": 30
     },
     {
-      "zone": "Vitan",
+      "zone": "Tineretului",
       "count": 29
     },
     {
@@ -33,6 +33,10 @@
       "count": 17
     },
     {
+      "zone": "Iancului",
+      "count": 12
+    },
+    {
       "zone": "Cișmigiu",
       "count": 12
     },
@@ -41,7 +45,7 @@
       "count": 12
     },
     {
-      "zone": "Iancului",
+      "zone": "Timpuri Noi",
       "count": 10
     },
     {
@@ -57,8 +61,12 @@
       "count": 9
     },
     {
-      "zone": "Timpuri Noi",
+      "zone": "Domenii",
       "count": 9
+    },
+    {
+      "zone": "Eminescu",
+      "count": 8
     },
     {
       "zone": "1 Mai",
@@ -66,6 +74,10 @@
     },
     {
       "zone": "Vatra Luminoasă",
+      "count": 7
+    },
+    {
+      "zone": "Universitate",
       "count": 7
     },
     {
@@ -81,11 +93,11 @@
       "count": 7
     },
     {
-      "zone": "Eminescu",
+      "zone": "Calea Moșilor",
       "count": 7
     },
     {
-      "zone": "Calea Moșilor",
+      "zone": "Armeneasca",
       "count": 7
     },
     {
@@ -101,15 +113,19 @@
       "count": 6
     },
     {
-      "zone": "Domenii",
-      "count": 6
-    },
-    {
       "zone": "Brancusi",
       "count": 6
     },
     {
+      "zone": "Vacaresti",
+      "count": 5
+    },
+    {
       "zone": "Decebal",
+      "count": 5
+    },
+    {
+      "zone": "Cismigiu",
       "count": 5
     },
     {
@@ -117,11 +133,7 @@
       "count": 5
     },
     {
-      "zone": "Vacaresti",
-      "count": 4
-    },
-    {
-      "zone": "Universitate",
+      "zone": "Victoriei",
       "count": 4
     },
     {
@@ -133,7 +145,19 @@
       "count": 4
     },
     {
+      "zone": "Nerva Traian",
+      "count": 4
+    },
+    {
+      "zone": "Grivita",
+      "count": 4
+    },
+    {
       "zone": "Dorobanți",
+      "count": 4
+    },
+    {
+      "zone": "Cotroceni",
       "count": 4
     },
     {
@@ -141,15 +165,7 @@
       "count": 4
     },
     {
-      "zone": "Victoriei",
-      "count": 3
-    },
-    {
-      "zone": "Cotroceni",
-      "count": 3
-    },
-    {
-      "zone": "Cismigiu",
+      "zone": "Vatra Luminoasa",
       "count": 3
     },
     {
@@ -174,14 +190,6 @@
     },
     {
       "zone": "Parcul Carol",
-      "count": 2
-    },
-    {
-      "zone": "Nerva Traian",
-      "count": 2
-    },
-    {
-      "zone": "Grivita",
       "count": 2
     },
     {
@@ -250,10 +258,6 @@
     },
     {
       "zone": "Aviației",
-      "count": 1
-    },
-    {
-      "zone": "Armeneasca",
       "count": 1
     }
   ],
@@ -324,7 +328,7 @@
       "url": "https://www.imobiliare.ro/oferta/275842231",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -351,7 +355,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275842278",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -502,6 +506,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275872557",
+      "price_eur": 87500,
+      "area_mp": 64.0,
+      "price_per_mp": 1367,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275872557",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 87500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDIj6q",
       "price_eur": 88999,
       "area_mp": 64.0,
@@ -562,7 +593,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-194616267",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -596,6 +627,33 @@
         {
           "date": "2026-08-21",
           "price": 81000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275464697",
+      "price_eur": 68000,
+      "area_mp": 46.0,
+      "price_per_mp": 1478,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275464697",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 68000
         }
       ],
       "price_change": 0,
@@ -910,6 +968,60 @@
         {
           "date": "2026-08-29",
           "price": 79705
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275935268",
+      "price_eur": 75000,
+      "area_mp": 47.0,
+      "price_per_mp": 1596,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275935268",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 75000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275866308",
+      "price_eur": 80000,
+      "area_mp": 50.0,
+      "price_per_mp": 1600,
+      "zone": "Grivita",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-grivita-2-camere-275866308",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 80000
         }
       ],
       "price_change": 0,
@@ -1298,7 +1410,7 @@
       "url": "https://www.imobiliare.ro/oferta/275882571",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1406,7 +1518,7 @@
       "url": "https://www.imobiliare.ro/oferta/273362897",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1617,7 +1729,7 @@
       "url": "https://www.imobiliare.ro/oferta/275813087",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1671,7 +1783,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275818026",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1698,7 +1810,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275801855",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1882,7 +1994,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275839761",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1909,7 +2021,7 @@
       "url": "https://www.imobiliare.ro/oferta/275922259",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1958,7 +2070,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275722644",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1992,6 +2104,33 @@
         {
           "date": "2026-08-29",
           "price": 97999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275732177",
+      "price_eur": 89000,
+      "area_mp": 49.0,
+      "price_per_mp": 1816,
+      "zone": "Nerva Traian",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-nerva-traian-2-camere-275732177",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 89000
         }
       ],
       "price_change": 0,
@@ -2066,7 +2205,7 @@
       "url": "https://www.imobiliare.ro/oferta/275620264",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2239,6 +2378,60 @@
       "user_confirmed": ""
     },
     {
+      "id": "275947916",
+      "price_eur": 102000,
+      "area_mp": 55.0,
+      "price_per_mp": 1855,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 0,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-mobilat-2-camere-275947916",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 102000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275947923",
+      "price_eur": 102000,
+      "area_mp": 55.0,
+      "price_per_mp": 1855,
+      "zone": "Cismigiu",
+      "sub_zone": "",
+      "sector": 0,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-cismigiu-mobilat-2-camere-275947923",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 102000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDI5p7",
       "price_eur": 119000,
       "area_mp": 64.0,
@@ -2277,13 +2470,40 @@
       "url": "https://www.imobiliare.ro/oferta/275916932",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 94900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275947695",
+      "price_eur": 85700,
+      "area_mp": 45.0,
+      "price_per_mp": 1904,
+      "zone": "Domenii",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275947695",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 85700
         }
       ],
       "price_change": 0,
@@ -2380,7 +2600,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274751571",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2537,7 +2757,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275721578",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2591,7 +2811,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274752265",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2727,6 +2947,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275786486",
+      "price_eur": 124900,
+      "area_mp": 63.0,
+      "price_per_mp": 1983,
+      "zone": "Victoriei",
+      "sub_zone": "",
+      "sector": 0,
+      "seismic_risk": "needs_check",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-victoriei-mobilat-2-camere-275786486",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 124900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDHzHk",
       "price_eur": 135000,
       "area_mp": 68.0,
@@ -2841,7 +3088,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275850986",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3169,7 +3416,7 @@
       "url": "https://www.imobiliare.ro/oferta/275885219",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3196,7 +3443,7 @@
       "url": "https://www.imobiliare.ro/oferta/275924163",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3277,13 +3524,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275730431",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 111500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275860893",
+      "price_eur": 120000,
+      "area_mp": 58.05,
+      "price_per_mp": 2067,
+      "zone": "Domenii",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275860893",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 120000
         }
       ],
       "price_change": 0,
@@ -3304,7 +3578,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-262410661",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3369,6 +3643,60 @@
       "user_confirmed": ""
     },
     {
+      "id": "275922617",
+      "price_eur": 98000,
+      "area_mp": 47.0,
+      "price_per_mp": 2085,
+      "zone": "Domenii",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275922617",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 98000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "253658202",
+      "price_eur": 104326,
+      "area_mp": 50.0,
+      "price_per_mp": 2087,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-253658202",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 104326
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "275514619",
       "price_eur": 113000,
       "area_mp": 54.08,
@@ -3380,7 +3708,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275514619",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3488,7 +3816,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-262410450",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3596,7 +3924,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275737561",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3639,6 +3967,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275924271",
+      "price_eur": 95000,
+      "area_mp": 45.0,
+      "price_per_mp": 2111,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275924271",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 95000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDHZCA",
       "price_eur": 109900,
       "area_mp": 52.0,
@@ -3665,6 +4020,33 @@
       ],
       "price_change": -1100,
       "price_change_pct": -1.0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275947628",
+      "price_eur": 110000,
+      "area_mp": 52.0,
+      "price_per_mp": 2115,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275947628",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 110000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
       "claude_needs_renovation": "",
       "renovation_notes": "",
       "user_confirmed": ""
@@ -3773,6 +4155,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "253355102",
+      "price_eur": 109117,
+      "area_mp": 51.0,
+      "price_per_mp": 2140,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-253355102",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 109117
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDI3D8",
       "price_eur": 120000,
       "area_mp": 56.0,
@@ -3844,6 +4253,33 @@
       "price_history": [
         {
           "date": "2026-08-15",
+          "price": 118000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275873752",
+      "price_eur": 118000,
+      "area_mp": 55.0,
+      "price_per_mp": 2145,
+      "zone": "Vatra Luminoasa",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-mobilat-2-camere-275873752",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
           "price": 118000
         }
       ],
@@ -4486,7 +4922,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-269179317",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4520,6 +4956,33 @@
         {
           "date": "2026-08-15",
           "price": 122000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275735548",
+      "price_eur": 99900,
+      "area_mp": 45.0,
+      "price_per_mp": 2220,
+      "zone": "Vatra Luminoasa",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275735548",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 99900
         }
       ],
       "price_change": 0,
@@ -4729,7 +5192,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275443682",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4756,7 +5219,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275834639",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4859,7 +5322,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275727114",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4892,6 +5355,33 @@
       "price_history": [
         {
           "date": "2026-08-21",
+          "price": 119500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275882093",
+      "price_eur": 119500,
+      "area_mp": 53.0,
+      "price_per_mp": 2255,
+      "zone": "Grivita",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-grivita-mobilat-2-camere-275882093",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
           "price": 119500
         }
       ],
@@ -4983,6 +5473,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275939195",
+      "price_eur": 158800,
+      "area_mp": 70.0,
+      "price_per_mp": 2269,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275939195",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 158800
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDHb71",
       "price_eur": 113500,
       "area_mp": 50.0,
@@ -5010,6 +5527,37 @@
       "user_confirmed": ""
     },
     {
+      "id": "275830051",
+      "price_eur": 125000,
+      "area_mp": 55.0,
+      "price_per_mp": 2273,
+      "zone": "Iancului",
+      "sub_zone": "Mihai Bravu",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275830051",
+      "source": "imobiliare",
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "USER_SELECTIE - semidecomandat, bloc reabilitat, mobilat+utilat, vis-a-vis Lic Iulia Hasdeu",
+      "price_history": [
+        {
+          "date": "2026-08-29",
+          "price": 130000
+        },
+        {
+          "date": "2026-09-05",
+          "price": 125000
+        }
+      ],
+      "price_change": -5000,
+      "price_change_pct": -3.8,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDIlJo",
       "price_eur": 125000,
       "area_mp": 55.0,
@@ -5028,6 +5576,33 @@
         {
           "date": "2026-08-29",
           "price": 125000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275721402",
+      "price_eur": 114500,
+      "area_mp": 50.3,
+      "price_per_mp": 2276,
+      "zone": "Vatra Luminoasa",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275721402",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 114500
         }
       ],
       "price_change": 0,
@@ -5178,7 +5753,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275838406",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5212,6 +5787,33 @@
         {
           "date": "2026-08-15",
           "price": 140000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275879535",
+      "price_eur": 153998,
+      "area_mp": 67.0,
+      "price_per_mp": 2298,
+      "zone": "Eminescu",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-eminescu-mobilat-2-camere-275879535",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 153998
         }
       ],
       "price_change": 0,
@@ -5347,6 +5949,33 @@
         {
           "date": "2026-08-15",
           "price": 129999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275737860",
+      "price_eur": 112500,
+      "area_mp": 48.48,
+      "price_per_mp": 2321,
+      "zone": "Vacaresti",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-vacaresti-2-camere-275737860",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 112500
         }
       ],
       "price_change": 0,
@@ -5556,7 +6185,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274979185",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5610,13 +6239,40 @@
       "url": "https://www.imobiliare.ro/oferta/275927509",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275946350",
+      "price_eur": 124900,
+      "area_mp": 53.0,
+      "price_per_mp": 2357,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275946350",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 124900
         }
       ],
       "price_change": 0,
@@ -5724,33 +6380,6 @@
       "price_history": [
         {
           "date": "2026-08-21",
-          "price": 130000
-        }
-      ],
-      "price_change": 0,
-      "price_change_pct": 0,
-      "claude_needs_renovation": "",
-      "renovation_notes": "",
-      "user_confirmed": ""
-    },
-    {
-      "id": "275830051",
-      "price_eur": 130000,
-      "area_mp": 55.0,
-      "price_per_mp": 2364,
-      "zone": "Iancului",
-      "sub_zone": "Mihai Bravu",
-      "sector": 2,
-      "seismic_risk": "none",
-      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275830051",
-      "source": "imobiliare",
-      "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
-      "status": "active",
-      "notes": "USER_SELECTIE - semidecomandat, bloc reabilitat, mobilat+utilat, vis-a-vis Lic Iulia Hasdeu",
-      "price_history": [
-        {
-          "date": "2026-08-29",
           "price": 130000
         }
       ],
@@ -5950,33 +6579,6 @@
       "user_confirmed": ""
     },
     {
-      "id": "IDI2mk",
-      "price_eur": 131000,
-      "area_mp": 55.0,
-      "price_per_mp": 2382,
-      "zone": "Obor",
-      "sub_zone": "",
-      "sector": 2,
-      "seismic_risk": "none",
-      "url": "https://www.storia.ro/ro/oferta/IDI2mk",
-      "source": "storia",
-      "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
-      "status": "active",
-      "notes": "USER_SELECTIE",
-      "price_history": [
-        {
-          "date": "2026-08-15",
-          "price": 131000
-        }
-      ],
-      "price_change": 0,
-      "price_change_pct": 0,
-      "claude_needs_renovation": "",
-      "renovation_notes": "",
-      "user_confirmed": ""
-    },
-    {
       "id": "275908022",
       "price_eur": 129000,
       "area_mp": 54.0,
@@ -5988,7 +6590,7 @@
       "url": "https://www.imobiliare.ro/oferta/275908022",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6334,7 +6936,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275827304",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6361,7 +6963,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275827316",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6545,7 +7147,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275730848",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6572,40 +7174,13 @@
       "url": "https://www.imobiliare.ro/oferta/274861496",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 155485
-        }
-      ],
-      "price_change": 0,
-      "price_change_pct": 0,
-      "claude_needs_renovation": "",
-      "renovation_notes": "",
-      "user_confirmed": ""
-    },
-    {
-      "id": "IDI26D",
-      "price_eur": 133000,
-      "area_mp": 55.0,
-      "price_per_mp": 2418,
-      "zone": "Tineretului",
-      "sub_zone": "",
-      "sector": 3,
-      "seismic_risk": "none",
-      "url": "https://www.storia.ro/ro/oferta/IDI26D",
-      "source": "storia",
-      "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
-      "status": "active",
-      "notes": "USER_SELECTIE",
-      "price_history": [
-        {
-          "date": "2026-08-15",
-          "price": 133000
         }
       ],
       "price_change": 0,
@@ -6837,7 +7412,7 @@
       "url": "https://www.imobiliare.ro/oferta/275745509",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7053,7 +7628,7 @@
       "url": "https://www.imobiliare.ro/oferta/275910984",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7345,7 +7920,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-270959137",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7426,7 +8001,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275641687",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": "USER_SELECTIE - mobilat+utilat, balcon, AC, termopan, langa metrou Iancului",
       "price_history": [
@@ -7658,28 +8233,6 @@
       "user_confirmed": ""
     },
     {
-      "id": "IDIdtL",
-      "price_eur": 144890,
-      "area_mp": 57.0,
-      "price_per_mp": 2542,
-      "zone": "Ștefan cel Mare",
-      "sub_zone": "",
-      "sector": "",
-      "seismic_risk": "0",
-      "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-obor-renovat-IDIdtL",
-      "source": "storia",
-      "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
-      "status": "active",
-      "notes": "USER_SELECTIE — Scan 160k - Stefan cel Mare",
-      "price_history": [],
-      "price_change": 0,
-      "price_change_pct": 0,
-      "claude_needs_renovation": "",
-      "renovation_notes": "",
-      "user_confirmed": ""
-    },
-    {
       "id": "IDIjyn",
       "price_eur": 150000,
       "area_mp": 59.0,
@@ -7794,7 +8347,7 @@
       "url": "https://www.imobiliare.ro/oferta/275909809",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7821,7 +8374,7 @@
       "url": "https://www.imobiliare.ro/oferta/275447785",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7902,7 +8455,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275788524",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8145,13 +8698,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275697052",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 150000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275644695",
+      "price_eur": 131900,
+      "area_mp": 51.0,
+      "price_per_mp": 2586,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-timpuri-noi-mobilat-2-camere-275644695",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 131900
         }
       ],
       "price_change": 0,
@@ -8356,7 +8936,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275869358",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8426,6 +9006,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275930507",
+      "price_eur": 139800,
+      "area_mp": 53.6,
+      "price_per_mp": 2608,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-obor-2-camere-275930507",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 139800
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "275927639",
       "price_eur": 141000,
       "area_mp": 54.0,
@@ -8437,7 +9044,7 @@
       "url": "https://www.imobiliare.ro/oferta/275927639",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8464,7 +9071,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275887766",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8491,7 +9098,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275858854",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8592,6 +9199,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "274929010",
+      "price_eur": 133000,
+      "area_mp": 50.55,
+      "price_per_mp": 2631,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-274929010",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 133000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDIg73",
       "price_eur": 140000,
       "area_mp": 53.0,
@@ -8630,7 +9264,7 @@
       "url": "https://www.imobiliare.ro/oferta/275877411",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8711,7 +9345,7 @@
       "url": "https://www.imobiliare.ro/oferta/275784277",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8965,6 +9599,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275748780",
+      "price_eur": 150000,
+      "area_mp": 56.0,
+      "price_per_mp": 2679,
+      "zone": "Nerva Traian",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-nerva-traian-mobilat-2-camere-275748780",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 150000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "275844993",
       "price_eur": 139000,
       "area_mp": 51.76,
@@ -8976,7 +9637,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275844993",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9154,6 +9815,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "IDIdtL",
+      "price_eur": 154990,
+      "area_mp": 57.0,
+      "price_per_mp": 2719,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "",
+      "sector": "",
+      "seismic_risk": "0",
+      "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-obor-renovat-IDIdtL",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "USER_SELECTIE — Scan 160k - Stefan cel Mare",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 154990
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "21744261",
       "price_eur": 150000,
       "area_mp": 55.0,
@@ -9165,7 +9853,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-21744261",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9263,7 +9951,7 @@
       "url": "https://www.imobiliare.ro/oferta/275776105",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9312,7 +10000,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275803159",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9339,7 +10027,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275803152",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9386,6 +10074,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275672604",
+      "price_eur": 124900,
+      "area_mp": 45.0,
+      "price_per_mp": 2776,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 0,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-2-camere-275672604",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 124900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDI2Hf",
       "price_eur": 159500,
       "area_mp": 57.0,
@@ -9419,7 +10134,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275772119",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9571,7 +10286,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275788066",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": "USER_SELECTIE",
       "price_history": [
@@ -9636,6 +10351,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275883604",
+      "price_eur": 135000,
+      "area_mp": 47.0,
+      "price_per_mp": 2872,
+      "zone": "Cotroceni",
+      "sub_zone": "",
+      "sector": 5,
+      "seismic_risk": "needs_check",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-5-cotroceni-2-camere-275883604",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDHZ6V",
       "price_eur": 158000,
       "area_mp": 55.0,
@@ -9674,7 +10416,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275888634",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9799,7 +10541,7 @@
       "url": "https://www.imobiliare.ro/oferta/275912318",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9887,6 +10629,33 @@
         {
           "date": "2026-08-29",
           "price": 160000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275521147",
+      "price_eur": 140000,
+      "area_mp": 48.0,
+      "price_per_mp": 2917,
+      "zone": "Universitate",
+      "sub_zone": "",
+      "sector": 0,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-mobilat-2-camere-275521147",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 140000
         }
       ],
       "price_change": 0,
@@ -10037,7 +10806,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275854988",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10134,6 +10903,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "275891261",
+      "price_eur": 159000,
+      "area_mp": 54.0,
+      "price_per_mp": 2944,
+      "zone": "Cismigiu",
+      "sub_zone": "",
+      "sector": 0,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-cismigiu-mobilat-2-camere-275891261",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 159000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "275796858",
       "price_eur": 149000,
       "area_mp": 50.0,
@@ -10145,7 +10941,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275796858",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10172,7 +10968,7 @@
       "url": "https://www.imobiliare.ro/oferta/275916699",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10199,7 +10995,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275396166",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10253,7 +11049,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275818529",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-05",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10662,9 +11458,90 @@
       "claude_needs_renovation": "",
       "renovation_notes": "",
       "user_confirmed": ""
+    },
+    {
+      "id": "275672894",
+      "price_eur": 150000,
+      "area_mp": 46.0,
+      "price_per_mp": 3261,
+      "zone": "Armeneasca",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-mobilat-2-camere-275672894",
+      "source": "imobiliare",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "status": "active",
+      "notes": "",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 150000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
     }
   ],
   "sold": [
+    {
+      "id": "IDI2mk",
+      "price_eur": 131000,
+      "area_mp": 55.0,
+      "price_per_mp": 2382,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI2mk",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-09-05",
+      "status": "sold",
+      "notes": "USER_SELECTIE",
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 131000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDI26D",
+      "price_eur": 133000,
+      "area_mp": 55.0,
+      "price_per_mp": 2418,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/IDI26D",
+      "source": "storia",
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-09-05",
+      "status": "sold",
+      "notes": "USER_SELECTIE",
+      "price_history": [
+        {
+          "date": "2026-08-15",
+          "price": 133000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
     {
       "id": "275805918",
       "price_eur": 130000,
@@ -10728,6 +11605,18 @@
       "year_built": null,
       "url": "https://www.storia.ro/ro/oferta/de-vanzare-apartament-cochet-metrou-universitate-IDHrvp",
       "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "275373082",
+      "price_eur": 110000,
+      "area_mp": 59.0,
+      "zone": "Centrul Istoric",
+      "sub_zone": "",
+      "reason": "Risc seismic clasa 1",
+      "year_built": null,
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-centrul-istoric-mobilat-2-camere-275373082",
+      "source": "imobiliare",
       "eliminated_date": null
     },
     {
