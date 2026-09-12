@@ -1,55 +1,71 @@
 {
   "generated": "",
   "stats": {
-    "active": 422,
+    "active": 495,
     "price_min": 66000,
     "price_max": 160000,
-    "price_avg": 125548,
-    "zones": 63
+    "price_avg": 124852,
+    "zones": 66
   },
   "zone_distribution": [
     {
       "zone": "Vitan",
-      "count": 32
+      "count": 39
     },
     {
       "zone": "Dristor",
-      "count": 30
-    },
-    {
-      "zone": "Tineretului",
-      "count": 29
+      "count": 35
     },
     {
       "zone": "Colentina",
-      "count": 29
+      "count": 35
+    },
+    {
+      "zone": "Tineretului",
+      "count": 31
     },
     {
       "zone": "Obor",
-      "count": 22
+      "count": 24
     },
     {
       "zone": "Tei",
+      "count": 23
+    },
+    {
+      "zone": "Cișmigiu",
+      "count": 18
+    },
+    {
+      "zone": "Centrul Civic",
       "count": 17
     },
     {
       "zone": "Iancului",
-      "count": 12
+      "count": 13
     },
     {
-      "zone": "Cișmigiu",
-      "count": 12
-    },
-    {
-      "zone": "Centrul Civic",
+      "zone": "Vatra Luminoasă",
       "count": 12
     },
     {
       "zone": "Timpuri Noi",
-      "count": 10
+      "count": 12
     },
     {
       "zone": "Grivița",
+      "count": 12
+    },
+    {
+      "zone": "1 Mai",
+      "count": 11
+    },
+    {
+      "zone": "Ștefan cel Mare",
+      "count": 10
+    },
+    {
+      "zone": "Domenii",
       "count": 10
     },
     {
@@ -57,23 +73,27 @@
       "count": 10
     },
     {
-      "zone": "Ștefan cel Mare",
+      "zone": "Calea Moșilor",
       "count": 9
     },
     {
-      "zone": "Domenii",
-      "count": 9
+      "zone": "Splai",
+      "count": 8
+    },
+    {
+      "zone": "Piața Romană",
+      "count": 8
+    },
+    {
+      "zone": "Floreasca",
+      "count": 8
     },
     {
       "zone": "Eminescu",
       "count": 8
     },
     {
-      "zone": "1 Mai",
-      "count": 8
-    },
-    {
-      "zone": "Vatra Luminoasă",
+      "zone": "Văcărești",
       "count": 7
     },
     {
@@ -81,19 +101,7 @@
       "count": 7
     },
     {
-      "zone": "Splai",
-      "count": 7
-    },
-    {
       "zone": "Industriilor",
-      "count": 7
-    },
-    {
-      "zone": "Floreasca",
-      "count": 7
-    },
-    {
-      "zone": "Calea Moșilor",
       "count": 7
     },
     {
@@ -101,15 +109,19 @@
       "count": 7
     },
     {
-      "zone": "Văcărești",
-      "count": 6
-    },
-    {
-      "zone": "Piața Romană",
-      "count": 6
-    },
-    {
       "zone": "Fundeni",
+      "count": 6
+    },
+    {
+      "zone": "Decebal",
+      "count": 6
+    },
+    {
+      "zone": "Cismigiu",
+      "count": 6
+    },
+    {
+      "zone": "Centrul Istoric",
       "count": 6
     },
     {
@@ -117,24 +129,16 @@
       "count": 6
     },
     {
+      "zone": "Victoriei",
+      "count": 5
+    },
+    {
       "zone": "Vacaresti",
       "count": 5
     },
     {
-      "zone": "Decebal",
+      "zone": "Dorobanți",
       "count": 5
-    },
-    {
-      "zone": "Cismigiu",
-      "count": 5
-    },
-    {
-      "zone": "Centrul Istoric",
-      "count": 5
-    },
-    {
-      "zone": "Victoriei",
-      "count": 4
     },
     {
       "zone": "Stefan cel Mare",
@@ -153,11 +157,11 @@
       "count": 4
     },
     {
-      "zone": "Dorobanți",
+      "zone": "Cotroceni",
       "count": 4
     },
     {
-      "zone": "Cotroceni",
+      "zone": "Armenească",
       "count": 4
     },
     {
@@ -181,15 +185,23 @@
       "count": 3
     },
     {
-      "zone": "Armenească",
-      "count": 3
-    },
-    {
       "zone": "Vatra Noua",
       "count": 2
     },
     {
       "zone": "Parcul Carol",
+      "count": 2
+    },
+    {
+      "zone": "Mosilor",
+      "count": 2
+    },
+    {
+      "zone": "Ion Creangă",
+      "count": 2
+    },
+    {
+      "zone": "Dorobanti",
       "count": 2
     },
     {
@@ -213,6 +225,10 @@
       "count": 1
     },
     {
+      "zone": "Traian",
+      "count": 1
+    },
+    {
       "zone": "Straulesti",
       "count": 1
     },
@@ -233,15 +249,11 @@
       "count": 1
     },
     {
-      "zone": "Mosilor",
+      "zone": "Gara de Nord",
       "count": 1
     },
     {
       "zone": "Electronicii",
-      "count": 1
-    },
-    {
-      "zone": "Dorobanti",
       "count": 1
     },
     {
@@ -274,7 +286,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjZp",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -301,7 +313,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIdh7",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -328,7 +340,7 @@
       "url": "https://www.imobiliare.ro/oferta/275842231",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -355,12 +367,39 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275842278",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
+          "price": 78000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275955323",
+      "price_eur": 78000,
+      "area_mp": 65.0,
+      "price_per_mp": 1200,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-mobilat-2-camere-275955323",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
           "price": 78000
         }
       ],
@@ -382,7 +421,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDH0qG",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -409,7 +448,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgjY",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -436,7 +475,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIggs",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -463,7 +502,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgeB",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -490,13 +529,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDGLMF",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 119500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwxg",
+      "price_eur": 76000,
+      "area_mp": 56.0,
+      "price_per_mp": 1357,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-piata-iancului-metrou-bl-reabilitat-liber-IDIwxg",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 76000
         }
       ],
       "price_change": 0,
@@ -517,7 +583,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275872557",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -544,7 +610,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIj6q",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -571,7 +637,7 @@
       "url": "https://www.storia.ro/ro/oferta/dristor-2-camere-IDIcC6",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Dristor",
       "price_history": [],
@@ -593,13 +659,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-194616267",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 136730
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDGK7p",
+      "price_eur": 67800,
+      "area_mp": 47.0,
+      "price_per_mp": 1443,
+      "zone": "Traian",
+      "sub_zone": "Str. Constantin Kiritescu",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/vnzare-cas-cu-2-camere-n-curte-comun-cu-vecini-linitii-IDGK7p",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": "Casa in curte comuna, necesita renovare",
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 67800
         }
       ],
       "price_change": 0,
@@ -620,7 +713,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfDC",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -647,7 +740,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275464697",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -674,7 +767,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfSY",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -701,7 +794,7 @@
       "url": "https://www.storia.ro/ro/oferta/stirbei-2-camere-IDI8Mq",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Stirbei",
       "price_history": [],
@@ -723,7 +816,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkWi",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -750,7 +843,7 @@
       "url": "https://www.storia.ro/ro/oferta/2-camere-55mp-metrou-stefan-cel-mare-IDIasb",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Tei",
       "price_history": [],
@@ -772,7 +865,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHDWt",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -799,7 +892,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI5pq",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -826,7 +919,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhCL",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -853,7 +946,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhD8",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -880,7 +973,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhCG",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -907,7 +1000,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlQw",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -934,7 +1027,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhDa",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -961,13 +1054,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlQA",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 79705
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDHYcV",
+      "price_eur": 86000,
+      "area_mp": 54.0,
+      "price_per_mp": 1593,
+      "zone": "Splai",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/splai-unirii-2-camere-54-mp-IDHYcV",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 86000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275785722",
+      "price_eur": 86000,
+      "area_mp": 54.0,
+      "price_per_mp": 1593,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-mobilat-2-camere-275785722",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 86000
         }
       ],
       "price_change": 0,
@@ -988,7 +1135,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275935268",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -1015,7 +1162,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-grivita-2-camere-275866308",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -1042,7 +1189,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgiG",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1069,7 +1216,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIghI",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1096,13 +1243,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgfH",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 98000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwkf",
+      "price_eur": 78000,
+      "area_mp": 47.0,
+      "price_per_mp": 1660,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-de-vnzare-n-exclusivitate-IDIwkf",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 78000
         }
       ],
       "price_change": 0,
@@ -1123,13 +1297,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhDp",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 85405
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275967387",
+      "price_eur": 85000,
+      "area_mp": 51.0,
+      "price_per_mp": 1667,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275967387",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 85000
         }
       ],
       "price_change": 0,
@@ -1150,7 +1351,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIj0S",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1177,7 +1378,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIeUK",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1204,7 +1405,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjVr",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1220,6 +1421,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "IDIwpc",
+      "price_eur": 78000,
+      "area_mp": 46.0,
+      "price_per_mp": 1696,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-de-vanzare-IDIwpc",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 78000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDHRtL",
       "price_eur": 85000,
       "area_mp": 50.0,
@@ -1231,10 +1459,37 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-grivita-IDHRtL",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Grivita",
       "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwtH",
+      "price_eur": 78000,
+      "area_mp": 45.8,
+      "price_per_mp": 1703,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/exclusivitate-apartament-2-camere-aleea-lamotesti-cheie-la-birou-IDIwtH",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 78000
+        }
+      ],
       "price_change": 0,
       "price_change_pct": 0,
       "claude_needs_renovation": "",
@@ -1253,7 +1508,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkKu",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1280,7 +1535,7 @@
       "url": "https://www.storia.ro/ro/oferta/colentina-2-camere-IDHahn",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Colentina",
       "price_history": [],
@@ -1302,7 +1557,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHRdI",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1329,7 +1584,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHRdi",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1356,7 +1611,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHdXW",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1383,7 +1638,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIiV5",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1410,7 +1665,7 @@
       "url": "https://www.imobiliare.ro/oferta/275882571",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1437,7 +1692,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlqq",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1464,7 +1719,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkWE",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1491,7 +1746,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHPWl",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1518,7 +1773,7 @@
       "url": "https://www.imobiliare.ro/oferta/273362897",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1545,7 +1800,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI6AV",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1572,7 +1827,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIku2",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1599,7 +1854,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkt1",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1626,13 +1881,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlcm",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 115000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIqK9",
+      "price_eur": 85000,
+      "area_mp": 48.0,
+      "price_per_mp": 1771,
+      "zone": "Colentina",
+      "sub_zone": "Maior Vasile Bacila",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-colentina-IDIqK9",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 85000
         }
       ],
       "price_change": 0,
@@ -1653,7 +1935,7 @@
       "url": "https://www.storia.ro/ro/oferta/iancului-2-camere-IDIcO7",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Iancului",
       "price_history": [],
@@ -1675,7 +1957,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlyU",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1702,7 +1984,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHVwu",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1729,7 +2011,7 @@
       "url": "https://www.imobiliare.ro/oferta/275813087",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1745,6 +2027,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "IDIts3",
+      "price_eur": 107500,
+      "area_mp": 60.0,
+      "price_per_mp": 1792,
+      "zone": "1 Mai",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/1-mai-domenii-2-camere-60-mp-IDIts3",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 107500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDIj8C",
       "price_eur": 129990,
       "area_mp": 72.5,
@@ -1756,7 +2065,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIj8C",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1783,7 +2092,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275818026",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1810,7 +2119,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275801855",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1837,10 +2146,37 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-64mp-mobilat-IDIbp7",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275854252",
+      "price_eur": 115000,
+      "area_mp": 64.0,
+      "price_per_mp": 1797,
+      "zone": "Văcărești",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-vacaresti-mobilat-2-camere-275854252",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 115000
+        }
+      ],
       "price_change": 0,
       "price_change_pct": 0,
       "claude_needs_renovation": "",
@@ -1859,7 +2195,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDCegu",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1886,7 +2222,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHXDI",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1913,7 +2249,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjub",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1940,7 +2276,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHb5A",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1967,7 +2303,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkV3",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -1994,7 +2330,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275839761",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2021,7 +2357,7 @@
       "url": "https://www.imobiliare.ro/oferta/275922259",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2048,7 +2384,7 @@
       "url": "https://www.storia.ro/ro/oferta/vatra-luminoasa-2-camere-IDIbXg",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vatra Luminoasa",
       "price_history": [],
@@ -2070,7 +2406,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275722644",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2097,7 +2433,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkQN",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2124,13 +2460,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-nerva-traian-2-camere-275732177",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
         {
           "date": "2026-09-05",
           "price": 89000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwKp",
+      "price_eur": 96500,
+      "area_mp": 53.0,
+      "price_per_mp": 1821,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2camere-coletina-stradal-5-minute-metrou-IDIwKp",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 96500
         }
       ],
       "price_change": 0,
@@ -2151,7 +2514,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI37G",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2178,7 +2541,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHuco",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2205,7 +2568,7 @@
       "url": "https://www.imobiliare.ro/oferta/275620264",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2232,7 +2595,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlxm",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2259,7 +2622,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlxe",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2286,7 +2649,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgj2",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2313,7 +2676,7 @@
       "url": "https://www.storia.ro/ro/oferta/vacaresti-2-camere-76mp-IDI9GP",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
@@ -2335,7 +2698,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhwD",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2362,7 +2725,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1Hk",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2389,7 +2752,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-mobilat-2-camere-275947916",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -2416,7 +2779,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-cismigiu-mobilat-2-camere-275947923",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -2443,7 +2806,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI5p7",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2470,13 +2833,67 @@
       "url": "https://www.imobiliare.ro/oferta/275916932",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 94900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwGJ",
+      "price_eur": 96999,
+      "area_mp": 52.0,
+      "price_per_mp": 1865,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/oportunitate-apartament-2-camere-kaufland-colentina-metrou-obor-IDIwGJ",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 96999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIfO3",
+      "price_eur": 90000,
+      "area_mp": 48.0,
+      "price_per_mp": 1875,
+      "zone": "Gara de Nord",
+      "sub_zone": "Bd. Dinicu Golescu",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/propietar-IDIfO3",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 90000
         }
       ],
       "price_change": 0,
@@ -2497,7 +2914,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275947695",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -2524,7 +2941,7 @@
       "url": "https://www.storia.ro/ro/oferta/ap-2-camere-gradina-proprie-IDIbE2",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Colentina",
       "price_history": [],
@@ -2546,7 +2963,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4oZ",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2573,7 +2990,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI8MQ",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2600,7 +3017,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274751571",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2627,7 +3044,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDFCHa",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2654,10 +3071,37 @@
       "url": "https://www.storia.ro/ro/oferta/universitate-apartament-2-camere-IDI7dH",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Centrul Istoric",
       "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDHYOA",
+      "price_eur": 95000,
+      "area_mp": 49.0,
+      "price_per_mp": 1939,
+      "zone": "Grivița",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/calea-griviei-lng-metrou-basarab-bloc-reabilitat-IDHYOA",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 95000
+        }
+      ],
       "price_change": 0,
       "price_change_pct": 0,
       "claude_needs_renovation": "",
@@ -2676,7 +3120,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4vS",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2703,7 +3147,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIaQe",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2730,13 +3174,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDFiV3",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 139000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIpT9",
+      "price_eur": 88000,
+      "area_mp": 45.0,
+      "price_per_mp": 1956,
+      "zone": "Colentina",
+      "sub_zone": "Fundeni",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-de-vanzare-fundeni-centrala-0-comision-bloc-2020-IDIpT9",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 88000
         }
       ],
       "price_change": 0,
@@ -2757,7 +3228,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275721578",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2784,7 +3255,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfIY",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2811,7 +3282,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274752265",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2838,7 +3309,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1PU",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2865,7 +3336,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-liviu-rebreanu-IDIbNa",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Dristor",
       "price_history": [],
@@ -2887,7 +3358,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-liviu-rebreanu-IDIb6e",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Dristor",
       "price_history": [],
@@ -2909,7 +3380,7 @@
       "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-basarabia-IDIbcc",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Basarabia",
       "price_history": [],
@@ -2931,7 +3402,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHDBy",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -2958,7 +3429,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-victoriei-mobilat-2-camere-275786486",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -2985,7 +3456,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHzHk",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3012,7 +3483,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkeC",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3039,7 +3510,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlER",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3066,7 +3537,7 @@
       "url": "https://www.storia.ro/ro/oferta/splai-2-camere-60mp-IDIbVb",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Splai",
       "price_history": [],
@@ -3088,7 +3559,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275850986",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3119,7 +3590,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIbsD",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3146,7 +3617,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4sN",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3173,7 +3644,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-dristor-IDH2xU",
       "source": "storia",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3200,7 +3671,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI49i",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3227,13 +3698,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDHET8",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 105000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItAQ",
+      "price_eur": 130000,
+      "area_mp": 65.0,
+      "price_per_mp": 2000,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/vitan-mihai-bravu-2-camere-65-mp-IDItAQ",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275967318",
+      "price_eur": 130000,
+      "area_mp": 65.0,
+      "price_per_mp": 2000,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-dristor-mobilat-2-camere-275967318",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 130000
         }
       ],
       "price_change": 0,
@@ -3254,7 +3779,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4qk",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3281,13 +3806,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfdB",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 108981
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwHQ",
+      "price_eur": 95000,
+      "area_mp": 47.0,
+      "price_per_mp": 2021,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-mobilat-covasna-IDIwHQ",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 95000
         }
       ],
       "price_change": 0,
@@ -3308,7 +3860,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlVo",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3335,7 +3887,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHLuo",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3362,13 +3914,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjKY",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuxt",
+      "price_eur": 106000,
+      "area_mp": 52.0,
+      "price_per_mp": 2038,
+      "zone": "Ion Creangă",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/ap-2-camere-colentina-bloc-nou-mobilat-loc-parcare-comision-0-IDIuxt",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 106000
         }
       ],
       "price_change": 0,
@@ -3389,7 +3968,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIj0D",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3416,7 +3995,7 @@
       "url": "https://www.imobiliare.ro/oferta/275885219",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3443,7 +4022,7 @@
       "url": "https://www.imobiliare.ro/oferta/275924163",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3470,13 +4049,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlad",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 115000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuTx",
+      "price_eur": 105000,
+      "area_mp": 51.0,
+      "price_per_mp": 2059,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/dristor-baba-novac-2-camere-51-mp-IDIuTx",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 105000
         }
       ],
       "price_change": 0,
@@ -3497,7 +4103,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHOnl",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3524,7 +4130,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275730431",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3551,7 +4157,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275860893",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -3578,7 +4184,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-262410661",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3605,7 +4211,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkYm",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3632,7 +4238,7 @@
       "url": "https://www.storia.ro/ro/oferta/13-septembrie-2-camere-IDHCHA",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - 13 Septembrie",
       "price_history": [],
@@ -3654,12 +4260,39 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-domenii-2-camere-275922617",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
         {
           "date": "2026-09-05",
+          "price": 98000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuSM",
+      "price_eur": 98000,
+      "area_mp": 47.0,
+      "price_per_mp": 2085,
+      "zone": "1 Mai",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/1-mai-domenii-kisseleff-2-camere-etaj-2-IDIuSM",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
           "price": 98000
         }
       ],
@@ -3681,7 +4314,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-253658202",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -3708,13 +4341,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275514619",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 113000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItC2",
+      "price_eur": 117000,
+      "area_mp": 56.0,
+      "price_per_mp": 2089,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-vitan-56-mp-IDItC2",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 117000
         }
       ],
       "price_change": 0,
@@ -3735,7 +4395,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIbt5",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3762,7 +4422,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDGSDs",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3789,7 +4449,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHmpv",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3816,7 +4476,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-262410450",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3843,13 +4503,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDHpCc",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE",
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItyj",
+      "price_eur": 104889,
+      "area_mp": 50.0,
+      "price_per_mp": 2098,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/dristor-2-camere-50-mp-etaj-3-IDItyj",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 104889
         }
       ],
       "price_change": 0,
@@ -3870,7 +4557,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIcBR",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3897,7 +4584,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI6oN",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3924,7 +4611,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275737561",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3951,7 +4638,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDF5fD",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -3978,7 +4665,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275924271",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -4005,7 +4692,7 @@
       "url": "https://www.storia.ro/ro/oferta/2-camere-crangasi-i-metrou-6-min-i-posibilitate-centrala-i-comision-0-IDHZCA",
       "source": "storia",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4036,7 +4723,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275947628",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -4063,7 +4750,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-tineretului-vacaresti-IDIatC",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
@@ -4085,7 +4772,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIb5Y",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4112,7 +4799,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHLRa",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4139,7 +4826,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlen",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4166,7 +4853,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-253355102",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -4193,7 +4880,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI3D8",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4220,7 +4907,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIanh",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4247,7 +4934,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDGNCu",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4274,7 +4961,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-mobilat-2-camere-275873752",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -4301,7 +4988,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1UU",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4328,7 +5015,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHvzP",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4355,7 +5042,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDImbX",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4382,7 +5069,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHZIr",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4409,13 +5096,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDHfcz",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 119000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwNj",
+      "price_eur": 129999,
+      "area_mp": 60.0,
+      "price_per_mp": 2167,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/oportunitate-apartament-2-camere-teiul-doamnei-bloc-1986-metrou-IDIwNj",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 129999
         }
       ],
       "price_change": 0,
@@ -4436,7 +5150,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHdfR",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4463,7 +5177,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIh2C",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4490,7 +5204,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHisy",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4517,7 +5231,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjMD",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4544,7 +5258,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIcxL",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4571,7 +5285,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHwdr",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4598,7 +5312,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlYc",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4625,7 +5339,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI93y",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4652,7 +5366,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI2Yz",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4679,7 +5393,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1Zn",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4706,7 +5420,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHKbG",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4733,7 +5447,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHmq2",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4760,7 +5474,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHYpD",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4787,7 +5501,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI5nf",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4814,13 +5528,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDCvWd",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 119000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIu5g",
+      "price_eur": 117000,
+      "area_mp": 53.0,
+      "price_per_mp": 2208,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/colentina-obor-piata-metrou-dec-renovare-1974-reabilitat-1-IDIu5g",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 117000
         }
       ],
       "price_change": 0,
@@ -4841,7 +5582,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIeVT",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4868,7 +5609,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI8H4",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4895,7 +5636,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDH9VN",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4922,7 +5663,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-269179317",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4949,7 +5690,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIbmu",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -4976,7 +5717,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275735548",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -5003,7 +5744,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI3QF",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5030,7 +5771,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHDY7",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5057,7 +5798,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgXR",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5084,7 +5825,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI9vi",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5111,13 +5852,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDI8VA",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 122500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275972641",
+      "price_eur": 125000,
+      "area_mp": 56.0,
+      "price_per_mp": 2232,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275972641",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 125000
         }
       ],
       "price_change": 0,
@@ -5138,7 +5906,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIddS",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5165,13 +5933,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDI925",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 129900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwJn",
+      "price_eur": 117000,
+      "area_mp": 52.05,
+      "price_per_mp": 2248,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-bloc-reabilitat-mihai-bravu-stadin-olimpia-IDIwJn",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 117000
         }
       ],
       "price_change": 0,
@@ -5192,7 +5987,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275443682",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5219,7 +6014,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275834639",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5246,7 +6041,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI8wa",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5273,7 +6068,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHKnH",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5300,7 +6095,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-vitan-barzesti-bloc-2021-IDIdjc",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vitan",
       "price_history": [],
@@ -5322,7 +6117,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275727114",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5349,7 +6144,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgsJ",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5376,7 +6171,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-1-grivita-mobilat-2-camere-275882093",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -5403,13 +6198,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDI3Lx",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 120000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuK2",
+      "price_eur": 119999,
+      "area_mp": 53.0,
+      "price_per_mp": 2264,
+      "zone": "Ion Creangă",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/ion-creanga-obor-2-camere-53-mp-IDIuK2",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 119999
         }
       ],
       "price_change": 0,
@@ -5430,7 +6252,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHVn0",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5457,7 +6279,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHVmL",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5484,7 +6306,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-2-camere-275939195",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -5511,13 +6333,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDHb71",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 113500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIw9j",
+      "price_eur": 109000,
+      "area_mp": 48.0,
+      "price_per_mp": 2271,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/cismigiu-la-civa-pai-de-parc-48-mp-lift-2-camere-IDIw9j",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 109000
         }
       ],
       "price_change": 0,
@@ -5538,7 +6387,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275830051",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE - semidecomandat, bloc reabilitat, mobilat+utilat, vis-a-vis Lic Iulia Hasdeu",
       "price_history": [
@@ -5569,7 +6418,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlJo",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5596,7 +6445,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-vatra-luminoasa-2-camere-275721402",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -5623,7 +6472,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI91h",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5650,10 +6499,37 @@
       "url": "https://www.storia.ro/ro/oferta/aparatment-2-camere-calea-mosilor-imobil-1980-IDIdS6",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Mosilor",
       "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDHd72",
+      "price_eur": 112000,
+      "area_mp": 49.0,
+      "price_per_mp": 2286,
+      "zone": "1 Mai",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-bd-ion-mihalache-166-metrou-1-mai-comision-0-IDHd72",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 112000
+        }
+      ],
       "price_change": 0,
       "price_change_pct": 0,
       "claude_needs_renovation": "",
@@ -5672,7 +6548,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIaL1",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5699,7 +6575,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI6pP",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5726,7 +6602,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjLQ",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5753,7 +6629,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275838406",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5780,7 +6656,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHdJp",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5807,7 +6683,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-eminescu-mobilat-2-camere-275879535",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -5834,7 +6710,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkOz",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5861,13 +6737,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDI84B",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 131500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuXt",
+      "price_eur": 117900,
+      "area_mp": 51.0,
+      "price_per_mp": 2312,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-vatra-luminoasa-posta-iancului-IDIuXt",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 117900
         }
       ],
       "price_change": 0,
@@ -5888,7 +6791,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIchp",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5915,7 +6818,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI8Ps",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5942,7 +6845,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHz6H",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -5969,7 +6872,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-vacaresti-2-camere-275737860",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -5996,7 +6899,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIiUr",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6023,7 +6926,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjaj",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6050,7 +6953,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHVt9",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6077,7 +6980,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHKbz",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6104,7 +7007,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI180",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6131,13 +7034,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhOt",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 119000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIw7M",
+      "price_eur": 110000,
+      "area_mp": 47.0,
+      "price_per_mp": 2340,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/timpuri-noi-2-camere-etaj-1-bloc-1984-bucatarie-inchisa-IDIw7M",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 110000
         }
       ],
       "price_change": 0,
@@ -6158,7 +7088,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI5UT",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6185,7 +7115,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-274979185",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6212,7 +7142,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHmpF",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6239,7 +7169,7 @@
       "url": "https://www.imobiliare.ro/oferta/275927509",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6266,7 +7196,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275946350",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -6293,7 +7223,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4i3",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6320,7 +7250,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI6l1",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6347,7 +7277,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI6kX",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6374,7 +7304,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIg0c",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6401,7 +7331,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjLW",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6428,7 +7358,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIj4a",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6455,7 +7385,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkrV",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6482,7 +7412,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIcMD",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6509,7 +7439,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1rx",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6536,7 +7466,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIf8E",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6563,7 +7493,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI10a",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6590,12 +7520,39 @@
       "url": "https://www.imobiliare.ro/oferta/275908022",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
+          "price": 129000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIubI",
+      "price_eur": 129000,
+      "area_mp": 54.0,
+      "price_per_mp": 2389,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-calea-mosilor-312-2-minute-metrou-obor-IDIubI",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
           "price": 129000
         }
       ],
@@ -6617,7 +7574,7 @@
       "url": "https://www.storia.ro/ro/oferta/cismigiu-decomandat-creditabil-IDIdpo",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Centrul Civic",
       "price_history": [],
@@ -6639,13 +7596,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDHCwR",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 127000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIq2R",
+      "price_eur": 115000,
+      "area_mp": 47.97,
+      "price_per_mp": 2397,
+      "zone": "Tei",
+      "sub_zone": "Stefan cel Mare",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-cu-2-camere-balcon-generos-tefan-cel-mare-metrou-IDIq2R",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 115000
         }
       ],
       "price_change": 0,
@@ -6666,7 +7650,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1Kg",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6693,7 +7677,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIh56",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE",
       "price_history": [
@@ -6720,7 +7704,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIm1v",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6747,7 +7731,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlIr",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6774,7 +7758,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHKio",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6801,7 +7785,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDGQwx",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6828,7 +7812,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDEhdZ",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6855,7 +7839,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIltI",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6882,7 +7866,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIdw8",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6909,7 +7893,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1vG",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6936,7 +7920,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275827304",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6963,7 +7947,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275827316",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -6990,7 +7974,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfSF",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7017,7 +8001,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHtPi",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7044,7 +8028,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHmq4",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7071,7 +8055,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHbZn",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7098,7 +8082,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjLO",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7125,7 +8109,7 @@
       "url": "https://www.storia.ro/ro/oferta/grivita-2-camere-58mp-IDHQns",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Grivita",
       "price_history": [],
@@ -7147,7 +8131,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275730848",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7174,7 +8158,7 @@
       "url": "https://www.imobiliare.ro/oferta/274861496",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7201,13 +8185,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkoV",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 126000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275975844",
+      "price_eur": 109000,
+      "area_mp": 45.0,
+      "price_per_mp": 2422,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-colentina-mobilat-2-camere-275975844",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 109000
         }
       ],
       "price_change": 0,
@@ -7228,7 +8239,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkaO",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7255,13 +8266,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDHOcq",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 131000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIw8E",
+      "price_eur": 135000,
+      "area_mp": 55.36,
+      "price_per_mp": 2439,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-colentina-obor-metrou-decomandat-1974-reabilitat-IDIw8E",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 135000
         }
       ],
       "price_change": 0,
@@ -7282,7 +8320,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-turda-parc-regina-maria-IDI9Un",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Grivita",
       "price_history": [],
@@ -7304,7 +8342,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI2W9",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7331,7 +8369,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4sg",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7358,7 +8396,7 @@
       "url": "https://www.storia.ro/ro/oferta/iancului-apartament-cu-2-camere-transformat-in-3-IDHKbp",
       "source": "storia",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "2 camere transformat în 3, bloc anvelopat",
       "price_history": [
@@ -7385,7 +8423,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgcT",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7412,7 +8450,7 @@
       "url": "https://www.imobiliare.ro/oferta/275745509",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7439,7 +8477,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-renovat-crngai-zboina-neagr-etaj-4-8-IDIjpZ",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - complet renovat",
       "price_history": [
@@ -7466,7 +8504,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIaRF",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7493,7 +8531,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjDJ",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7520,7 +8558,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhyM",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7547,7 +8585,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHExr",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7574,7 +8612,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI5Uo",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7601,7 +8639,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDH6vt",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7628,7 +8666,7 @@
       "url": "https://www.imobiliare.ro/oferta/275910984",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7655,7 +8693,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI2ft",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7682,7 +8720,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDH8vw",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7709,7 +8747,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHIJa",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7736,7 +8774,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-uranus-IDIapJ",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Uranus",
       "price_history": [],
@@ -7758,7 +8796,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkoz",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7785,7 +8823,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIcYA",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7812,7 +8850,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI7ne",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7839,7 +8877,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI32f",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7866,7 +8904,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI2n9",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7893,7 +8931,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI1lq",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7920,7 +8958,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-270959137",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7947,7 +8985,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgd6",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -7974,7 +9012,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfgb",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE",
       "price_history": [
@@ -8001,7 +9039,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-iancului-2-camere-275641687",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE - mobilat+utilat, balcon, AC, termopan, langa metrou Iancului",
       "price_history": [
@@ -8028,7 +9066,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhX9",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8044,6 +9082,33 @@
       "user_confirmed": ""
     },
     {
+      "id": "IDIuii",
+      "price_eur": 140000,
+      "area_mp": 56.0,
+      "price_per_mp": 2500,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/cismigiu-sala-palatului-2-camere-centrala-proprie-balcon-bloc-far-IDIuii",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 140000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
       "id": "IDGAMV",
       "price_eur": 158000,
       "area_mp": 63.0,
@@ -8055,7 +9120,7 @@
       "url": "https://www.storia.ro/ro/oferta/ap-2-camere-piata-domenii-ion-mihalache-bloc-boutique-IDGAMV",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - bloc boutique, centrala proprie, 158k cash / 180k credit",
       "price_history": [
@@ -8082,7 +9147,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIflR",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8109,7 +9174,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIflP",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8136,7 +9201,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlGl",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8163,7 +9228,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIl2Z",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8190,7 +9255,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDGMTA",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8217,7 +9282,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-61-mp-stefan-cel-mare-parcul-circului-IDIecd",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - centrala de bloc",
       "price_history": [
@@ -8244,7 +9309,7 @@
       "url": "https://www.storia.ro/ro/oferta/ap-2-camere-vitan-metrou-dristor-IDIjyn",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet",
       "price_history": [
@@ -8271,10 +9336,91 @@
       "url": "https://www.storia.ro/ro/oferta/stefan-cel-mare-metrou-obor-IDIbkL",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Stefan cel Mare",
       "price_history": [],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIrHN",
+      "price_eur": 145000,
+      "area_mp": 57.0,
+      "price_per_mp": 2544,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/iancului-metrou-stradal-bl-1988-monolit-decomandat-bucatarie-mare-IDIrHN",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 145000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItTm",
+      "price_eur": 139900,
+      "area_mp": 55.0,
+      "price_per_mp": 2544,
+      "zone": "Centrul Civic",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-pe-unirii-55-mp-parter-cu-balcon-IDItTm",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 139900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDEAuG",
+      "price_eur": 145000,
+      "area_mp": 57.0,
+      "price_per_mp": 2544,
+      "zone": "Calea Moșilor",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/calea-mosilor-obor-2-camere-57-mp-IDEAuG",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 145000
+        }
+      ],
       "price_change": 0,
       "price_change_pct": 0,
       "claude_needs_renovation": "",
@@ -8293,7 +9439,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIcUF",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8320,7 +9466,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIh8Q",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8347,7 +9493,7 @@
       "url": "https://www.imobiliare.ro/oferta/275909809",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8374,13 +9520,40 @@
       "url": "https://www.imobiliare.ro/oferta/275447785",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 134999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275696324",
+      "price_eur": 132500,
+      "area_mp": 52.0,
+      "price_per_mp": 2548,
+      "zone": "Timpuri Noi",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-timpuri-noi-2-camere-275696324",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 132500
         }
       ],
       "price_change": 0,
@@ -8401,7 +9574,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHg36",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8428,12 +9601,39 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkbE",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
+          "price": 130000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuqK",
+      "price_eur": 130000,
+      "area_mp": 51.0,
+      "price_per_mp": 2549,
+      "zone": "Obor",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-la-et-1-in-bloc-reabilitat-langa-metrou-obor-IDIuqK",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
           "price": 130000
         }
       ],
@@ -8455,7 +9655,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275788524",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8482,7 +9682,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4m8",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8509,13 +9709,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDI15y",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 128000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275966307",
+      "price_eur": 136000,
+      "area_mp": 53.0,
+      "price_per_mp": 2566,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-dristor-mobilat-2-camere-275966307",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 136000
         }
       ],
       "price_change": 0,
@@ -8536,7 +9763,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkBX",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8563,7 +9790,7 @@
       "url": "https://www.storia.ro/ro/oferta/lacul-tei-circ-61-mp-etaj-3-4-renovat-mobilat-i-utilat-modern-IDIclF",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - renovat, mobilat modern",
       "price_history": [
@@ -8590,7 +9817,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIj1U",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8617,7 +9844,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHhKF",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8644,7 +9871,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfmY",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8671,7 +9898,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI6rV",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8698,7 +9925,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275697052",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8725,7 +9952,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-4-timpuri-noi-mobilat-2-camere-275644695",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -8752,7 +9979,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfl3",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8779,7 +10006,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHOwA",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8806,7 +10033,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI7jm",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8833,13 +10060,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDHoj6",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-15",
           "price": 129500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275715055",
+      "price_eur": 127000,
+      "area_mp": 49.0,
+      "price_per_mp": 2592,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "sector": 3,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-dristor-mobilat-2-camere-275715055",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 127000
         }
       ],
       "price_change": 0,
@@ -8860,7 +10114,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIcZD",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8887,7 +10141,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIc6v",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8914,7 +10168,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-vacaresti-IDIdgD",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vacaresti",
       "price_history": [],
@@ -8936,7 +10190,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275869358",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8963,7 +10217,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDI4iV",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -8990,7 +10244,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkmR",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9017,7 +10271,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-obor-2-camere-275930507",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -9044,7 +10298,7 @@
       "url": "https://www.imobiliare.ro/oferta/275927639",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9071,7 +10325,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275887766",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9098,13 +10352,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275858854",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 159500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIujM",
+      "price_eur": 130000,
+      "area_mp": 49.7,
+      "price_per_mp": 2616,
+      "zone": "Centrul Civic",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-renovat-lux-general-berthelot-27-ultracentral-IDIujM",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 130000
         }
       ],
       "price_change": 0,
@@ -9125,7 +10406,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-titulescu-centrala-proprie-metrou-IDIb2n",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - centrala proprie",
       "price_history": [
@@ -9152,7 +10433,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-grivita-IDHHY2",
       "source": "storia",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9183,7 +10464,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIg8q",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9210,7 +10491,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-vitan-2-camere-274929010",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -9237,7 +10518,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIg73",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9264,7 +10545,7 @@
       "url": "https://www.imobiliare.ro/oferta/275877411",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9291,7 +10572,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-domenii-IDHYEO",
       "source": "storia",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE",
       "price_history": [
@@ -9318,7 +10599,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfyU",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9345,7 +10626,7 @@
       "url": "https://www.imobiliare.ro/oferta/275784277",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9372,7 +10653,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfIo",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9399,7 +10680,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-l-muncii-IDFg5g",
       "source": "storia",
       "first_seen": "2026-07-26",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9426,7 +10707,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIgX7",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9453,7 +10734,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-dristor-mihai-bravu-comision-0-IDHRQW",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - renovat complet 2025, comision 0",
       "price_history": [
@@ -9480,13 +10761,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDIf8F",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 159400
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIueL",
+      "price_eur": 135500,
+      "area_mp": 51.0,
+      "price_per_mp": 2657,
+      "zone": "Decebal",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/dristor-rond-baba-novac-vulcan-judetul-5-minute-metrou-10-min-parc-IDIueL",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 135500
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItNg",
+      "price_eur": 139000,
+      "area_mp": 52.0,
+      "price_per_mp": 2673,
+      "zone": "Victoriei",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-victoriei-IDItNg",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 139000
         }
       ],
       "price_change": 0,
@@ -9507,7 +10842,7 @@
       "url": "https://www.storia.ro/ro/oferta/2-camere-calea-calarasilor-IDIdPB",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Centrul Civic",
       "price_history": [],
@@ -9529,13 +10864,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIg20",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 155223
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItxN",
+      "price_eur": 149900,
+      "area_mp": 56.0,
+      "price_per_mp": 2677,
+      "zone": "Tei",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/tei-2-camere-56-mp-bloc-reabilitat-IDItxN",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 149900
         }
       ],
       "price_change": 0,
@@ -9556,7 +10918,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIiZB",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9583,7 +10945,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfe0",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9610,13 +10972,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-3-nerva-traian-mobilat-2-camere-275748780",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
         {
           "date": "2026-09-05",
           "price": 150000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwQ9",
+      "price_eur": 153000,
+      "area_mp": 57.0,
+      "price_per_mp": 2684,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-bd-tineretului-palatul-copiilor-IDIwQ9",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 153000
         }
       ],
       "price_change": 0,
@@ -9637,7 +11026,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275844993",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9664,13 +11053,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfBI",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 145000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDGTIL",
+      "price_eur": 121000,
+      "area_mp": 45.0,
+      "price_per_mp": 2689,
+      "zone": "Floreasca",
+      "sub_zone": "Compozitori / Ceaikovski",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-floreasca-l-compozitori-l-boxa-inclusa-IDGTIL",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 121000
         }
       ],
       "price_change": 0,
@@ -9691,7 +11107,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIh3X",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9718,7 +11134,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIbax",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE",
       "price_history": [
@@ -9745,7 +11161,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhjQ",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9772,7 +11188,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIf2l",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9799,13 +11215,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkIe",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 155223
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIq7o",
+      "price_eur": 125000,
+      "area_mp": 46.0,
+      "price_per_mp": 2717,
+      "zone": "Domenii",
+      "sub_zone": "Ion Mihalache",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/direct-proprietar-2-camere-ion-mihalache-renovat-central-proprie-IDIq7o",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 125000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuBc",
+      "price_eur": 125000,
+      "area_mp": 46.0,
+      "price_per_mp": 2717,
+      "zone": "Vatra Luminoasă",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-etaj-intermediar-posta-iancului-IDIuBc",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 125000
         }
       ],
       "price_change": 0,
@@ -9826,7 +11296,7 @@
       "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-obor-renovat-IDIdtL",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE — Scan 160k - Stefan cel Mare",
       "price_history": [
@@ -9853,13 +11323,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-21744261",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 150000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIoRy",
+      "price_eur": 139000,
+      "area_mp": 50.86,
+      "price_per_mp": 2733,
+      "zone": "Centrul Istoric",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/centrul-istoric-lipscani-2-camere-IDIoRy",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 139000
         }
       ],
       "price_change": 0,
@@ -9880,7 +11377,7 @@
       "url": "https://www.storia.ro/ro/oferta/dristor-decomandat-an-1983-IDHoSL",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Dristor",
       "price_history": [],
@@ -9902,7 +11399,7 @@
       "url": "https://www.storia.ro/ro/oferta/dristor-metrou-5-min-IDIcZl",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Dristor",
       "price_history": [],
@@ -9924,7 +11421,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIj1c",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -9951,13 +11448,94 @@
       "url": "https://www.imobiliare.ro/oferta/275776105",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 137000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIpLl",
+      "price_eur": 139900,
+      "area_mp": 51.0,
+      "price_per_mp": 2743,
+      "zone": "Colentina",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-colentina-fundeni-IDIpLl",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 139900
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIqex",
+      "price_eur": 135000,
+      "area_mp": 49.0,
+      "price_per_mp": 2755,
+      "zone": "Centrul Civic",
+      "sub_zone": "Kogalniceanu / Parcul Izvor",
+      "sector": 5,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-renovat-kogalniceanu-parcul-izvor-metrou-IDIqex",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 135000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDFxYm",
+      "price_eur": 124000,
+      "area_mp": 45.0,
+      "price_per_mp": 2756,
+      "zone": "Centrul Civic",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/unirii-bulevardul-ion-c-brtianu-vizavi-de-magazinul-cocor-IDFxYm",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 124000
         }
       ],
       "price_change": 0,
@@ -9978,7 +11556,7 @@
       "url": "https://www.storia.ro/ro/oferta/vanzare-apartament-2-camere-tineretului-IDI9Te",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE — Scan 160k - Tineretului",
       "price_history": [],
@@ -10000,7 +11578,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275803159",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10027,7 +11605,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275803152",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10058,7 +11636,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIm0R",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10085,7 +11663,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-2-camere-275672604",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -10112,7 +11690,7 @@
       "url": "https://www.storia.ro/ro/oferta/2-camere-centrul-civic-IDI2Hf",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Centrul Civic",
       "price_history": [],
@@ -10134,13 +11712,40 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275772119",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 151320
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIud5",
+      "price_eur": 160000,
+      "area_mp": 57.0,
+      "price_per_mp": 2807,
+      "zone": "Dorobanți",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/calea-dorobanti-IDIud5",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 160000
         }
       ],
       "price_change": 0,
@@ -10161,7 +11766,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIh64",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10188,7 +11793,7 @@
       "url": "https://www.storia.ro/ro/oferta/dorobanti-2-camere-IDFvdD",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Dorobanti",
       "price_history": [],
@@ -10210,7 +11815,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIffV",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10237,13 +11842,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlHH",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 142000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuuu",
+      "price_eur": 145000,
+      "area_mp": 51.0,
+      "price_per_mp": 2843,
+      "zone": "Calea Moșilor",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/calea-mosilor-stradal-decomandat-IDIuuu",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 145000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItYe",
+      "price_eur": 137000,
+      "area_mp": 48.0,
+      "price_per_mp": 2854,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/piata-romana-vedere-spate-linite-creditabil-IDItYe",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 137000
         }
       ],
       "price_change": 0,
@@ -10264,7 +11923,7 @@
       "url": "https://www.storia.ro/ro/oferta/decebal-metrou-p-ta-muncii-IDIbe4",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Decebal",
       "price_history": [],
@@ -10286,7 +11945,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275788066",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE",
       "price_history": [
@@ -10313,13 +11972,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkE9",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 160000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275879986",
+      "price_eur": 129000,
+      "area_mp": 45.15,
+      "price_per_mp": 2857,
+      "zone": "Ștefan cel Mare",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-stefan-cel-mare-2-camere-275879986",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 129000
         }
       ],
       "price_change": 0,
@@ -10340,7 +12026,7 @@
       "url": "https://www.storia.ro/ro/oferta/mosilor-eminescu-2-camere-IDIblT",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Mosilor",
       "price_history": [],
@@ -10362,7 +12048,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-5-cotroceni-2-camere-275883604",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -10389,13 +12075,40 @@
       "url": "https://www.storia.ro/ro/oferta/tineretului-parc-apartament-2-camere-renovat-complet-comision-0-IDHZ6V",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - renovat complet, comision 0, loc parcare ADP",
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 158000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIfCI",
+      "price_eur": 130000,
+      "area_mp": 45.2,
+      "price_per_mp": 2876,
+      "zone": "Cismigiu",
+      "sub_zone": "Piata Romana / C.A. Rosetti",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-l-2-camere-l-piata-romana-l-universitatii-IDIfCI",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 130000
         }
       ],
       "price_change": 0,
@@ -10416,7 +12129,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275888634",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10443,7 +12156,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIiWk",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10470,7 +12183,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-unirii-nicolae-balcescu-IDGes6",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Cismigiu",
       "price_history": [],
@@ -10492,7 +12205,7 @@
       "url": "https://www.storia.ro/ro/oferta/vanzari-apartamente-2-camere-dorobanti-IDIaSv",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Dorobanti",
       "price_history": [],
@@ -10514,7 +12227,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfxE",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10541,7 +12254,7 @@
       "url": "https://www.imobiliare.ro/oferta/275912318",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10568,13 +12281,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDGOjK",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 159675
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIwel",
+      "price_eur": 144900,
+      "area_mp": 49.82,
+      "price_per_mp": 2908,
+      "zone": "Grivița",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/2-camere-banu-manta-decomandat-renovat-2026-bloc-reabilitat-panoramic-IDIwel",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 144900
         }
       ],
       "price_change": 0,
@@ -10595,7 +12335,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHdvp",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10622,7 +12362,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIm44",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10649,7 +12389,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-universitate-mobilat-2-camere-275521147",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -10676,7 +12416,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDHt1C",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10703,7 +12443,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkBR",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10730,7 +12470,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlhr",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10757,13 +12497,40 @@
       "url": "https://www.storia.ro/ro/oferta/IDIfP7",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-21",
           "price": 157999
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItO6",
+      "price_eur": 135000,
+      "area_mp": 46.0,
+      "price_per_mp": 2935,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/piata-romana-2-camere-balcon-creditabil-IDItO6",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 135000
         }
       ],
       "price_change": 0,
@@ -10784,7 +12551,7 @@
       "url": "https://www.storia.ro/ro/oferta/tineretului-2-camere-IDIbD1",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "USER_SELECTIE — Scan 160k - Tineretului",
       "price_history": [],
@@ -10806,7 +12573,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275854988",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10833,7 +12600,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDGqfX",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10860,7 +12627,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhRX",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10887,7 +12654,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhRT",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10914,7 +12681,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-ultracentral-cismigiu-mobilat-2-camere-275891261",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -10941,7 +12708,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275796858",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -10968,12 +12735,39 @@
       "url": "https://www.imobiliare.ro/oferta/275916699",
       "source": "imobiliare",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
+          "price": 149000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275908800",
+      "price_eur": 149000,
+      "area_mp": 50.0,
+      "price_per_mp": 2980,
+      "zone": "Armenească",
+      "sub_zone": "",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-mobilat-2-camere-275908800",
+      "source": "imobiliare",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
           "price": 149000
         }
       ],
@@ -10995,7 +12789,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275396166",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11022,13 +12816,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDHSgr",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 150000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIffJ",
+      "price_eur": 144000,
+      "area_mp": 48.0,
+      "price_per_mp": 3000,
+      "zone": "Centrul Civic",
+      "sub_zone": "Universitate / Bd Regina Elisabeta",
+      "sector": 5,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/universitate-bd-regina-elisabeta-bloc-fara-risc-seismic-IDIffJ",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 144000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIuTi",
+      "price_eur": 159000,
+      "area_mp": 53.0,
+      "price_per_mp": 3000,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/ap-2-camere-mihai-bravu-mall-vitan-IDIuTi",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 159000
         }
       ],
       "price_change": 0,
@@ -11049,7 +12897,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275818529",
       "source": "imobiliare",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11076,7 +12924,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIjjO",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11103,7 +12951,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-metrou-1mai-bloc-nou-IDGtR2",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - bloc nou, centrala proprie, parcare extra, neclar TVA",
       "price_history": [
@@ -11130,7 +12978,7 @@
       "url": "https://www.storia.ro/ro/oferta/vitan-apartament-IDIcYn",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vitan",
       "price_history": [],
@@ -11152,7 +13000,7 @@
       "url": "https://www.storia.ro/ro/oferta/vitan-2-camere-IDI9Gj",
       "source": "storia",
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "Scan 160k - Vitan",
       "price_history": [],
@@ -11174,7 +13022,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhob",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11201,7 +13049,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIg1S",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11228,7 +13076,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIf9Y",
       "source": "storia",
       "first_seen": "2026-08-21",
-      "last_seen": "2026-08-21",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11255,7 +13103,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIlyq",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11282,7 +13130,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIkLG",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11309,7 +13157,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIk3r",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11336,13 +13184,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDIhVO",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 153000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDItsa",
+      "price_eur": 153000,
+      "area_mp": 50.0,
+      "price_per_mp": 3060,
+      "zone": "Vitan",
+      "sub_zone": "",
+      "sector": 4,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/vitan-mall-2-camere-50-mp-IDItsa",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 153000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIqIo",
+      "price_eur": 149000,
+      "area_mp": 48.18,
+      "price_per_mp": 3093,
+      "zone": "Mosilor",
+      "sub_zone": "Calea Mosilor / Obor",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-i-calea-mosilor-i-metrou-obor-IDIqIo",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 149000
         }
       ],
       "price_change": 0,
@@ -11363,7 +13265,7 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-one-lake-district-21-tva-inclus-IDHIeO",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - bloc nou, parcare 15500+TVA",
       "price_history": [
@@ -11390,13 +13292,67 @@
       "url": "https://www.storia.ro/ro/oferta/IDIl15",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 155000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIsfU",
+      "price_eur": 156000,
+      "area_mp": 50.0,
+      "price_per_mp": 3120,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": null,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-tineretului-parc-metrou-bloc-reabilitat-renovat-IDIsfU",
+      "source": "storia",
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-11",
+          "price": 156000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIhXn",
+      "price_eur": 150000,
+      "area_mp": 48.0,
+      "price_per_mp": 3125,
+      "zone": "Tei",
+      "sub_zone": "Lacul Tei - Parcul Circului",
+      "sector": 2,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-lacul-tei-parcul-circului-comision-0-IDIhXn",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 150000
         }
       ],
       "price_change": 0,
@@ -11417,13 +13373,40 @@
       "url": "https://www.storia.ro/ro/oferta/apartament-2-camere-de-vanzare-iancului-mobilat-IDIilF",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "from user spreadsheet - centrala proprie, mobilat",
       "price_history": [
         {
           "date": "2026-08-29",
           "price": 160000
+        }
+      ],
+      "price_change": 0,
+      "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "IDIqUj",
+      "price_eur": 149500,
+      "area_mp": 47.1,
+      "price_per_mp": 3174,
+      "zone": "Dorobanti",
+      "sub_zone": "Iancu de Hunedoara",
+      "sector": 1,
+      "seismic_risk": "none",
+      "url": "https://www.storia.ro/ro/oferta/vanzae-2-camere-iancu-de-hunedoara-IDIqUj",
+      "source": "storia",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-09-05",
+          "price": 149500
         }
       ],
       "price_change": 0,
@@ -11444,7 +13427,7 @@
       "url": "https://www.storia.ro/ro/oferta/IDIktP",
       "source": "storia",
       "first_seen": "2026-08-29",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": null,
       "price_history": [
@@ -11471,7 +13454,7 @@
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-sector-2-armeneasca-mobilat-2-camere-275672894",
       "source": "imobiliare",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-11",
       "status": "active",
       "notes": "",
       "price_history": [
@@ -11572,6 +13555,18 @@
   ],
   "eliminated": [
     {
+      "id": "IDHMKU",
+      "price_eur": 149900,
+      "area_mp": 56.0,
+      "zone": "Aviației",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
       "id": "IDGAKt",
       "price_eur": 132000,
       "area_mp": 51.0,
@@ -11580,6 +13575,18 @@
       "reason": "Zonă exclusă: Bucureștii Noi (era marcat ca Centru)",
       "year_built": null,
       "url": "https://www.storia.ro/ro/oferta/IDGAKt",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDItDh",
+      "price_eur": 147000,
+      "area_mp": 47.2,
+      "zone": "Carol",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
       "source": "storia",
       "eliminated_date": null
     },
@@ -11632,6 +13639,18 @@
       "eliminated_date": null
     },
     {
+      "id": "IDIubz",
+      "price_eur": 139000,
+      "area_mp": 64.0,
+      "zone": "Cișmigiu",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
       "id": "IDIf1f",
       "price_eur": 67000,
       "area_mp": 54.0,
@@ -11642,6 +13661,18 @@
       "url": "https://www.storia.ro/ro/oferta/IDIf1f",
       "source": "storia",
       "eliminated_date": "2026-08-21"
+    },
+    {
+      "id": "IDIwcm",
+      "price_eur": 109900,
+      "area_mp": 58.8,
+      "zone": "Dobroești",
+      "sub_zone": "",
+      "reason": "Nu este în București",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
     },
     {
       "id": "IDHPjX",
@@ -11824,6 +13855,42 @@
       "eliminated_date": "2026-08-29"
     },
     {
+      "id": "IDIptb",
+      "price_eur": 124900,
+      "area_mp": 53.0,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIuXD",
+      "price_eur": 107000,
+      "area_mp": 52.0,
+      "zone": "Iancului",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIwaG",
+      "price_eur": 86000,
+      "area_mp": 64.0,
+      "zone": "Ion Creangă",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
       "id": "IDIbCU",
       "price_eur": 78900,
       "area_mp": 54.0,
@@ -11884,6 +13951,18 @@
       "eliminated_date": "2026-08-21"
     },
     {
+      "id": "IDIuCc",
+      "price_eur": 138999,
+      "area_mp": 52.0,
+      "zone": "Piața Romană",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
       "id": "IDHCI8",
       "price_eur": 108000,
       "area_mp": 65.0,
@@ -11892,6 +13971,18 @@
       "reason": "Zonă exclusă: Pieptănari (era marcat ca Parcul Carol)",
       "year_built": null,
       "url": "https://www.storia.ro/ro/oferta/IDHCI8",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDIwAf",
+      "price_eur": 119000,
+      "area_mp": 46.0,
+      "zone": "Splai",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
       "source": "storia",
       "eliminated_date": null
     },
@@ -11908,6 +13999,18 @@
       "eliminated_date": "2026-08-29"
     },
     {
+      "id": "IDHAkY",
+      "price_eur": 79000,
+      "area_mp": 52.0,
+      "zone": "Tei",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
       "id": "IDIbBe",
       "price_eur": 98000,
       "area_mp": 50.0,
@@ -11916,6 +14019,18 @@
       "reason": "Risc seismic detectat automat",
       "year_built": null,
       "url": "https://www.storia.ro/ro/oferta/vatra-luminoasa-iancului-metrou-5-min-IDIbBe",
+      "source": "storia",
+      "eliminated_date": null
+    },
+    {
+      "id": "IDItX1",
+      "price_eur": 145000,
+      "area_mp": 45.0,
+      "zone": "Victoriei",
+      "sub_zone": "",
+      "reason": "Risc seismic",
+      "year_built": null,
+      "url": null,
       "source": "storia",
       "eliminated_date": null
     },
