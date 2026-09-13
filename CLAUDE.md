@@ -79,9 +79,19 @@ dristor, obor, vitan, tineretului, iancului, tei, colentina, floreasca, dorobant
 8. **Imobiliare.ro URL pagination is ignored** — navigate zone-by-zone instead
 9. **Imobiliare.ro rate limiting is aggressive** — space requests 3-5s, avoid JS DOM queries that trigger extra XHR
 
+## Optimal batch sizes (Chrome JS execution)
+
+These are tuned to stay under the 45-second CDP timeout:
+
+- **Search page scanning**: 12 pages per JS execution (with 500ms delays between fetches)
+- **Individual listing fetch**: 200 candidates per JS execution (20 concurrent with Promise.all, 500ms delays between rounds)
+- **Availability/price check**: 200 items per JS execution (20 concurrent, 500ms delays)
+- **Seismic risk check**: 200 items per JS execution (20 concurrent, 500ms delays)
+- **Chrome JS tool output truncation**: ~1500 chars — extract data in chunks of 35-40 items (with zones/prices) or 130+ (IDs only)
+
 ## Storia.ro scanning workflow
-1. Extract listing IDs from search pages via `fetch()` + regex (batches of 15-20 pages)
-2. Batch-fetch individual listing pages (10 at a time with Promise.all, 800ms delays)
+1. Extract listing IDs from search pages via `fetch()` + regex (batches of 12 pages)
+2. Batch-fetch individual listing pages (20 at a time with Promise.all, 500ms delays)
 3. From each page: extract `addressLocality`, price, area from JSON-LD
 4. Filter by zone (addressLocality vs excluded list) and area/price
 5. Check seismic risk keywords in page HTML
@@ -126,12 +136,16 @@ dristor, obor, vitan, tineretului, iancului, tei, colentina, floreasca, dorobant
 }
 ```
 
-## Current stats (Aug 15, 2026)
-- 162 active listings across 34 zones
-- Top zones: Dristor (19), Colentina (12), Vitan (12), Obor (12), Tei (11)
-- 22 eliminated (seismic risk + bad zones discovered post-scan)
-- Price range: 70,990 - 160,000€
-- Best €/m²: ~1,300 (Splai, Piata Romana)
+## Current stats (Sep 13, 2026)
+- 509 active listings (397 storia, 112 imobiliare)
+- 240 possibly_removed, 5 over_budget, 72 eliminated
+- Shortlist/preferred zones: Timpuri Noi, Tineretului, Carol, Mihai Bravu, Muncii, Dristor, Iancului, Obor, Stefan cel Mare, Grozavesti, Domenii
+
+## Additional technical lessons (Sep 2026)
+10. **`@type:"Residence"` no longer exists on Storia.ro** — pages now use `"@type":"WebPage"`, `"@type":"WebSite"`, `"@type":"BreadcrumbList"`. Detection of removed listings relies on: 404/410 status, "nu a fost găsit" / "nu mai este disponibil" / "Acest anunț nu mai este activ" text, or absence of price in JSON-LD.
+11. **`floorSize` JSON-LD regex no longer works on Storia.ro** — use `(\d+[.,]?\d*)\s*m²` regex on page text instead.
+12. **Imobiliare.ro zone URLs that redirect**: piata-romana, carol, and splai redirect to the main București page, returning junk listings from wrong zones. Filter these out or skip them.
+13. **Imobiliare.ro removal detection via fetch**: removed listings redirect to homepage (`https://www.imobiliare.ro/`), active ones redirect to zone pages. Check `response.url` after `fetch()` with default redirect:'follow'.
 
 ## GitHub
 Repo: https://github.com/galexand/appartments-scanner

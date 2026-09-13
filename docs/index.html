@@ -110,6 +110,15 @@ tr.price-drop { background: rgba(74,222,128,.08); }
 .compare-row .lbl { color: var(--muted); }
 .best-value { color: var(--green); font-weight: 600; }
 
+/* Log */
+.log-card { background: var(--surface); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 16px; border-left: 3px solid var(--accent); }
+.log-card .log-date { font-size: .75em; color: var(--accent); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
+.log-card .log-title { font-size: 1.1em; font-weight: 600; margin-bottom: 12px; }
+.log-card .log-entry { display: flex; gap: 10px; align-items: baseline; padding: 5px 0; font-size: .9em; color: var(--text); border-bottom: 1px solid rgba(71,85,105,.2); }
+.log-card .log-entry:last-child { border-bottom: none; }
+.log-card .log-icon { flex-shrink: 0; width: 22px; text-align: center; }
+.log-card .log-text strong { color: var(--accent); }
+
 @media (max-width: 768px) {
   .charts { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(2, 1fr); }
@@ -131,6 +140,7 @@ tr.price-drop { background: rgba(74,222,128,.08); }
     <a href="#" onclick="showView('recommended')" style="background:rgba(74,222,128,.15);color:var(--green)">⭐ Recomandate</a>
     <a href="#" onclick="showView('newlistings')" style="background:rgba(96,165,250,.15);color:var(--blue)">🆕 Noi</a>
     <a href="#" onclick="showView('changes')">📊 Schimbări</a>
+    <a href="#" onclick="showView('log')">📋 Log</a>
   </div>
 </div>
 
@@ -208,6 +218,14 @@ tr.price-drop { background: rgba(74,222,128,.08); }
     <h3 style="color:var(--text);margin:0 0 16px">Schimbări între scanări</h3>
     <div id="changes-sold"></div>
     <div id="changes-price" style="margin-top:24px"></div>
+  </div>
+</div>
+
+<div id="view-log" style="display:none">
+  <div style="padding:16px 24px">
+    <h3 style="color:var(--text);margin:0 0 4px">Istoric scanări</h3>
+    <p style="color:var(--muted);font-size:.85em;margin:0 0 20px">Rezumatul fiecărei scanări, de la cea mai recentă.</p>
+    <div id="log-entries"></div>
   </div>
 </div>
 
@@ -563,7 +581,7 @@ function closeModal(id) { document.getElementById(id).classList.remove('visible'
 
 // Views
 function showView(view) {
-  ['listings','charts','eliminated','sold','recommended','newlistings','changes'].forEach(v => {
+  ['listings','charts','eliminated','sold','recommended','newlistings','changes','log'].forEach(v => {
     document.getElementById('view-'+v).style.display = v === view ? '' : 'none';
   });
   document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
@@ -572,6 +590,7 @@ function showView(view) {
   if (view === 'recommended') renderRecommended();
   if (view === 'newlistings') renderNewListings();
   if (view === 'changes') renderChanges();
+  if (view === 'log') renderLog();
 }
 
 function renderRecommended() {
@@ -804,6 +823,32 @@ function renderSold() {
       <td>${s.url ? '<a href="'+s.url+'" target="_blank">'+ ((s.source||'storia')==='imobiliare'?'Imobiliare':'Storia') +' →</a>' : '—'}</td>
     </tr>`
   ).join('') || '<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:24px">Niciun apartament vândut încă</td></tr>';
+}
+
+// Scan log
+let SCAN_LOG = [];
+fetch('data/scan_log.json')
+  .then(r => r.json())
+  .then(d => { SCAN_LOG = d; })
+  .catch(() => {});
+
+function renderLog() {
+  const container = document.getElementById('log-entries');
+  if (!SCAN_LOG.length) {
+    container.innerHTML = '<p style="color:var(--muted)">Niciun log disponibil.</p>';
+    return;
+  }
+  container.innerHTML = SCAN_LOG.map(entry => {
+    const lines = entry.entries.map(e => {
+      const html = e.text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/`([^`]+)`/g, '<code style="background:var(--surface2);padding:1px 5px;border-radius:3px;font-size:.85em">$1</code>');
+      return `<div class="log-entry"><span class="log-icon">${e.icon}</span><span class="log-text">${html}</span></div>`;
+    }).join('');
+    return `<div class="log-card">
+      <div class="log-date">${entry.date}</div>
+      <div class="log-title">${entry.title}</div>
+      ${lines}
+    </div>`;
+  }).join('');
 }
 
 // Close modals on overlay click

@@ -1,0 +1,73 @@
+[
+  {
+    "date": "2026-09-13",
+    "title": "Scanare 13 septembrie 2026",
+    "entries": [
+      {"icon": "🆕", "text": "Listinguri noi: 135 Storia + 12 imobiliare = **147** adăugate"},
+      {"icon": "🔄", "text": "29 listinguri imobiliare existente actualizate (prețuri/last_seen)"},
+      {"icon": "📉", "text": "Modificări de preț: **54** total — 44 scăderi, 10 creșteri"},
+      {"icon": "💰", "text": "Cea mai mare scădere: IDIkBR/IDIkBX de la 149.000€ la 123.000€"},
+      {"icon": "⚠️", "text": "5 listinguri au trecut peste bugetul de 160.000€ → marcate `over_budget`"},
+      {"icon": "🔴", "text": "128 Storia marcate `possibly_removed` (NU șterse din DB)"},
+      {"icon": "🏚️", "text": "31 listinguri noi cu risc seismic → eliminate"},
+      {"icon": "✅", "text": "Toate 109 listinguri imobiliare existente confirmate active"},
+      {"icon": "📊", "text": "Stare finală DB: 509 active | 240 removed | 5 over_budget | 72 eliminated"}
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "title": "Scanare 11 septembrie 2026",
+    "entries": [
+      {"icon": "🆕", "text": "Listinguri noi: 48 Storia + 12 imobiliare = **60** adăugate"},
+      {"icon": "📊", "text": "Stare DB: 362 active | 112 removed | 41 eliminated"}
+    ]
+  },
+  {
+    "date": "2026-09-05",
+    "title": "Scanare 5 septembrie 2026",
+    "entries": [
+      {"icon": "🆕", "text": "Listinguri noi: 13 Storia + 32 imobiliare = **45** adăugate"},
+      {"icon": "📉", "text": "1 scădere de preț detectată"},
+      {"icon": "📊", "text": "Stare DB: 302 active | 112 removed | 41 eliminated"}
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "title": "Scanare 29 august 2026",
+    "entries": [
+      {"icon": "🆕", "text": "Listinguri noi: 109 Storia + 25 imobiliare = **134** adăugate"},
+      {"icon": "📉", "text": "2 modificări de preț (1 scădere, 1 creștere)"},
+      {"icon": "🏚️", "text": "3 listinguri noi cu risc seismic → eliminate"},
+      {"icon": "📊", "text": "Stare DB: 257 active | 112 removed | 41 eliminated"}
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "title": "Scanare 21 august 2026",
+    "entries": [
+      {"icon": "🆕", "text": "Listinguri noi: 56 Storia + 41 imobiliare = **97** adăugate"},
+      {"icon": "🌐", "text": "Prima scanare imobiliare.ro — 29 zone scanate"},
+      {"icon": "🏚️", "text": "4 listinguri noi cu risc seismic → eliminate"},
+      {"icon": "📊", "text": "Stare DB: 123 active | 112 removed | 38 eliminated"}
+    ]
+  },
+  {
+    "date": "2026-08-15",
+    "title": "Scanare 15 august 2026",
+    "entries": [
+      {"icon": "🆕", "text": "Listinguri noi: **156** Storia adăugate"},
+      {"icon": "📉", "text": "2 scăderi de preț detectate"},
+      {"icon": "🔬", "text": "Implementat verificare seismică individuală + clasificare zone via addressLocality"},
+      {"icon": "📊", "text": "Stare DB: 26 active | 112 removed | 34 eliminated"}
+    ]
+  },
+  {
+    "date": "2026-07-26",
+    "title": "Scanare inițială — 26 iulie 2026",
+    "entries": [
+      {"icon": "🚀", "text": "Prima scanare — **118** listinguri Storia extrase"},
+      {"icon": "🏗️", "text": "Creat baza de date JSON + skill Cowork"},
+      {"icon": "📊", "text": "Stare DB: 118 active | 0 removed | 0 eliminated"}
+    ]
+  }
+]
