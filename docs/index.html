@@ -100,6 +100,15 @@ tr.price-drop { background: rgba(74,222,128,.08); }
 .modal .detail-item .dl { font-size: .75em; color: var(--muted); text-transform: uppercase; }
 .modal .detail-item .dv { font-size: 1.1em; font-weight: 500; }
 .modal .chart-container { height: 200px; margin-top: 16px; }
+.notes-section { margin-top: 16px; }
+.notes-section textarea { width: 100%; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-family: inherit; font-size: .9em; resize: vertical; min-height: 60px; outline: none; transition: border-color .2s; }
+.notes-section textarea:focus { border-color: var(--accent); }
+.notes-section .notes-actions { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.notes-section .save-btn { background: var(--accent); color: var(--bg); border: none; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: .85em; }
+.notes-section .save-btn:hover { opacity: .9; }
+.notes-section .saved-msg { color: var(--green); font-size: .8em; opacity: 0; transition: opacity .3s; }
+.notes-section .saved-msg.show { opacity: 1; }
+.note-icon { font-size: .75em; margin-left: 4px; vertical-align: middle; opacity: .8; }
 
 /* Compare modal */
 .compare-modal { max-width: 900px; }
@@ -269,6 +278,25 @@ function getShortlist() {
 function saveShortlist(sl) {
   try { localStorage.setItem('apt_shortlist', JSON.stringify(sl)); } catch(e) {}
 }
+
+// Notes persisted in localStorage
+function getNotes() {
+  try { return JSON.parse(localStorage.getItem('apt_notes') || '{}'); } catch(e) { return {}; }
+}
+function saveNote(id, text) {
+  const notes = getNotes();
+  if (text.trim()) notes[id] = text.trim();
+  else delete notes[id];
+  try { localStorage.setItem('apt_notes', JSON.stringify(notes)); } catch(e) {}
+}
+function saveNoteFromModal(id) {
+  const ta = document.getElementById('noteInput');
+  if (!ta) return;
+  saveNote(id, ta.value);
+  const msg = document.getElementById('noteSavedMsg');
+  if (msg) { msg.classList.add('show'); setTimeout(() => msg.classList.remove('show'), 2000); }
+  renderTable();
+}
 function toggleStar(id, e) {
   e.stopPropagation();
   const sl = getShortlist();
@@ -284,6 +312,7 @@ function toggleFilterBtn(btnId) {
   btn.classList.toggle(cls);
   applyFilters();
 }
+
 
 // Load data
 fetch('data/listings.json')
@@ -339,6 +368,7 @@ function buildFilters() {
     <button class="filter-btn" id="fPref" onclick="toggleFilterBtn('fPref')">⭐ Preferate</button>
     <button class="filter-btn" id="fShort" onclick="toggleFilterBtn('fShort')">📋 Short List</button>
     <button class="filter-btn" id="fConfirmed" onclick="toggleFilterBtn('fConfirmed')">✓ Confirmed</button>
+    <button class="filter-btn" id="fNotes" onclick="toggleFilterBtn('fNotes')">📝 Cu notițe</button>
     <span class="count" id="filterCount"></span>
   `;
 }
@@ -353,7 +383,9 @@ function applyFilters() {
   const prefOnly = document.getElementById('fPref').classList.contains('active');
   const shortOnly = document.getElementById('fShort').classList.contains('active-amber');
   const confirmedOnly = document.getElementById('fConfirmed').classList.contains('active-green');
+  const notesOnly = document.getElementById('fNotes').classList.contains('active');
   const sl = getShortlist();
+  const allNotes = notesOnly ? getNotes() : {};
 
   filtered = DATA.listings.filter(l =>
     (!zone || l.zone === zone) &&
@@ -364,7 +396,8 @@ function applyFilters() {
     (!source || (l.source || 'storia') === source) &&
     (!prefOnly || PREFERRED_ZONES.has(l.zone)) &&
     (!shortOnly || sl[l.id]) &&
-    (!confirmedOnly || sl[l.id] === 'preferred')
+    (!confirmedOnly || sl[l.id] === 'preferred') &&
+    (!notesOnly || allNotes[l.id])
   );
 
   sortData();
@@ -406,12 +439,14 @@ function renderTable() {
 
   const tbody = document.getElementById('tbody');
   const sl = getShortlist();
+  const allNotes = getNotes();
   tbody.innerHTML = filtered.map(l => {
     const isDrop = l.price_change < 0;
     const isPref = PREFERRED_ZONES.has(l.zone);
     const starState = sl[l.id] || '';
     const starLabel = starState === 'preferred' ? '★' : starState === 'shortlist' ? '☆' : '·';
     const starClass = starState ? `starred ${starState}` : '';
+    const hasNote = !!allNotes[l.id];
     const changeHtml = l.price_change !== 0
       ? `<span class="price-change ${l.price_change<0?'down':'up'}">${l.price_change>0?'+':''}${fmt(l.price_change)}€ (${l.price_change_pct>0?'+':''}${l.price_change_pct}%)</span>`
       : '<span style="color:var(--muted);font-size:.8em">—</span>';
@@ -425,7 +460,7 @@ function renderTable() {
     return `<tr class="${isDrop?'price-drop':''}" style="cursor:pointer" onclick="openDetail('${l.id}')">
       <td><button class="star-btn ${starClass}" onclick="toggleStar('${l.id}',event)" title="Click: Short List → Preferred → Remove">${starLabel}</button></td>
       <td><button class="compare-btn ${compareSet.has(l.id)?'selected':''}" onclick="event.stopPropagation();toggleCompare('${l.id}')">${compareSet.has(l.id)?'✓':'+'}</button></td>
-      <td>${zoneBadge}</td>
+      <td>${zoneBadge}${hasNote ? '<span class="note-icon" title="Are notițe">📝</span>' : ''}</td>
       <td><strong>${fmt(l.price_eur)}€</strong></td>
       <td>${l.area_mp} m²</td>
       <td>${l.price_per_mp}</td>
@@ -545,10 +580,18 @@ function openDetail(id) {
     ${l.price_change !== 0 ? `<div style="padding:8px 12px;background:${l.price_change<0?'rgba(74,222,128,.1)':'rgba(248,113,113,.1)'};border-radius:8px;margin-bottom:12px">
       <span class="price-change ${l.price_change<0?'down':'up'}" style="font-size:1em">${l.price_change>0?'+':''}${fmt(l.price_change)}€ (${l.price_change_pct>0?'+':''}${l.price_change_pct}%)</span>
     </div>` : ''}
+    <div class="notes-section">
+      <h3 style="font-size:.9em;color:var(--muted);margin:0 0 8px">📝 Notițe</h3>
+      <textarea id="noteInput" rows="3" placeholder="Adaugă notițe despre vizită, starea apartamentului...">${(getNotes()[l.id] || '').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</textarea>
+      <div class="notes-actions">
+        <button class="save-btn" onclick="saveNoteFromModal('${l.id}')">Salvează</button>
+        <span class="saved-msg" id="noteSavedMsg">✓ Salvat</span>
+      </div>
+    </div>
     <h3 style="font-size:.9em;color:var(--muted);margin:12px 0 8px">Evoluție preț</h3>
     <div class="chart-container"><canvas id="detailChart"></canvas></div>
     <div style="margin-top:16px;text-align:center">
-      <a href="${l.url}" target="_blank" style="display:inline-block;padding:8px 20px;background:var(--accent);color:var(--bg);border-radius:var(--radius);font-weight:600">Vezi pe Storia.ro →</a>
+      <a href="${l.url}" target="_blank" style="display:inline-block;padding:8px 20px;background:var(--accent);color:var(--bg);border-radius:var(--radius);font-weight:600">Vezi pe ${(l.source||'storia')==='imobiliare'?'Imobiliare.ro':'Storia.ro'} →</a>
     </div>
   `;
 
