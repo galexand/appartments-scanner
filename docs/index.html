@@ -389,6 +389,7 @@ const COLS = [
   { key: 'price_per_mp', label: '€/m²' },
   { key: 'price_change', label: 'Δ Preț' },
   { key: '_reno', label: 'Renovare', nosort: true },
+  { key: 'year_built', label: 'An' },
   { key: 'sector', label: 'Sector' },
   { key: 'seismic_risk', label: 'Seismic' },
   { key: 'first_seen', label: 'Văzut' },
@@ -430,6 +431,7 @@ function renderTable() {
       <td>${l.price_per_mp}</td>
       <td>${changeHtml}</td>
       <td>${renoHtml}</td>
+      <td style="font-size:.85em;color:${l.year_built ? 'var(--text)' : 'var(--muted)'}">${l.year_built || '—'}</td>
       <td>S${l.sector || '?'}</td>
       <td class="${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">${l.seismic_risk==='none'?'✓ Safe':l.seismic_risk}</td>
       <td style="font-size:.8em;color:var(--muted)">${l.first_seen||''}</td>
@@ -535,6 +537,7 @@ function openDetail(id) {
       <div class="detail-item"><div class="dl">Preț</div><div class="dv">${fmt(l.price_eur)}€</div></div>
       <div class="detail-item"><div class="dl">Suprafață</div><div class="dv">${l.area_mp} m²</div></div>
       <div class="detail-item"><div class="dl">€/m²</div><div class="dv">${l.price_per_mp}</div></div>
+      <div class="detail-item"><div class="dl">An construcție</div><div class="dv">${l.year_built || '—'}</div></div>
       <div class="detail-item"><div class="dl">Risc seismic</div><div class="dv ${l.seismic_risk==='none'?'risk-safe':'risk-warn'}">${l.seismic_risk==='none'?'✓ Fără risc':l.seismic_risk}</div></div>
       <div class="detail-item"><div class="dl">Prima apariție</div><div class="dv">${l.first_seen||'—'}</div></div>
       <div class="detail-item"><div class="dl">Ultima apariție</div><div class="dv">${l.last_seen||'—'}</div></div>

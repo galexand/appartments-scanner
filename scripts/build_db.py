@@ -83,14 +83,14 @@ def import_json(conn, data):
 def export_site_data(conn, data):
     cur = conn.cursor()
     cur.execute("""SELECT id, price_eur, area_mp, price_per_mp, zone, sub_zone,
-        sector, seismic_risk, url, source, first_seen, last_seen, status, notes
+        sector, year_built, seismic_risk, url, source, first_seen, last_seen, status, notes
         FROM listings WHERE status='active' ORDER BY price_per_mp""")
     cols = [d[0] for d in cur.description]
     active = [dict(zip(cols, r)) for r in cur.fetchall()]
 
     # Also fetch sold listings
     cur.execute("""SELECT id, price_eur, area_mp, price_per_mp, zone, sub_zone,
-        sector, seismic_risk, url, source, first_seen, last_seen, status, notes
+        sector, year_built, seismic_risk, url, source, first_seen, last_seen, status, notes
         FROM listings WHERE status='sold' ORDER BY price_per_mp""")
     sold = [dict(zip(cols, r)) for r in cur.fetchall()]
 
