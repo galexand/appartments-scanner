@@ -40,10 +40,10 @@ These are matched case-insensitively against the `addressLocality` field from ea
 Militari, Berceni, Pallady, Titan, Pantelimon, Drumul Taberei, Rahova, Ferentari,
 Giurgiului, Alexandriei, Sebastian, Salaj, Popesti, Oltenitei, Chitila, Giulesti,
 Aparatorii, Ghencea, Metalurgiei, Progresul, Lujerului, Pacii, Gorjului, Brancoveanu,
-Ozana, Trapezului, Prelungirea, Bucurestii Noi, Chiajna, Voluntari, Jilava, Magurele,
+Ozana, Trapezului, Prelungirea, Chiajna, Voluntari, Jilava, Magurele,
 Bragadiru, Rosu, Domnesti, IMGB, Margeanului, Pieptanari, Dudesti, Nitu Vasile,
 1 Decembrie, Straulesti, Pipera, Baneasa, Pajura, Vatra Noua, Piata Sudului, Leonida,
-Industriilor, Damaroaia, Sisesti, Gara de Nord, Electronicii, Andronache,
+Industriilor, Sisesti, Gara de Nord, Electronicii, Andronache,
 Theodor Pallady, Brancusi, Grand Arena
 ```
 
@@ -195,7 +195,7 @@ URL pagination does NOT work on imobiliare.ro (SPA ignores `/pagina-N`). Instead
 https://www.imobiliare.ro/vanzare-apartamente/bucuresti/{zone}/2-camere
 ```
 
-Target zones (URL slugs): dristor, obor, vitan, tineretului, iancului, tei, colentina, floreasca, dorobanti, stefan-cel-mare, eminescu, mosilor, decebal, cismigiu, grivita, timpuri-noi, piata-romana, centrul-civic, centrul-istoric, vacaresti, vatra-luminoasa, carol, cotroceni, victoriei, universitate, nerva-traian, splai, domenii, armeneasca
+Target zones (URL slugs): dristor, obor, vitan, tineretului, iancului, tei, colentina, floreasca, dorobanti, stefan-cel-mare, eminescu, mosilor, decebal, cismigiu, grivita, timpuri-noi, piata-romana, centrul-civic, centrul-istoric, vacaresti, vatra-luminoasa, carol, cotroceni, victoriei, universitate, nerva-traian, splai, domenii, armeneasca, bucurestii-noi, damaroaia
 
 Wait 3-5 seconds between zone navigations to avoid triggering rate limits.
 

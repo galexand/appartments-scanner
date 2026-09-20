@@ -66,7 +66,7 @@ document.querySelectorAll('article[data-listing-id]').forEach(a => {
 ```
 
 #### Imobiliare.ro target zones
-dristor, obor, vitan, tineretului, iancului, tei, colentina, floreasca, dorobanti, stefan-cel-mare, eminescu, mosilor, decebal, cismigiu, grivita, timpuri-noi, piata-romana, centrul-civic, centrul-istoric, vacaresti, vatra-luminoasa, carol, cotroceni, victoriei, universitate, nerva-traian, splai, domenii, armeneasca
+dristor, obor, vitan, tineretului, iancului, tei, colentina, floreasca, dorobanti, stefan-cel-mare, eminescu, mosilor, decebal, cismigiu, grivita, timpuri-noi, piata-romana, centrul-civic, centrul-istoric, vacaresti, vatra-luminoasa, carol, cotroceni, victoriei, universitate, nerva-traian, splai, domenii, armeneasca, bucurestii-noi, damaroaia
 
 ## Critical technical lessons
 1. **URL slugs are unreliable for zone classification (Storia.ro)** — 86/160 listings had wrong zones. Agencies stuff SEO keywords into URLs.

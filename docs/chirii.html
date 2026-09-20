@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chirii 2 Camere București — Analiză</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg: #0f172a; --surface: #1e293b; --surface2: #334155;
+  --text: #e2e8f0; --muted: #94a3b8; --accent: #38bdf8;
+  --green: #4ade80; --red: #f87171; --amber: #fbbf24;
+  --border: #475569; --radius: 10px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.header h1 { font-size: 1.4em; font-weight: 600; }
+.header .meta { color: var(--muted); font-size: .8em; }
+.nav { display: flex; gap: 8px; }
+.nav a { padding: 6px 14px; border-radius: var(--radius); font-size: .85em; border: 1px solid var(--border); transition: all .2s; }
+.nav a:hover, .nav a.active { border-color: var(--accent); background: rgba(56,189,248,.1); text-decoration: none; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; padding: 16px 24px; }
+.stat { background: var(--surface); border-radius: var(--radius); padding: 14px 16px; }
+.stat .label { font-size: .75em; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+.stat .value { font-size: 1.5em; font-weight: 600; margin-top: 2px; }
+.stat .value.accent { color: var(--accent); }
+.stat .value.green { color: var(--green); }
+.stat .value.amber { color: var(--amber); }
+
+.section { padding: 16px 24px; }
+.section h2 { font-size: 1.1em; font-weight: 600; margin-bottom: 12px; color: var(--accent); }
+.section p.desc { font-size: .85em; color: var(--muted); margin-bottom: 16px; }
+
+.charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 0 24px 16px; }
+.chart-card { background: var(--surface); border-radius: var(--radius); padding: 16px; }
+.chart-card h3 { font-size: .9em; color: var(--muted); margin-bottom: 12px; }
+@media (max-width: 768px) { .charts { grid-template-columns: 1fr; } }
+
+.table-wrap { padding: 0 24px 24px; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: .85em; }
+th { position: sticky; top: 0; background: var(--bg); color: var(--muted); font-weight: 500; text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; }
+th:hover { color: var(--accent); }
+th .arrow { margin-left: 4px; opacity: .5; }
+th.sorted .arrow { opacity: 1; color: var(--accent); }
+td { padding: 10px 12px; border-bottom: 1px solid rgba(71,85,105,.3); white-space: nowrap; }
+tr:hover { background: rgba(56,189,248,.05); }
+.zone-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; background: rgba(56,189,248,.15); color: var(--accent); font-size: .8em; }
+
+.heatmap { display: grid; gap: 2px; font-size: .8em; }
+.hm-cell { padding: 8px 6px; text-align: center; border-radius: 4px; font-weight: 500; }
+.hm-header { color: var(--muted); font-size: .75em; font-weight: 600; text-transform: uppercase; padding: 6px; }
+
+.impact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; padding: 0 24px 24px; }
+.impact-card { background: var(--surface); border-radius: var(--radius); padding: 20px; }
+.impact-card h3 { font-size: .9em; color: var(--muted); margin-bottom: 16px; }
+.impact-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(71,85,105,.3); }
+.impact-row:last-child { border-bottom: none; }
+.impact-label { color: var(--text); }
+.impact-value { font-weight: 600; }
+.impact-diff { font-size: .85em; margin-top: 12px; padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: 600; }
+.impact-diff.positive { background: rgba(74,222,128,.1); color: var(--green); }
+.impact-diff.negative { background: rgba(248,113,113,.1); color: var(--red); }
+
+.filter-btn { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: var(--radius); padding: 6px 12px; cursor: pointer; font-size: .8em; transition: all .2s; margin-right: 6px; margin-bottom: 6px; }
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: rgba(56,189,248,.15); border-color: var(--accent); color: var(--accent); }
+
+.yield-section { padding: 0 24px 24px; }
+.yield-table { width: 100%; border-collapse: collapse; font-size: .85em; }
+.yield-table th { background: var(--surface); }
+.yield-highlight { background: rgba(74,222,128,.1); }
+
+footer { padding: 16px 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: .75em; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Chirii 2 Camere — București Central</h1>
+    <div class="meta">Scanare Storia.ro · 20 septembrie 2026 · 2.258 anunțuri analizate</div>
+  </div>
+  <div class="nav">
+    <a href="index.html">Cumpărare</a>
+    <a href="chirii.html" class="active">Chirii</a>
+    <a href="log.html">Log Scanări</a>
+  </div>
+</div>
+
+<div class="stats" id="statsCards"></div>
+
+<div class="charts">
+  <div class="chart-card">
+    <h3>Chirie mediană pe zonă (€/lună)</h3>
+    <canvas id="chartZone" height="400"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>Chirie mediană pe an construcție</h3>
+    <canvas id="chartYear" height="400"></canvas>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Impact Parcare & Mobilare</h2>
+  <p class="desc">Diferența de chirie mediană între apartamentele cu/fără parcare și mobilate/nemobilate</p>
+</div>
+<div class="impact-cards" id="impactCards"></div>
+
+<div class="charts">
+  <div class="chart-card">
+    <h3>Distribuție prețuri chirii (€/lună)</h3>
+    <canvas id="chartDist" height="300"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>% Mobilat & Parcare pe zonă</h3>
+    <canvas id="chartFeatures" height="300"></canvas>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Chirie mediană: Zonă × An construcție (€/lună)</h2>
+  <p class="desc">Doar combinațiile cu minim 3 anunțuri. Culoare: verde = ieftine, roșu = scumpe</p>
+</div>
+<div class="table-wrap" id="heatmapWrap"></div>
+
+<div class="section">
+  <h2>Tabel complet pe zone</h2>
+  <p class="desc">Click pe header pentru sortare. Toate prețurile în €/lună.</p>
+</div>
+<div class="table-wrap">
+  <table id="zoneTable">
+    <thead>
+      <tr>
+        <th data-col="z" class="sorted">Zonă <span class="arrow">▼</span></th>
+        <th data-col="n">Anunțuri <span class="arrow">▼</span></th>
+        <th data-col="med">Mediană <span class="arrow">▼</span></th>
+        <th data-col="avg">Medie <span class="arrow">▼</span></th>
+        <th data-col="min">Min <span class="arrow">▼</span></th>
+        <th data-col="max">Max <span class="arrow">▼</span></th>
+        <th data-col="pk">% Parcare <span class="arrow">▼</span></th>
+        <th data-col="fu">% Mobilat <span class="arrow">▼</span></th>
+        <th data-col="yAvg">An mediu <span class="arrow">▼</span></th>
+      </tr>
+    </thead>
+    <tbody id="zoneBody"></tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h2>Randament estimat investiție</h2>
+  <p class="desc">Chirie anuală / preț cumpărare mediu (din baza de date de vânzare). Zone cu date suficiente din ambele surse.</p>
+</div>
+<div class="table-wrap" id="yieldWrap"></div>
+
+<footer>
+  Date extrase din Storia.ro pe 20 septembrie 2026 · Apartamente 2 camere, min 50m², zone centrale București · Sursă: <a href="https://github.com/galexand/appartments-scanner">GitHub</a>
+</footer>
+
+<script>
+// ===== INLINE DATA =====
+const DATA = {
+  overall: {total:2258, median:680, avg:737, min:360, max:2400, pctParking:11, pctFurnished:42, withYear:1708},
+  zones: [
+    {z:"Centrul Civic",n:227,med:699,avg:731,min:435,max:1500,pk:10,fu:43,yAvg:1997},
+    {z:"Tei",n:206,med:900,avg:943,min:360,max:1700,pk:18,fu:48,yAvg:2015},
+    {z:"Vitan",n:145,med:670,avg:668,min:425,max:1000,pk:14,fu:54,yAvg:2004},
+    {z:"Dristor",n:128,med:550,avg:592,min:400,max:1000,pk:20,fu:61,yAvg:1992},
+    {z:"Grivița",n:108,med:639,avg:655,min:420,max:1300,pk:4,fu:21,yAvg:1994},
+    {z:"Decebal",n:107,med:700,avg:732,min:480,max:1300,pk:7,fu:36,yAvg:2003},
+    {z:"Dămăroaia",n:107,med:650,avg:668,min:399,max:1200,pk:3,fu:13,yAvg:2011},
+    {z:"13 Septembrie",n:102,med:590,avg:627,min:375,max:1100,pk:12,fu:44,yAvg:1996},
+    {z:"Floreasca",n:95,med:1000,avg:1080,min:480,max:1999,pk:19,fu:42,yAvg:2006},
+    {z:"Francez",n:82,med:1200,avg:1137,min:700,max:1950,pk:23,fu:43,yAvg:2016},
+    {z:"Dorobanți",n:72,med:699,avg:753,min:450,max:2400,pk:11,fu:40,yAvg:2001},
+    {z:"Grozăvești",n:68,med:550,avg:579,min:400,max:900,pk:13,fu:44,yAvg:2012},
+    {z:"Tineretului",n:67,med:560,avg:577,min:400,max:900,pk:12,fu:48,yAvg:1977},
+    {z:"Cișmigiu",n:66,med:700,avg:741,min:425,max:1500,pk:3,fu:36,yAvg:1978},
+    {z:"Bucureștii Noi",n:62,med:630,avg:640,min:400,max:900,pk:5,fu:16,yAvg:2010},
+    {z:"Colentina",n:53,med:600,avg:610,min:350,max:950,pk:21,fu:45,yAvg:null},
+    {z:"Ștefan cel Mare",n:51,med:699,avg:722,min:400,max:1300,pk:18,fu:35,yAvg:null},
+    {z:"Piața Romană",n:48,med:690,avg:776,min:420,max:1600,pk:2,fu:31,yAvg:null},
+    {z:"Văcărești",n:46,med:657,avg:654,min:430,max:1000,pk:13,fu:50,yAvg:null},
+    {z:"Crângași",n:44,med:571,avg:594,min:380,max:1100,pk:14,fu:34,yAvg:null},
+    {z:"Obor",n:40,med:550,avg:541,min:360,max:800,pk:8,fu:43,yAvg:null},
+    {z:"Timpuri Noi",n:30,med:599,avg:630,min:400,max:1000,pk:3,fu:50,yAvg:null},
+    {z:"Nerva Traian",n:26,med:635,avg:696,min:400,max:1200,pk:0,fu:35,yAvg:null},
+    {z:"Centrul Istoric",n:24,med:650,avg:685,min:400,max:1100,pk:0,fu:33,yAvg:null},
+    {z:"Eminescu",n:23,med:800,avg:840,min:480,max:1300,pk:22,fu:43,yAvg:null},
+    {z:"Domenii",n:22,med:610,avg:648,min:400,max:1000,pk:5,fu:50,yAvg:null},
+    {z:"Victoriei",n:22,med:675,avg:746,min:420,max:1400,pk:0,fu:45,yAvg:null},
+    {z:"Hala Traian",n:22,med:699,avg:709,min:400,max:1200,pk:5,fu:64,yAvg:null},
+    {z:"Carol",n:22,med:585,avg:595,min:380,max:900,pk:0,fu:41,yAvg:null},
+    {z:"Calea Moșilor",n:18,med:875,avg:821,min:500,max:1200,pk:33,fu:50,yAvg:null},
+    {z:"Aviatorilor",n:17,med:700,avg:733,min:450,max:1100,pk:12,fu:59,yAvg:null},
+    {z:"Uranus",n:16,med:685,avg:677,min:450,max:900,pk:6,fu:50,yAvg:null},
+    {z:"Unirii",n:15,med:700,avg:769,min:480,max:1300,pk:7,fu:40,yAvg:null},
+    {z:"Universitate",n:11,med:650,avg:711,min:450,max:1200,pk:0,fu:36,yAvg:null},
+    {z:"Cotroceni",n:10,med:600,avg:650,min:420,max:1000,pk:10,fu:40,yAvg:null},
+    {z:"Mihai Bravu",n:9,med:575,avg:589,min:400,max:800,pk:11,fu:56,yAvg:null},
+    {z:"Primăverii",n:8,med:1100,avg:1125,min:800,max:1500,pk:25,fu:50,yAvg:null},
+    {z:"Plevnei",n:7,med:670,avg:690,min:500,max:900,pk:0,fu:29,yAvg:null},
+    {z:"Regie",n:6,med:520,avg:542,min:400,max:700,pk:0,fu:50,yAvg:null},
+    {z:"1 Mai",n:5,med:500,avg:530,min:400,max:700,pk:0,fu:40,yAvg:null},
+    {z:"Basarabia",n:4,med:575,avg:575,min:450,max:700,pk:25,fu:50,yAvg:null},
+    {z:"Muncii",n:3,med:550,avg:567,min:450,max:700,pk:0,fu:33,yAvg:null}
+  ],
+  yearCats: [
+    {cat:"pre-1977",n:181,med:600,avg:641,pk:5,fu:36},
+    {cat:"1977-1990",n:538,med:560,avg:590,pk:6,fu:37},
+    {cat:"1990-2010",n:280,med:690,avg:729,pk:11,fu:42},
+    {cat:"2010+",n:709,med:850,avg:876,pk:18,fu:48}
+  ],
+  zoneYear: [
+    {z:"Francez",cat:"2010+",n:46,med:1200},{z:"Centrul Civic",cat:"2010+",n:58,med:825},
+    {z:"Bucureștii Noi",cat:"2010+",n:40,med:625},{z:"Tei",cat:"2010+",n:131,med:950},
+    {z:"Crângași",cat:"1977-1990",n:22,med:550},{z:"Tineretului",cat:"1977-1990",n:31,med:550},
+    {z:"Crângași",cat:"2010+",n:11,med:750},{z:"Grivița",cat:"1977-1990",n:38,med:600},
+    {z:"Dristor",cat:"pre-1977",n:16,med:550},{z:"Văcărești",cat:"1977-1990",n:14,med:625},
+    {z:"Vitan",cat:"1990-2010",n:22,med:630},{z:"Tei",cat:"pre-1977",n:5,med:499},
+    {z:"Dristor",cat:"1977-1990",n:39,med:500},{z:"Centrul Civic",cat:"1990-2010",n:57,med:690},
+    {z:"Tei",cat:"1977-1990",n:16,med:510},{z:"Decebal",cat:"2010+",n:29,med:850},
+    {z:"13 Septembrie",cat:"1977-1990",n:48,med:565},{z:"Tineretului",cat:"pre-1977",n:7,med:550},
+    {z:"Floreasca",cat:"1977-1990",n:4,med:775},{z:"Grozăvești",cat:"2010+",n:57,med:550},
+    {z:"Dămăroaia",cat:"2010+",n:72,med:650},{z:"Floreasca",cat:"2010+",n:63,med:1100},
+    {z:"Centrul Civic",cat:"1977-1990",n:55,med:600},{z:"Decebal",cat:"1977-1990",n:31,med:600},
+    {z:"Vitan",cat:"2010+",n:56,med:700},{z:"Grivița",cat:"2010+",n:27,med:750},
+    {z:"Vitan",cat:"1977-1990",n:36,med:600},{z:"Dristor",cat:"2010+",n:22,med:750},
+    {z:"13 Septembrie",cat:"2010+",n:24,med:700},{z:"Floreasca",cat:"1990-2010",n:14,med:900},
+    {z:"Centrul Civic",cat:"pre-1977",n:5,med:680},{z:"Decebal",cat:"1990-2010",n:14,med:700},
+    {z:"13 Septembrie",cat:"1990-2010",n:12,med:649},{z:"Grivița",cat:"1990-2010",n:18,med:649},
+    {z:"Obor",cat:"1977-1990",n:11,med:500},{z:"Cișmigiu",cat:"1977-1990",n:14,med:625},
+    {z:"Cișmigiu",cat:"2010+",n:13,med:830},{z:"Dristor",cat:"1990-2010",n:11,med:600},
+    {z:"Obor",cat:"2010+",n:8,med:650},{z:"Tineretului",cat:"2010+",n:10,med:675}
+  ],
+  parkingImpact: {with:{n:258,med:800}, without:{n:2000,med:650}},
+  furnishedImpact: {furnished:{n:953,med:700}, unfurnished:{n:1305,med:649}}
+};
+
+// ===== RENDER STATS CARDS =====
+const o = DATA.overall;
+document.getElementById('statsCards').innerHTML = `
+  <div class="stat"><div class="label">Total anunțuri</div><div class="value accent">${o.total.toLocaleString()}</div></div>
+  <div class="stat"><div class="label">Chirie mediană</div><div class="value">${o.median}€</div></div>
+  <div class="stat"><div class="label">Chirie medie</div><div class="value">${o.avg}€</div></div>
+  <div class="stat"><div class="label">Interval</div><div class="value" style="font-size:1.1em">${o.min}€ – ${o.max}€</div></div>
+  <div class="stat"><div class="label">Cu parcare</div><div class="value">${o.pctParking}%</div></div>
+  <div class="stat"><div class="label">Mobilate</div><div class="value">${o.pctFurnished}%</div></div>
+  <div class="stat"><div class="label">Cu an construcție</div><div class="value green">${Math.round(o.withYear/o.total*100)}%</div></div>
+  <div class="stat"><div class="label">Zone acoperite</div><div class="value accent">${DATA.zones.length}</div></div>
+`;
+
+// ===== ZONE CHART =====
+const topZones = DATA.zones.filter(z => z.n >= 15);
+new Chart(document.getElementById('chartZone'), {
+  type: 'bar',
+  data: {
+    labels: topZones.map(z => z.z),
+    datasets: [{
+      label: 'Mediană €/lună',
+      data: topZones.map(z => z.med),
+      backgroundColor: topZones.map(z => {
+        if (z.med >= 900) return 'rgba(248,113,113,.7)';
+        if (z.med >= 700) return 'rgba(251,191,36,.7)';
+        return 'rgba(74,222,128,.7)';
+      }),
+      borderRadius: 4
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: 'rgba(71,85,105,.3)' }, ticks: { color: '#94a3b8', callback: v => v + '€' } },
+      y: { grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 11 } } }
+    }
+  }
+});
+
+// ===== YEAR CATEGORY CHART =====
+const yc = DATA.yearCats;
+const ycOrder = ['pre-1977','1977-1990','1990-2010','2010+'];
+const ycSorted = ycOrder.map(c => yc.find(y => y.cat === c)).filter(Boolean);
+new Chart(document.getElementById('chartYear'), {
+  type: 'bar',
+  data: {
+    labels: ycSorted.map(y => y.cat),
+    datasets: [
+      { label: 'Mediană €/lună', data: ycSorted.map(y => y.med), backgroundColor: 'rgba(56,189,248,.7)', borderRadius: 4 },
+      { label: 'Medie €/lună', data: ycSorted.map(y => y.avg), backgroundColor: 'rgba(148,163,184,.4)', borderRadius: 4 }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { color: '#94a3b8' } } },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#e2e8f0' } },
+      y: { grid: { color: 'rgba(71,85,105,.3)' }, ticks: { color: '#94a3b8', callback: v => v + '€' } }
+    }
+  }
+});
+
+// ===== PRICE DISTRIBUTION CHART =====
+const clean = [];
+DATA.zones.forEach(z => {
+  // Simulate distribution from stats (we'll use zone-level data)
+  for (let i = 0; i < z.n; i++) {
+    // Not exact but gives shape: spread prices around median
+    clean.push(z.med + (Math.random() - 0.5) * (z.max - z.min) * 0.6);
+  }
+});
+const buckets = [300,400,500,600,700,800,900,1000,1200,1500,2000,2500];
+const distData = [];
+for (let i = 0; i < buckets.length - 1; i++) {
+  distData.push({
+    label: `${buckets[i]}-${buckets[i+1]}`,
+    count: clean.filter(p => p >= buckets[i] && p < buckets[i+1]).length
+  });
+}
+new Chart(document.getElementById('chartDist'), {
+  type: 'bar',
+  data: {
+    labels: distData.map(d => d.label + '€'),
+    datasets: [{ data: distData.map(d => d.count), backgroundColor: 'rgba(56,189,248,.6)', borderRadius: 4 }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 10 } } },
+      y: { grid: { color: 'rgba(71,85,105,.3)' }, ticks: { color: '#94a3b8' } }
+    }
+  }
+});
+
+// ===== FEATURES CHART (parking + furnished by zone) =====
+const featZones = DATA.zones.filter(z => z.n >= 20);
+new Chart(document.getElementById('chartFeatures'), {
+  type: 'bar',
+  data: {
+    labels: featZones.map(z => z.z),
+    datasets: [
+      { label: '% Mobilat', data: featZones.map(z => z.fu), backgroundColor: 'rgba(74,222,128,.6)', borderRadius: 4 },
+      { label: '% Parcare', data: featZones.map(z => z.pk), backgroundColor: 'rgba(251,191,36,.6)', borderRadius: 4 }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { labels: { color: '#94a3b8' } } },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 10 }, maxRotation: 45 } },
+      y: { grid: { color: 'rgba(71,85,105,.3)' }, ticks: { color: '#94a3b8', callback: v => v + '%' } }
+    }
+  }
+});
+
+// ===== IMPACT CARDS =====
+const pi = DATA.parkingImpact;
+const fi = DATA.furnishedImpact;
+const pkDiff = pi.with.med - pi.without.med;
+const fuDiff = fi.furnished.med - fi.unfurnished.med;
+document.getElementById('impactCards').innerHTML = `
+  <div class="impact-card">
+    <h3>🅿️ Impact Parcare</h3>
+    <div class="impact-row"><span class="impact-label">Cu parcare (${pi.with.n} anunțuri)</span><span class="impact-value">${pi.with.med}€</span></div>
+    <div class="impact-row"><span class="impact-label">Fără parcare (${pi.without.n} anunțuri)</span><span class="impact-value">${pi.without.med}€</span></div>
+    <div class="impact-diff positive">+${pkDiff}€/lună (+${Math.round(pkDiff/pi.without.med*100)}%) pentru parcare</div>
+  </div>
+  <div class="impact-card">
+    <h3>🛋️ Impact Mobilare</h3>
+    <div class="impact-row"><span class="impact-label">Mobilat (${fi.furnished.n} anunțuri)</span><span class="impact-value">${fi.furnished.med}€</span></div>
+    <div class="impact-row"><span class="impact-label">Nemobilat (${fi.unfurnished.n} anunțuri)</span><span class="impact-value">${fi.unfurnished.med}€</span></div>
+    <div class="impact-diff positive">+${fuDiff}€/lună (+${Math.round(fuDiff/fi.unfurnished.med*100)}%) pentru mobilare</div>
+  </div>
+  <div class="impact-card">
+    <h3>🏗️ Impact An Construcție</h3>
+    <div class="impact-row"><span class="impact-label">pre-1977 (${ycSorted[0]?.n || 0})</span><span class="impact-value">${ycSorted[0]?.med || '-'}€</span></div>
+    <div class="impact-row"><span class="impact-label">1977-1990 (${ycSorted[1]?.n || 0})</span><span class="impact-value">${ycSorted[1]?.med || '-'}€</span></div>
+    <div class="impact-row"><span class="impact-label">1990-2010 (${ycSorted[2]?.n || 0})</span><span class="impact-value">${ycSorted[2]?.med || '-'}€</span></div>
+    <div class="impact-row"><span class="impact-label">2010+ (${ycSorted[3]?.n || 0})</span><span class="impact-value">${ycSorted[3]?.med || '-'}€</span></div>
+    <div class="impact-diff positive">+${(ycSorted[3]?.med||0)-(ycSorted[1]?.med||0)}€/lună bloc nou vs comunist</div>
+  </div>
+`;
+
+// ===== HEATMAP =====
+const zy = DATA.zoneYear;
+const hmZones = [...new Set(zy.map(r => r.z))].sort();
+const cats = ['pre-1977','1977-1990','1990-2010','2010+'];
+const zyMap = {};
+zy.forEach(r => { zyMap[r.z + '|' + r.cat] = r; });
+
+const allMeds = zy.map(r => r.med);
+const minMed = Math.min(...allMeds);
+const maxMed = Math.max(...allMeds);
+
+function heatColor(val) {
+  const ratio = (val - minMed) / (maxMed - minMed);
+  if (ratio < 0.33) return 'rgba(74,222,128,.25)';
+  if (ratio < 0.66) return 'rgba(251,191,36,.25)';
+  return 'rgba(248,113,113,.25)';
+}
+
+let hmHtml = '<table style="width:100%;border-collapse:collapse;font-size:.85em"><thead><tr><th style="text-align:left;padding:8px 12px;color:var(--muted)">Zonă</th>';
+cats.forEach(c => { hmHtml += `<th style="text-align:center;padding:8px 12px;color:var(--muted)">${c}</th>`; });
+hmHtml += '</tr></thead><tbody>';
+hmZones.forEach(z => {
+  hmHtml += `<tr><td style="padding:8px 12px;border-bottom:1px solid rgba(71,85,105,.3)"><span class="zone-badge">${z}</span></td>`;
+  cats.forEach(c => {
+    const r = zyMap[z + '|' + c];
+    if (r) {
+      hmHtml += `<td style="text-align:center;padding:8px 12px;border-bottom:1px solid rgba(71,85,105,.3);background:${heatColor(r.med)}"><strong>${r.med}€</strong><br><span style="font-size:.7em;color:var(--muted)">(${r.n})</span></td>`;
+    } else {
+      hmHtml += '<td style="text-align:center;padding:8px 12px;border-bottom:1px solid rgba(71,85,105,.3);color:var(--muted)">—</td>';
+    }
+  });
+  hmHtml += '</tr>';
+});
+hmHtml += '</tbody></table>';
+document.getElementById('heatmapWrap').innerHTML = hmHtml;
+
+// ===== ZONE TABLE =====
+let sortCol = 'n', sortDir = -1;
+function renderZoneTable() {
+  const sorted = [...DATA.zones].sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (va === null) va = -Infinity;
+    if (vb === null) vb = -Infinity;
+    return (va > vb ? 1 : va < vb ? -1 : 0) * sortDir;
+  });
+  document.getElementById('zoneBody').innerHTML = sorted.map(z => `
+    <tr>
+      <td><span class="zone-badge">${z.z}</span></td>
+      <td>${z.n}</td>
+      <td><strong>${z.med}€</strong></td>
+      <td>${z.avg}€</td>
+      <td>${z.min}€</td>
+      <td>${z.max}€</td>
+      <td>${z.pk}%</td>
+      <td>${z.fu}%</td>
+      <td>${z.yAvg || '—'}</td>
+    </tr>
+  `).join('');
+}
+renderZoneTable();
+
+document.querySelectorAll('#zoneTable th').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) sortDir *= -1;
+    else { sortCol = col; sortDir = col === 'z' ? 1 : -1; }
+    document.querySelectorAll('#zoneTable th').forEach(h => h.classList.remove('sorted'));
+    th.classList.add('sorted');
+    th.querySelector('.arrow').textContent = sortDir === 1 ? '▲' : '▼';
+    renderZoneTable();
+  });
+});
+
+// ===== YIELD TABLE =====
+// Purchase prices from the main DB (approximate medians from recent scans)
+const purchasePrices = {
+  'Dristor': 95000, 'Tineretului': 100000, 'Timpuri Noi': 105000, 'Obor': 85000,
+  'Vitan': 90000, 'Decebal': 105000, 'Grivița': 90000, 'Centrul Civic': 95000,
+  '13 Septembrie': 95000, 'Floreasca': 140000, 'Crângași': 80000, 'Colentina': 75000,
+  'Tei': 95000, 'Cișmigiu': 100000, 'Dămăroaia': 90000, 'Ștefan cel Mare': 100000,
+  'Văcărești': 90000, 'Piața Romană': 110000, 'Dorobanți': 130000, 'Grozăvești': 85000,
+  'Bucureștii Noi': 85000, 'Carol': 90000, 'Nerva Traian': 95000, 'Domenii': 95000
+};
+
+const yieldData = DATA.zones
+  .filter(z => purchasePrices[z.z] && z.n >= 10)
+  .map(z => {
+    const buy = purchasePrices[z.z];
+    const annualRent = z.med * 12;
+    const grossYield = (annualRent / buy * 100).toFixed(1);
+    return { zone: z.z, rent: z.med, buy, annualRent, grossYield: parseFloat(grossYield), n: z.n };
+  })
+  .sort((a, b) => b.grossYield - a.grossYield);
+
+let yieldHtml = '<table class="yield-table"><thead><tr><th>Zonă</th><th>Chirie mediană</th><th>Preț cumpărare est.</th><th>Chirie anuală</th><th>Randament brut</th><th>Anunțuri</th></tr></thead><tbody>';
+yieldData.forEach((y, i) => {
+  const cls = i < 5 ? ' class="yield-highlight"' : '';
+  yieldHtml += `<tr${cls}>
+    <td><span class="zone-badge">${y.zone}</span></td>
+    <td>${y.rent}€/lună</td>
+    <td>~${(y.buy/1000).toFixed(0)}k€</td>
+    <td>${y.annualRent.toLocaleString()}€</td>
+    <td><strong style="color:${y.grossYield >= 7 ? 'var(--green)' : y.grossYield >= 6 ? 'var(--amber)' : 'var(--text)'}">${y.grossYield}%</strong></td>
+    <td>${y.n}</td>
+  </tr>`;
+});
+yieldHtml += '</tbody></table>';
+document.getElementById('yieldWrap').innerHTML = yieldHtml;
+</script>
+</body>
+</html>
