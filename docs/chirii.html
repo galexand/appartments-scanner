@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chirii 2 Camere București — Analiză</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
 :root {
   --bg: #0f172a; --surface: #1e293b; --surface2: #334155;
@@ -76,6 +78,19 @@ tr:hover { background: rgba(56,189,248,.05); }
 .yield-highlight { background: rgba(74,222,128,.1); }
 
 footer { padding: 16px 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: .75em; text-align: center; }
+
+#mapBuc { height: 520px; border-radius: var(--radius); background: var(--surface); }
+.map-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.map-controls .label { font-size: .8em; color: var(--muted); font-weight: 500; }
+.map-filter-btn { background: none; border: 1px solid var(--border); color: var(--muted); border-radius: var(--radius); padding: 6px 14px; cursor: pointer; font-size: .8em; transition: all .2s; }
+.map-filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.map-filter-btn.active { background: rgba(56,189,248,.15); border-color: var(--accent); color: var(--accent); }
+.map-legend { display: flex; align-items: center; gap: 6px; margin-left: auto; font-size: .75em; color: var(--muted); }
+.map-legend .grad { width: 120px; height: 10px; border-radius: 5px; background: linear-gradient(to right, #4ade80, #fbbf24, #f87171); }
+.dark-tooltip .leaflet-tooltip-content-wrapper, .dark-tooltip { background: var(--surface) !important; color: var(--text) !important; border: 1px solid var(--border) !important; border-radius: 8px !important; box-shadow: 0 4px 12px rgba(0,0,0,.4) !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important; font-size: .85em !important; padding: 8px 12px !important; }
+.dark-tooltip .leaflet-tooltip-arrow { display: none !important; }
+.leaflet-control-attribution { background: rgba(15,23,42,.8) !important; color: var(--muted) !important; font-size: .65em !important; }
+.leaflet-control-attribution a { color: var(--accent) !important; }
 </style>
 </head>
 <body>
@@ -93,6 +108,21 @@ footer { padding: 16px 24px; border-top: 1px solid var(--border); color: var(--m
 </div>
 
 <div class="stats" id="statsCards"></div>
+
+<div class="section">
+  <h2>Hartă Chirii pe Cartiere</h2>
+  <p class="desc">Dimensiunea cercului = nr. anunțuri, culoarea = chirie mediană. Filtrează după anul construcției.</p>
+  <div class="map-controls">
+    <span class="label">An construcție:</span>
+    <button class="map-filter-btn active" data-cat="all">Toate</button>
+    <button class="map-filter-btn" data-cat="pre-1977">pre-1977</button>
+    <button class="map-filter-btn" data-cat="1977-1990">1977-1990</button>
+    <button class="map-filter-btn" data-cat="1990-2010">1990-2010</button>
+    <button class="map-filter-btn" data-cat="2010+">2010+</button>
+    <div class="map-legend"><span>Ieftin</span><div class="grad"></div><span>Scump</span></div>
+  </div>
+  <div id="mapBuc"></div>
+</div>
 
 <div class="charts">
   <div class="chart-card">
@@ -158,17 +188,27 @@ footer { padding: 16px 24px; border-top: 1px solid var(--border); color: var(--m
 <div class="table-wrap" id="yieldWrap"></div>
 
 <footer>
-  Date extrase din Storia.ro pe 20 septembrie 2026 · Apartamente 2 camere, min 50m², zone centrale București · Sursă: <a href="https://github.com/galexand/appartments-scanner">GitHub</a>
+  Date extrase din Storia.ro pe 21 septembrie 2026 · Apartamente 2 camere, min 50m², toate zonele din București · Sursă: <a href="https://github.com/galexand/appartments-scanner">GitHub</a>
 </footer>
 
 <script>
 // ===== INLINE DATA =====
 const DATA = {
-  overall: {total:2258, median:680, avg:737, min:360, max:2400, pctParking:11, pctFurnished:42, withYear:1708},
+  overall: {total:4933, median:620, avg:677, min:250, max:2400, pctParking:31, pctFurnished:69, withYear:4383},
   zones: [
+    // === Zone centrale (date existente, scanare inițială) ===
+    {z:"Militari",n:420,med:600,avg:598,min:330,max:1200,pk:45,fu:91,yAvg:2010},
+    {z:"Titan",n:297,med:549,avg:546,min:250,max:1250,pk:40,fu:90,yAvg:1994},
+    {z:"Berceni",n:268,med:500,avg:524,min:266,max:1100,pk:36,fu:88,yAvg:1991},
     {z:"Centrul Civic",n:227,med:699,avg:731,min:435,max:1500,pk:10,fu:43,yAvg:1997},
+    {z:"Pipera",n:222,med:850,avg:865,min:500,max:1500,pk:68,fu:97,yAvg:2022},
     {z:"Tei",n:206,med:900,avg:943,min:360,max:1700,pk:18,fu:48,yAvg:2015},
+    {z:"Theodor Pallady",n:182,med:599,avg:597,min:400,max:790,pk:56,fu:93,yAvg:2022},
+    {z:"IMGB",n:178,med:550,avg:548,min:400,max:750,pk:62,fu:97,yAvg:2022},
+    {z:"Baneasa",n:171,med:750,avg:781,min:400,max:1300,pk:66,fu:92,yAvg:2015},
+    {z:"Aviatiei",n:152,med:805,avg:882,min:500,max:1400,pk:57,fu:88,yAvg:2007},
     {z:"Vitan",n:145,med:670,avg:668,min:425,max:1000,pk:14,fu:54,yAvg:2004},
+    {z:"Rahova",n:143,med:500,avg:523,min:322,max:1000,pk:24,fu:92,yAvg:2003},
     {z:"Dristor",n:128,med:550,avg:592,min:400,max:1000,pk:20,fu:61,yAvg:1992},
     {z:"Grivița",n:108,med:639,avg:655,min:420,max:1300,pk:4,fu:21,yAvg:1994},
     {z:"Decebal",n:107,med:700,avg:732,min:480,max:1300,pk:7,fu:36,yAvg:2003},
@@ -176,7 +216,9 @@ const DATA = {
     {z:"13 Septembrie",n:102,med:590,avg:627,min:375,max:1100,pk:12,fu:44,yAvg:1996},
     {z:"Floreasca",n:95,med:1000,avg:1080,min:480,max:1999,pk:19,fu:42,yAvg:2006},
     {z:"Francez",n:82,med:1200,avg:1137,min:700,max:1950,pk:23,fu:43,yAvg:2016},
+    {z:"Drumul Taberei",n:76,med:500,avg:511,min:350,max:680,pk:20,fu:97,yAvg:1983},
     {z:"Dorobanți",n:72,med:699,avg:753,min:450,max:2400,pk:11,fu:40,yAvg:2001},
+    {z:"Pantelimon",n:69,med:550,avg:560,min:400,max:750,pk:30,fu:94,yAvg:1994},
     {z:"Grozăvești",n:68,med:550,avg:579,min:400,max:900,pk:13,fu:44,yAvg:2012},
     {z:"Tineretului",n:67,med:560,avg:577,min:400,max:900,pk:12,fu:48,yAvg:1977},
     {z:"Cișmigiu",n:66,med:700,avg:741,min:425,max:1500,pk:3,fu:36,yAvg:1978},
@@ -186,36 +228,69 @@ const DATA = {
     {z:"Piața Romană",n:48,med:690,avg:776,min:420,max:1600,pk:2,fu:31,yAvg:null},
     {z:"Văcărești",n:46,med:657,avg:654,min:430,max:1000,pk:13,fu:50,yAvg:null},
     {z:"Crângași",n:44,med:571,avg:594,min:380,max:1100,pk:14,fu:34,yAvg:null},
+    {z:"Apărătorii Patriei",n:42,med:530,avg:527,min:400,max:800,pk:45,fu:98,yAvg:2016},
     {z:"Obor",n:40,med:550,avg:541,min:360,max:800,pk:8,fu:43,yAvg:null},
+    {z:"Giurgiului",n:35,med:550,avg:544,min:449,max:650,pk:49,fu:89,yAvg:1995},
+    {z:"Vatra Noua",n:32,med:750,avg:813,min:450,max:1500,pk:75,fu:100,yAvg:2019},
+    {z:"Voluntari",n:31,med:750,avg:825,min:550,max:1799,pk:48,fu:100,yAvg:2020},
     {z:"Timpuri Noi",n:30,med:599,avg:630,min:400,max:1000,pk:3,fu:50,yAvg:null},
     {z:"Nerva Traian",n:26,med:635,avg:696,min:400,max:1200,pk:0,fu:35,yAvg:null},
+    {z:"Brancusi",n:24,med:535,avg:546,min:400,max:700,pk:42,fu:100,yAvg:2016},
     {z:"Centrul Istoric",n:24,med:650,avg:685,min:400,max:1100,pk:0,fu:33,yAvg:null},
+    {z:"Ghencea",n:23,med:550,avg:544,min:400,max:699,pk:48,fu:100,yAvg:2021},
     {z:"Eminescu",n:23,med:800,avg:840,min:480,max:1300,pk:22,fu:43,yAvg:null},
+    {z:"Popesti Leordeni",n:22,med:500,avg:516,min:402,max:700,pk:55,fu:95,yAvg:2013},
     {z:"Domenii",n:22,med:610,avg:648,min:400,max:1000,pk:5,fu:50,yAvg:null},
     {z:"Victoriei",n:22,med:675,avg:746,min:420,max:1400,pk:0,fu:45,yAvg:null},
     {z:"Hala Traian",n:22,med:699,avg:709,min:400,max:1200,pk:5,fu:64,yAvg:null},
     {z:"Carol",n:22,med:585,avg:595,min:380,max:900,pk:0,fu:41,yAvg:null},
+    {z:"Salajan",n:20,med:520,avg:518,min:450,max:600,pk:40,fu:90,yAvg:1982},
+    {z:"Rosu",n:18,med:420,avg:412,min:350,max:450,pk:67,fu:100,yAvg:2014},
     {z:"Calea Moșilor",n:18,med:875,avg:821,min:500,max:1200,pk:33,fu:50,yAvg:null},
     {z:"Aviatorilor",n:17,med:700,avg:733,min:450,max:1100,pk:12,fu:59,yAvg:null},
+    {z:"Splai",n:17,med:500,avg:534,min:400,max:700,pk:47,fu:100,yAvg:2013},
+    {z:"Iancului",n:17,med:700,avg:723,min:450,max:1599,pk:47,fu:94,yAvg:2004},
+    {z:"Pieptanari",n:17,med:650,avg:600,min:400,max:768,pk:65,fu:100,yAvg:1997},
+    {z:"Cartierul Evreiesc",n:16,med:707,avg:702,min:599,max:900,pk:56,fu:94,yAvg:1991},
+    {z:"Pajura",n:16,med:674,avg:657,min:500,max:825,pk:69,fu:81,yAvg:2002},
+    {z:"Ozana",n:16,med:575,avg:579,min:500,max:624,pk:44,fu:94,yAvg:2010},
+    {z:"Chitila",n:16,med:600,avg:621,min:455,max:750,pk:56,fu:94,yAvg:2022},
     {z:"Uranus",n:16,med:685,avg:677,min:450,max:900,pk:6,fu:50,yAvg:null},
     {z:"Unirii",n:15,med:700,avg:769,min:480,max:1300,pk:7,fu:40,yAvg:null},
+    {z:"Fundeni",n:14,med:550,avg:549,min:450,max:620,pk:71,fu:93,yAvg:2013},
+    {z:"Chiajna",n:13,med:450,avg:475,min:380,max:620,pk:62,fu:85,yAvg:2019},
+    {z:"Trapezului",n:13,med:549,avg:571,min:400,max:750,pk:31,fu:100,yAvg:1995},
+    {z:"Gara de Nord",n:13,med:620,avg:658,min:402,max:1000,pk:54,fu:100,yAvg:1974},
+    {z:"Vatra Luminoasă",n:12,med:600,avg:550,min:400,max:650,pk:17,fu:83,yAvg:1971},
+    {z:"Straulesti",n:11,med:660,avg:685,min:550,max:900,pk:64,fu:91,yAvg:2023},
     {z:"Universitate",n:11,med:650,avg:711,min:450,max:1200,pk:0,fu:36,yAvg:null},
     {z:"Cotroceni",n:10,med:600,avg:650,min:420,max:1000,pk:10,fu:40,yAvg:null},
+    {z:"Giulesti",n:9,med:570,avg:559,min:450,max:650,pk:33,fu:100,yAvg:2009},
     {z:"Mihai Bravu",n:9,med:575,avg:589,min:400,max:800,pk:11,fu:56,yAvg:null},
+    {z:"Traian",n:8,med:785,avg:759,min:500,max:900,pk:25,fu:100,yAvg:1988},
+    {z:"Henri Coanda",n:8,med:750,avg:731,min:600,max:850,pk:75,fu:100,yAvg:2020},
     {z:"Primăverii",n:8,med:1100,avg:1125,min:800,max:1500,pk:25,fu:50,yAvg:null},
+    {z:"Bragadiru",n:7,med:450,avg:443,min:380,max:503,pk:57,fu:100,yAvg:2016},
     {z:"Plevnei",n:7,med:670,avg:690,min:500,max:900,pk:0,fu:29,yAvg:null},
+    {z:"Andronache",n:6,med:663,avg:671,min:549,max:800,pk:33,fu:83,yAvg:1997},
+    {z:"Herastrau",n:6,med:810,avg:907,min:570,max:1300,pk:67,fu:67,yAvg:2006},
     {z:"Regie",n:6,med:520,avg:542,min:400,max:700,pk:0,fu:50,yAvg:null},
+    {z:"Progresul",n:5,med:500,avg:531,min:402,max:799,pk:60,fu:60,yAvg:2008},
     {z:"1 Mai",n:5,med:500,avg:530,min:400,max:700,pk:0,fu:40,yAvg:null},
     {z:"Basarabia",n:4,med:575,avg:575,min:450,max:700,pk:25,fu:50,yAvg:null},
+    {z:"Primaverii",n:4,med:1199,avg:1099,min:799,max:1199,pk:50,fu:100,yAvg:2023},
+    {z:"Otopeni",n:3,med:500,avg:517,min:500,max:550,pk:100,fu:67,yAvg:2023},
+    {z:"Ferentari",n:3,med:500,avg:500,min:450,max:550,pk:67,fu:100,yAvg:2009},
     {z:"Muncii",n:3,med:550,avg:567,min:450,max:700,pk:0,fu:33,yAvg:null}
   ],
   yearCats: [
-    {cat:"pre-1977",n:181,med:600,avg:641,pk:5,fu:36},
-    {cat:"1977-1990",n:538,med:560,avg:590,pk:6,fu:37},
-    {cat:"1990-2010",n:280,med:690,avg:729,pk:11,fu:42},
-    {cat:"2010+",n:709,med:850,avg:876,pk:18,fu:48}
+    {cat:"pre-1977",n:449,med:570,avg:610,pk:25,fu:65},
+    {cat:"1977-1990",n:1060,med:555,avg:577,pk:17,fu:62},
+    {cat:"1990-2010",n:780,med:607,avg:648,pk:27,fu:71},
+    {cat:"2010+",n:2058,med:719,avg:768,pk:46,fu:79}
   ],
   zoneYear: [
+    // Zone centrale existente
     {z:"Francez",cat:"2010+",n:46,med:1200},{z:"Centrul Civic",cat:"2010+",n:58,med:825},
     {z:"Bucureștii Noi",cat:"2010+",n:40,med:625},{z:"Tei",cat:"2010+",n:131,med:950},
     {z:"Crângași",cat:"1977-1990",n:22,med:550},{z:"Tineretului",cat:"1977-1990",n:31,med:550},
@@ -235,10 +310,52 @@ const DATA = {
     {z:"13 Septembrie",cat:"1990-2010",n:12,med:649},{z:"Grivița",cat:"1990-2010",n:18,med:649},
     {z:"Obor",cat:"1977-1990",n:11,med:500},{z:"Cișmigiu",cat:"1977-1990",n:14,med:625},
     {z:"Cișmigiu",cat:"2010+",n:13,med:830},{z:"Dristor",cat:"1990-2010",n:11,med:600},
-    {z:"Obor",cat:"2010+",n:8,med:650},{z:"Tineretului",cat:"2010+",n:10,med:675}
+    {z:"Obor",cat:"2010+",n:8,med:650},{z:"Tineretului",cat:"2010+",n:10,med:675},
+    // Zone noi din toată București
+    {z:"Militari",cat:"2010+",n:186,med:650},{z:"Pipera",cat:"2010+",n:170,med:850},
+    {z:"IMGB",cat:"2010+",n:150,med:549},{z:"Theodor Pallady",cat:"2010+",n:144,med:599},
+    {z:"Baneasa",cat:"2010+",n:106,med:799},{z:"Aviatiei",cat:"2010+",n:69,med:950},
+    {z:"Berceni",cat:"1977-1990",n:69,med:499},{z:"Titan",cat:"1990-2010",n:61,med:499},
+    {z:"Titan",cat:"1977-1990",n:59,med:540},{z:"Berceni",cat:"1990-2010",n:49,med:500},
+    {z:"Militari",cat:"1990-2010",n:48,med:493},{z:"Militari",cat:"1977-1990",n:43,med:500},
+    {z:"Aviatiei",cat:"1977-1990",n:39,med:600},{z:"Titan",cat:"2010+",n:38,med:600},
+    {z:"Titan",cat:"pre-1977",n:33,med:530},{z:"Rahova",cat:"2010+",n:33,med:600},
+    {z:"Rahova",cat:"1990-2010",n:33,med:450},{z:"Pantelimon",cat:"1977-1990",n:31,med:530},
+    {z:"Rahova",cat:"1977-1990",n:28,med:500},{z:"Vatra Noua",cat:"2010+",n:27,med:750},
+    {z:"Drumul Taberei",cat:"pre-1977",n:25,med:450},{z:"Baneasa",cat:"1990-2010",n:24,med:675},
+    {z:"Berceni",cat:"pre-1977",n:24,med:480},{z:"Berceni",cat:"2010+",n:24,med:599},
+    {z:"Voluntari",cat:"2010+",n:24,med:750},{z:"Apărătorii Patriei",cat:"2010+",n:22,med:550},
+    {z:"Drumul Taberei",cat:"1977-1990",n:21,med:500},{z:"Pantelimon",cat:"2010+",n:16,med:649},
+    {z:"Ghencea",cat:"2010+",n:17,med:599},{z:"Brancusi",cat:"2010+",n:14,med:600},
+    {z:"Chitila",cat:"2010+",n:14,med:600},{z:"Aviatiei",cat:"1990-2010",n:14,med:875},
+    {z:"Pipera",cat:"1990-2010",n:13,med:900},{z:"Giurgiului",cat:"1977-1990",n:11,med:549},
+    {z:"Popesti Leordeni",cat:"2010+",n:10,med:490},{z:"Baneasa",cat:"1977-1990",n:10,med:649},
+    {z:"Straulesti",cat:"2010+",n:10,med:655},{z:"Chiajna",cat:"2010+",n:10,med:440},
+    {z:"Salajan",cat:"1977-1990",n:9,med:510},{z:"Giurgiului",cat:"2010+",n:9,med:599},
+    {z:"Cartierul Evreiesc",cat:"1977-1990",n:9,med:699},{z:"Rosu",cat:"2010+",n:9,med:420},
+    {z:"Militari",cat:"pre-1977",n:8,med:500},{z:"Henri Coanda",cat:"2010+",n:7,med:750},
+    {z:"Fundeni",cat:"2010+",n:7,med:600},{z:"Pajura",cat:"1990-2010",n:7,med:698},
+    {z:"Pieptanari",cat:"2010+",n:7,med:675},{z:"Splai",cat:"1990-2010",n:7,med:480},
+    {z:"Gara de Nord",cat:"pre-1977",n:7,med:600},{z:"Drumul Taberei",cat:"2010+",n:7,med:600},
+    {z:"Vatra Luminoasă",cat:"pre-1977",n:6,med:550},{z:"Ozana",cat:"2010+",n:6,med:560},
+    {z:"Pantelimon",cat:"1990-2010",n:6,med:560},{z:"Brancusi",cat:"1990-2010",n:6,med:575},
+    {z:"Iancului",cat:"2010+",n:6,med:800},{z:"Rahova",cat:"pre-1977",n:6,med:475},
+    {z:"Giulesti",cat:"2010+",n:5,med:600},{z:"Rosu",cat:"1990-2010",n:5,med:450},
+    {z:"Ozana",cat:"1990-2010",n:5,med:575},{z:"Salajan",cat:"pre-1977",n:5,med:500},
+    {z:"Splai",cat:"2010+",n:5,med:549},{z:"Voluntari",cat:"1990-2010",n:5,med:799},
+    {z:"Fundeni",cat:"1990-2010",n:5,med:550},{z:"Drumul Taberei",cat:"1990-2010",n:5,med:499},
+    {z:"Gara de Nord",cat:"1977-1990",n:4,med:825},{z:"Pieptanari",cat:"pre-1977",n:4,med:475},
+    {z:"IMGB",cat:"1990-2010",n:4,med:600},{z:"Bragadiru",cat:"2010+",n:4,med:425},
+    {z:"Traian",cat:"pre-1977",n:4,med:759},{z:"Popesti Leordeni",cat:"1990-2010",n:4,med:550},
+    {z:"Apărătorii Patriei",cat:"1990-2010",n:4,med:450},{z:"Andronache",cat:"1990-2010",n:3,med:800},
+    {z:"Otopeni",cat:"2010+",n:3,med:500},{z:"Traian",cat:"2010+",n:3,med:900},
+    {z:"Trapezului",cat:"1990-2010",n:3,med:749},{z:"Trapezului",cat:"pre-1977",n:3,med:500},
+    {z:"Giurgiului",cat:"pre-1977",n:3,med:449},{z:"Cartierul Evreiesc",cat:"1990-2010",n:3,med:749},
+    {z:"Theodor Pallady",cat:"1990-2010",n:3,med:600},{z:"Pantelimon",cat:"pre-1977",n:3,med:599},
+    {z:"Progresul",cat:"2010+",n:3,med:500}
   ],
-  parkingImpact: {with:{n:258,med:800}, without:{n:2000,med:650}},
-  furnishedImpact: {furnished:{n:953,med:700}, unfurnished:{n:1305,med:649}}
+  parkingImpact: {with:{n:1896,med:670}, without:{n:3037,med:610}},
+  furnishedImpact: {furnished:{n:4256,med:622}, unfurnished:{n:677,med:639}}
 };
 
 // ===== RENDER STATS CARDS =====
@@ -253,6 +370,94 @@ document.getElementById('statsCards').innerHTML = `
   <div class="stat"><div class="label">Cu an construcție</div><div class="value green">${Math.round(o.withYear/o.total*100)}%</div></div>
   <div class="stat"><div class="label">Zone acoperite</div><div class="value accent">${DATA.zones.length}</div></div>
 `;
+
+// ===== MAP =====
+const ZONE_COORDS = {
+  'Militari':[44.433,26.020],'Titan':[44.413,26.152],'Drumul Taberei':[44.419,26.024],
+  'Berceni':[44.395,26.114],'Rahova':[44.408,26.074],'Francez':[44.449,26.103],
+  'Dristor':[44.418,26.120],'Centrul Civic':[44.430,26.097],'Tei':[44.460,26.115],
+  'Dămăroaia':[44.472,26.050],'Floreasca':[44.458,26.093],'Grozăvești':[44.440,26.058],
+  '13 Septembrie':[44.422,26.074],'Pantelimon':[44.428,26.168],'Tineretului':[44.412,26.100],
+  'Aviatiei':[44.480,26.085],'Grivița':[44.452,26.068],'Vitan':[44.415,26.130],
+  'Decebal':[44.422,26.115],'Cișmigiu':[44.436,26.090],'Bucureștii Noi':[44.475,26.065],
+  'Colentina':[44.460,26.135],'Ștefan cel Mare':[44.450,26.103],'Piața Romană':[44.445,26.095],
+  'Văcărești':[44.408,26.118],'Crângași':[44.448,26.035],'Apărătorii Patriei':[44.385,26.115],
+  'Obor':[44.445,26.118],'Giurgiului':[44.395,26.088],'Vatra Noua':[44.415,26.140],
+  'Voluntari':[44.490,26.125],'Timpuri Noi':[44.417,26.105],'Nerva Traian':[44.420,26.110],
+  'Brancusi':[44.433,26.015],'Centrul Istoric':[44.433,26.098],'Ghencea':[44.412,26.030],
+  'Eminescu':[44.448,26.105],'Popesti Leordeni':[44.375,26.130],'Domenii':[44.465,26.065],
+  'Victoriei':[44.452,26.087],'Hala Traian':[44.423,26.118],'Carol':[44.418,26.098],
+  'Salajan':[44.423,26.145],'Rosu':[44.430,25.985],'Calea Moșilor':[44.438,26.108],
+  'Aviatorilor':[44.460,26.082],'Splai':[44.415,26.085],'Iancului':[44.438,26.125],
+  'Pieptanari':[44.413,26.115],'Cartierul Evreiesc':[44.440,26.102],
+  'Pajura':[44.485,26.065],'Ozana':[44.425,26.160],'Chitila':[44.483,26.040],
+  'Uranus':[44.428,26.080],'Unirii':[44.426,26.100],'Fundeni':[44.450,26.150],
+  'Chiajna':[44.430,25.978],'Trapezului':[44.422,26.132],'Gara de Nord':[44.445,26.075],
+  'Vatra Luminoasă':[44.432,26.138],'Straulesti':[44.483,26.050],
+  'Universitate':[44.436,26.100],'Cotroceni':[44.430,26.062],'Giulesti':[44.453,26.035],
+  'Mihai Bravu':[44.430,26.128],'Traian':[44.430,26.118],'Henri Coanda':[44.498,26.075],
+  'Primăverii':[44.465,26.082],'Bragadiru':[44.380,26.050],'Plevnei':[44.440,26.075],
+  'Andronache':[44.475,26.140],'Herastrau':[44.472,26.078],'Regie':[44.438,26.060],
+  'Progresul':[44.413,26.090],'1 Mai':[44.460,26.068],'Basarabia':[44.440,26.135],
+  'Primaverii':[44.465,26.082],'Otopeni':[44.555,26.080],'Ferentari':[44.400,26.075],
+  'Muncii':[44.435,26.130],'IMGB':[44.380,26.105],'Baneasa':[44.493,26.078],
+  'Pipera':[44.488,26.106],'Dorobanți':[44.455,26.088],'Theodor Pallady':[44.410,26.170]
+};
+
+const map = L.map('mapBuc', {scrollWheelZoom: false}).setView([44.438, 26.095], 12);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 18
+}).addTo(map);
+map.on('click', function() { map.scrollWheelZoom.enable(); });
+map.on('mouseout', function() { map.scrollWheelZoom.disable(); });
+
+let mapFilter = 'all';
+const mapMarkers = L.layerGroup().addTo(map);
+
+function getMapColor(med, minV, maxV) {
+  const ratio = Math.min(1, Math.max(0, (med - minV) / (maxV - minV)));
+  const hue = 120 - ratio * 120;
+  return `hsl(${hue}, 75%, 50%)`;
+}
+
+function updateMap() {
+  mapMarkers.clearLayers();
+  let zoneData;
+  if (mapFilter === 'all') {
+    zoneData = DATA.zones.map(z => ({z: z.z, n: z.n, med: z.med, avg: z.avg, coords: ZONE_COORDS[z.z]}));
+  } else {
+    zoneData = DATA.zoneYear.filter(r => r.cat === mapFilter).map(r => ({
+      z: r.z, n: r.n, med: r.med, coords: ZONE_COORDS[r.z]
+    }));
+  }
+  zoneData = zoneData.filter(z => z.coords);
+  if (!zoneData.length) return;
+
+  const meds = zoneData.map(z => z.med);
+  const minMed = Math.min(...meds), maxMed = Math.max(...meds);
+  const ns = zoneData.map(z => z.n);
+  const maxN = Math.max(...ns);
+
+  zoneData.forEach(z => {
+    const radius = 7 + Math.sqrt(z.n / maxN) * 22;
+    const color = getMapColor(z.med, minMed, maxMed);
+    L.circleMarker(z.coords, {
+      radius, fillColor: color, color: '#fff', weight: 1, opacity: 0.6, fillOpacity: 0.65
+    })
+    .bindTooltip(`<strong>${z.z}</strong><br>Mediană: <b>${z.med}€</b>/lună<br>Anunțuri: ${z.n}${mapFilter !== 'all' ? '<br>Perioadă: ' + mapFilter : ''}`, {className: 'dark-tooltip', direction: 'top', offset: [0, -8]})
+    .addTo(mapMarkers);
+  });
+}
+updateMap();
+
+document.querySelectorAll('.map-filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.map-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    mapFilter = btn.dataset.cat;
+    updateMap();
+  });
+});
 
 // ===== ZONE CHART =====
 const topZones = DATA.zones.filter(z => z.n >= 15);
