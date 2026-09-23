@@ -182,6 +182,16 @@ footer { padding: 16px 24px; border-top: 1px solid var(--border); color: var(--m
 </div>
 
 <div class="section">
+  <h2>Evoluție prețuri cumpărare per an construcție</h2>
+  <p class="desc">Preț mediu de vânzare (€) în timp, grupat pe perioadă de construcție. Doar listingurile cu an de construcție cunoscut din baza de date de cumpărare.</p>
+</div>
+<div class="charts" style="grid-template-columns:1fr">
+  <div class="chart-card">
+    <canvas id="chartPriceEvo" height="280"></canvas>
+  </div>
+</div>
+
+<div class="section">
   <h2>Randament estimat investiție</h2>
   <p class="desc">Chirie anuală / preț cumpărare mediu (din baza de date de vânzare). Zone cu date suficiente din ambele surse.</p>
 </div>
@@ -405,9 +415,10 @@ const ZONE_COORDS = {
 };
 
 const map = L.map('mapBuc', {scrollWheelZoom: false}).setView([44.438, 26.095], 12);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-  attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 18
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap', maxZoom: 18
 }).addTo(map);
+document.querySelector('#mapBuc .leaflet-tile-pane').style.filter = 'invert(1) hue-rotate(180deg) brightness(.85) contrast(1.2)';
 map.on('click', function() { map.scrollWheelZoom.enable(); });
 map.on('mouseout', function() { map.scrollWheelZoom.disable(); });
 
@@ -663,6 +674,57 @@ document.querySelectorAll('#zoneTable th').forEach(th => {
     th.querySelector('.arrow').textContent = sortDir === 1 ? '▲' : '▼';
     renderZoneTable();
   });
+});
+
+// ===== PRICE EVOLUTION CHART =====
+const PRICE_EVOLUTION = [
+  {"date":"2026-07-26","pre-1977":{"avg":104000,"n":3},"1977-1990":{"avg":123286,"n":7},"1990-2010":{"avg":120000,"n":1},"2010+":{"avg":null,"n":0}},
+  {"date":"2026-08-15","pre-1977":{"avg":104000,"n":3},"1977-1990":{"avg":123286,"n":7},"1990-2010":{"avg":120000,"n":1},"2010+":{"avg":null,"n":0}},
+  {"date":"2026-08-29","pre-1977":{"avg":118800,"n":5},"1977-1990":{"avg":131564,"n":14},"1990-2010":{"avg":144000,"n":3},"2010+":{"avg":157000,"n":4}},
+  {"date":"2026-09-05","pre-1977":{"avg":118800,"n":5},"1977-1990":{"avg":131207,"n":14},"1990-2010":{"avg":144000,"n":3},"2010+":{"avg":157000,"n":4}},
+  {"date":"2026-09-13","pre-1977":{"avg":118800,"n":5},"1977-1990":{"avg":131129,"n":14},"1990-2010":{"avg":144000,"n":3},"2010+":{"avg":157000,"n":4}},
+  {"date":"2026-09-22","pre-1977":{"avg":118000,"n":5},"1977-1990":{"avg":129738,"n":81},"1990-2010":{"avg":119613,"n":30},"2010+":{"avg":131722,"n":60}}
+];
+const evoCats = ['pre-1977','1977-1990','1990-2010','2010+'];
+const evoColors = ['rgba(248,113,113,.9)','rgba(251,191,36,.9)','rgba(74,222,128,.9)','rgba(56,189,248,.9)'];
+new Chart(document.getElementById('chartPriceEvo'), {
+  type: 'line',
+  data: {
+    labels: PRICE_EVOLUTION.map(p => p.date.slice(5)),
+    datasets: evoCats.map((cat, i) => ({
+      label: cat,
+      data: PRICE_EVOLUTION.map(p => p[cat]?.avg || null),
+      borderColor: evoColors[i],
+      backgroundColor: evoColors[i].replace('.9','.15'),
+      borderWidth: 2,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      tension: 0.3,
+      spanGaps: true,
+      fill: false
+    }))
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { labels: { color: '#94a3b8' } },
+      tooltip: {
+        callbacks: {
+          label: function(ctx) {
+            const d = PRICE_EVOLUTION[ctx.dataIndex];
+            const cat = evoCats[ctx.datasetIndex];
+            const info = d[cat];
+            return `${cat}: ${info?.avg?.toLocaleString() || '—'}€ (${info?.n || 0} anunțuri)`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { color: '#94a3b8' } },
+      y: { grid: { color: 'rgba(71,85,105,.3)' }, ticks: { color: '#94a3b8', callback: v => (v/1000) + 'k€' } }
+    }
+  }
 });
 
 // ===== YIELD TABLE =====
