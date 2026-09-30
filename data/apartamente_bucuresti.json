@@ -3899,7 +3899,7 @@
           "price": 99900
         }
       ],
-      "status": "active",
+      "status": "possibly_removed",
       "notes": null
     },
     {
@@ -7306,9 +7306,9 @@
     },
     {
       "id": "275854988",
-      "price_eur": 139900,
+      "price_eur": 154000,
       "area_mp": 54,
-      "price_per_mp": 2798,
+      "price_per_mp": 2852,
       "zone": "Tineretului",
       "sub_zone": "",
       "sector": 4,
@@ -7324,7 +7324,7 @@
         },
         {
           "date": "2026-09-30",
-          "price": 139900
+          "price": 154000
         }
       ],
       "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275854988"
@@ -11898,31 +11898,6 @@
         }
       ],
       "url": "https://www.storia.ro/ro/oferta/IDIjLO"
-    },
-    {
-      "id": "275776105",
-      "price_eur": 134500,
-      "area_mp": 50,
-      "price_per_mp": 2690,
-      "zone": "Dristor",
-      "sub_zone": "",
-      "sector": 3,
-      "source": "imobiliare",
-      "seismic_risk": "none",
-      "status": "active",
-      "first_seen": "2026-08-29",
-      "last_seen": "2026-09-30",
-      "price_history": [
-        {
-          "date": "2026-08-29",
-          "price": 137000
-        },
-        {
-          "date": "2026-09-30",
-          "price": 134500
-        }
-      ],
-      "url": "https://www.imobiliare.ro/oferta/275776105"
     },
     {
       "id": "275909809",
@@ -27033,6 +27008,16 @@
       "reason": "Risc seismic detectat",
       "source": "storia",
       "date": "2026-09-30"
+    },
+    {
+      "id": "275776105",
+      "zone": "Dristor",
+      "price_eur": 134500,
+      "area_mp": 50,
+      "reason": "An construcție 1968 (pre-1977)",
+      "url": "https://www.imobiliare.ro/oferta/275776105",
+      "source": "imobiliare",
+      "eliminated_date": "2026-09-30"
     }
   ],
   "sold": [

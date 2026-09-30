@@ -1,10 +1,10 @@
 {
   "generated": "",
   "stats": {
-    "active": 609,
+    "active": 607,
     "price_min": 66000,
     "price_max": 160000,
-    "price_avg": 126199,
+    "price_avg": 126252,
     "zones": 60
   },
   "zone_distribution": [
@@ -25,11 +25,11 @@
       "count": 33
     },
     {
-      "zone": "Dristor",
-      "count": 32
+      "zone": "Dămăroaia",
+      "count": 31
     },
     {
-      "zone": "Dămăroaia",
+      "zone": "Dristor",
       "count": 31
     },
     {
@@ -49,12 +49,12 @@
       "count": 21
     },
     {
-      "zone": "Splai",
+      "zone": "Iancului",
       "count": 18
     },
     {
-      "zone": "Iancului",
-      "count": 18
+      "zone": "Splai",
+      "count": 17
     },
     {
       "zone": "Grivița",
@@ -3282,38 +3282,6 @@
       ],
       "price_change": 0,
       "price_change_pct": 0,
-      "claude_needs_renovation": "",
-      "renovation_notes": "",
-      "user_confirmed": ""
-    },
-    {
-      "id": "IDI4qk",
-      "price_eur": 99900,
-      "area_mp": 55.0,
-      "price_per_mp": 1816,
-      "zone": "Splai",
-      "sub_zone": "",
-      "sector": 2,
-      "year_built": null,
-      "seismic_risk": "none",
-      "url": "https://www.storia.ro/ro/oferta/IDI4qk",
-      "source": "storia",
-      "first_seen": "2026-08-15",
-      "last_seen": "2026-09-30",
-      "status": "active",
-      "notes": null,
-      "price_history": [
-        {
-          "date": "2026-08-15",
-          "price": 110999
-        },
-        {
-          "date": "2026-09-13",
-          "price": 99900
-        }
-      ],
-      "price_change": -11099,
-      "price_change_pct": -10.0,
       "claude_needs_renovation": "",
       "renovation_notes": "",
       "user_confirmed": ""
@@ -14374,38 +14342,6 @@
       "user_confirmed": ""
     },
     {
-      "id": "275776105",
-      "price_eur": 134500,
-      "area_mp": 50.0,
-      "price_per_mp": 2690,
-      "zone": "Dristor",
-      "sub_zone": "",
-      "sector": 3,
-      "year_built": null,
-      "seismic_risk": "none",
-      "url": "https://www.imobiliare.ro/oferta/275776105",
-      "source": "imobiliare",
-      "first_seen": "2026-08-29",
-      "last_seen": "2026-09-30",
-      "status": "active",
-      "notes": null,
-      "price_history": [
-        {
-          "date": "2026-08-29",
-          "price": 137000
-        },
-        {
-          "date": "2026-09-30",
-          "price": 134500
-        }
-      ],
-      "price_change": -2500,
-      "price_change_pct": -1.8,
-      "claude_needs_renovation": "",
-      "renovation_notes": "",
-      "user_confirmed": ""
-    },
-    {
       "id": "IDIBSl",
       "price_eur": 143000,
       "area_mp": 53.0,
@@ -15146,38 +15082,6 @@
       "user_confirmed": ""
     },
     {
-      "id": "275854988",
-      "price_eur": 139900,
-      "area_mp": 54.0,
-      "price_per_mp": 2798,
-      "zone": "Tineretului",
-      "sub_zone": "",
-      "sector": 4,
-      "year_built": null,
-      "seismic_risk": "none",
-      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275854988",
-      "source": "imobiliare",
-      "first_seen": "2026-08-21",
-      "last_seen": "2026-09-30",
-      "status": "active",
-      "notes": null,
-      "price_history": [
-        {
-          "date": "2026-08-21",
-          "price": 159000
-        },
-        {
-          "date": "2026-09-30",
-          "price": 139900
-        }
-      ],
-      "price_change": -19100,
-      "price_change_pct": -12.0,
-      "claude_needs_renovation": "",
-      "renovation_notes": "",
-      "user_confirmed": ""
-    },
-    {
       "id": "IDIs4s",
       "price_eur": 157000,
       "area_mp": 56.0,
@@ -15685,6 +15589,38 @@
       ],
       "price_change": 0,
       "price_change_pct": 0,
+      "claude_needs_renovation": "",
+      "renovation_notes": "",
+      "user_confirmed": ""
+    },
+    {
+      "id": "275854988",
+      "price_eur": 154000,
+      "area_mp": 54.0,
+      "price_per_mp": 2852,
+      "zone": "Tineretului",
+      "sub_zone": "",
+      "sector": 4,
+      "year_built": null,
+      "seismic_risk": "none",
+      "url": "https://www.imobiliare.ro/oferta/apartament-de-vanzare-2-camere-275854988",
+      "source": "imobiliare",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-09-30",
+      "status": "active",
+      "notes": null,
+      "price_history": [
+        {
+          "date": "2026-08-21",
+          "price": 159000
+        },
+        {
+          "date": "2026-09-30",
+          "price": 154000
+        }
+      ],
+      "price_change": -5000,
+      "price_change_pct": -3.1,
       "claude_needs_renovation": "",
       "renovation_notes": "",
       "user_confirmed": ""
@@ -18194,6 +18130,18 @@
       "url": "https://www.storia.ro/ro/oferta/IDIeNF",
       "source": "storia",
       "eliminated_date": "2026-08-21"
+    },
+    {
+      "id": "275776105",
+      "price_eur": 134500,
+      "area_mp": 50.0,
+      "zone": "Dristor",
+      "sub_zone": "",
+      "reason": "An construcție 1968 (pre-1977)",
+      "year_built": null,
+      "url": "https://www.imobiliare.ro/oferta/275776105",
+      "source": "imobiliare",
+      "eliminated_date": null
     },
     {
       "id": "IDIF0y",
